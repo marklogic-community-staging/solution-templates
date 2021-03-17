@@ -1,0 +1,33 @@
+{
+  "lang" : "zxx",
+  "name" : "MountainTopEmployees-MapJobOpenings",
+  "description" : "",
+  "version" : 0,
+  "targetEntityType" : "http://marklogic.com/envision/JobOpening-0.0.1/JobOpening",
+  "sourceContext" : "/",
+  "sourceURI" : "/C/Users/paven/Desktop/HR360/JobOpenings/b74c561a-6217-4072-bf5e-c70ad8f0802a.json",
+  "properties" : {
+    "requiredCompetency" : {
+      "sourcedFrom" : "competency"
+    },
+    "jobId" : {
+      "sourcedFrom" : "jobId"
+    },
+    "reqStatus" : {
+      "sourcedFrom" : "status"
+    },
+    "departmentId" : {
+      "sourcedFrom" : "deptId"
+    },
+    "jobTitle" : {
+      "sourcedFrom" : "jobTitle"
+    },
+    "employeeStartDate" : {
+      "sourcedFrom" : "parseDate(startDate,\"MM/DD/YYYY\")"
+    },
+    "focusArea" : {
+      "sourcedFrom" : "productFocus"
+    }
+  },
+  "namespaces" : { }
+}
