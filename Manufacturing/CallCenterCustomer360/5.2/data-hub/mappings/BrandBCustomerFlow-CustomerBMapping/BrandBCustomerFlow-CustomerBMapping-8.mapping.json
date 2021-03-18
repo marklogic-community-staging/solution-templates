@@ -1,0 +1,60 @@
+{
+  "lang" : "zxx",
+  "name" : "BrandBCustomerFlow-CustomerBMapping",
+  "description" : "Default description",
+  "version" : 8,
+  "targetEntityType" : "http://marklogic.com/envision#Customer-0.0.1/Customer",
+  "sourceContext" : "/",
+  "sourceURI" : "",
+  "properties" : {
+    "lastName" : {
+      "sourcedFrom" : "l_name"
+    },
+    "favoriteStoreType" : {
+      "sourcedFrom" : "favorite_store-_type"
+    },
+    "address" : {
+      "sourcedFrom" : "street"
+    },
+    "gender" : {
+      "sourcedFrom" : "memoryLookup(gender,'{\"F\":\"Female\", \"M\":\"Male\", \"U\":\"Unspecified\"}')"
+    },
+    "city" : {
+      "sourcedFrom" : "city"
+    },
+    "postalCode" : {
+      "sourcedFrom" : "postal"
+    },
+    "numberMinorsHHLD" : {
+      "sourcedFrom" : "nbr_minors_hhld"
+    },
+    "firstName" : {
+      "sourcedFrom" : "f_name"
+    },
+    "places" : {
+      "sourcedFrom" : ""
+    },
+    "phoneNumber" : {
+      "sourcedFrom" : "home_phone"
+    },
+    "estIncomeHHLD" : {
+      "sourcedFrom" : "est_income_hhld"
+    },
+    "segment" : {
+      "sourcedFrom" : ""
+    },
+    "customerId" : {
+      "sourcedFrom" : "brand_two_cust_id"
+    },
+    "state" : {
+      "sourcedFrom" : "state"
+    },
+    "age" : {
+      "sourcedFrom" : "age"
+    },
+    "email" : {
+      "sourcedFrom" : ""
+    }
+  },
+  "namespaces" : { }
+}

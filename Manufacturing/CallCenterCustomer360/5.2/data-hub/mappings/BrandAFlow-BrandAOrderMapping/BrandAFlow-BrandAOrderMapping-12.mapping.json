@@ -1,0 +1,36 @@
+{
+  "lang" : "zxx",
+  "name" : "BrandAFlow-BrandAOrderMapping",
+  "description" : "",
+  "version" : 12,
+  "targetEntityType" : "http://marklogic.com/envision#Order-0.0.1/Order",
+  "sourceContext" : "/",
+  "sourceURI" : "",
+  "properties" : {
+    "orderId" : {
+      "sourcedFrom" : "transactionId"
+    },
+    "customerId" : {
+      "sourcedFrom" : "customerId"
+    },
+    "creditCardType" : {
+      "sourcedFrom" : ""
+    },
+    "has" : {
+      "sourcedFrom" : ""
+    },
+    "pricePaid" : {
+      "sourcedFrom" : "pricePaid"
+    },
+    "shipDate" : {
+      "sourcedFrom" : "shipDate"
+    },
+    "orderDate" : {
+      "sourcedFrom" : "transactionDate"
+    },
+    "status" : {
+      "sourcedFrom" : "orderStatus"
+    }
+  },
+  "namespaces" : { }
+}

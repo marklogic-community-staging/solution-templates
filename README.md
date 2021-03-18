@@ -12,6 +12,7 @@ Our goal is that a template consists of 3 major components:
 Not all walkthroughs provide reports at this time, but providing them with each template remains a goal.
 
 ## Use Cases
+* Call Center Customer 360
 * HR360
 
 ## Using a Template

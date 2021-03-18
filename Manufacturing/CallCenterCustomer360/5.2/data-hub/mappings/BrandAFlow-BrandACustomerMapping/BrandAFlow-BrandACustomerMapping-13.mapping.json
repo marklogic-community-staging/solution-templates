@@ -1,0 +1,60 @@
+{
+  "lang" : "zxx",
+  "name" : "BrandAFlow-BrandACustomerMapping",
+  "description" : "",
+  "version" : 13,
+  "targetEntityType" : "http://marklogic.com/envision#Customer-0.0.1/Customer",
+  "sourceContext" : "/",
+  "sourceURI" : "/C/github/solution-templates/Manufacturing/CallCenterCustomer360/5.2/data-hub/data/BrandACustomers/370268ab-5ff6-492f-b1e3-5bc26dce4e1b.json",
+  "properties" : {
+    "lastName" : {
+      "sourcedFrom" : "lastName"
+    },
+    "favoriteStoreType" : {
+      "sourcedFrom" : ""
+    },
+    "address" : {
+      "sourcedFrom" : "address"
+    },
+    "gender" : {
+      "sourcedFrom" : "gender"
+    },
+    "city" : {
+      "sourcedFrom" : "city"
+    },
+    "postalCode" : {
+      "sourcedFrom" : "zip"
+    },
+    "numberMinorsHHLD" : {
+      "sourcedFrom" : ""
+    },
+    "firstName" : {
+      "sourcedFrom" : "firstName"
+    },
+    "places" : {
+      "sourcedFrom" : ""
+    },
+    "phoneNumber" : {
+      "sourcedFrom" : "phoneNumber"
+    },
+    "estIncomeHHLD" : {
+      "sourcedFrom" : ""
+    },
+    "segment" : {
+      "sourcedFrom" : "segment"
+    },
+    "customerId" : {
+      "sourcedFrom" : "brandOneCustomerId"
+    },
+    "state" : {
+      "sourcedFrom" : "state"
+    },
+    "age" : {
+      "sourcedFrom" : "age"
+    },
+    "email" : {
+      "sourcedFrom" : "email"
+    }
+  },
+  "namespaces" : { }
+}

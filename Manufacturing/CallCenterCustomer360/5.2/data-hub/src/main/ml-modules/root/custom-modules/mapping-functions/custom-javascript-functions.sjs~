@@ -1,0 +1,13 @@
+function cleanPrefix(input) {
+  return input != null ? fn.string(input).replace(".", "") : null;
+}
+
+function doubleMetaphone(input) {
+  return input != null ? spell.doubleMetaphone(input): null;
+}
+
+
+
+module.exports = {
+  [cleanPrefix, doubleMetaphone]
+};

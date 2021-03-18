@@ -1,0 +1,179 @@
+{
+  "name" : "BrandAFlow",
+  "description" : "null",
+  "batchSize" : 100,
+  "threadCount" : 4,
+  "stopOnError" : false,
+  "options" : { },
+  "version" : 0,
+  "steps" : {
+    "1" : {
+      "name" : "BrandACustomers",
+      "description" : "",
+      "options" : {
+        "additionalCollections" : [ ],
+        "headers" : {
+          "sources" : [ {
+            "name" : "BrandAFlow"
+          } ],
+          "createdOn" : "currentDateTime",
+          "createdBy" : "currentUser"
+        },
+        "sourceQuery" : "cts.collectionQuery([])",
+        "collections" : [ "BrandACustomers" ],
+        "permissions" : "rest-reader,read,rest-writer,update",
+        "outputFormat" : "json",
+        "targetDatabase" : "data-hub-STAGING"
+      },
+      "customHook" : { },
+      "retryLimit" : 0,
+      "batchSize" : 0,
+      "threadCount" : 0,
+      "stepDefinitionName" : "default-ingestion",
+      "stepDefinitionType" : "INGESTION",
+      "fileLocations" : {
+        "inputFilePath" : "C:\\github\\solution-templates\\Manufacturing\\CallCenterCustomer360\\5.2\\data-hub\\data\\BrandACustomers",
+        "inputFileType" : "csv",
+        "outputURIReplacement" : "",
+        "separator" : ","
+      }
+    },
+    "2" : {
+      "name" : "BrandAOrders",
+      "description" : "",
+      "options" : {
+        "additionalCollections" : [ ],
+        "headers" : {
+          "sources" : [ {
+            "name" : "BrandAFlow"
+          } ],
+          "createdOn" : "currentDateTime",
+          "createdBy" : "currentUser"
+        },
+        "sourceQuery" : "cts.collectionQuery([])",
+        "collections" : [ "BrandAOrders" ],
+        "permissions" : "rest-reader,read,rest-writer,update",
+        "outputFormat" : "json",
+        "targetDatabase" : "data-hub-STAGING"
+      },
+      "customHook" : { },
+      "retryLimit" : 0,
+      "batchSize" : 0,
+      "threadCount" : 0,
+      "stepDefinitionName" : "default-ingestion",
+      "stepDefinitionType" : "INGESTION",
+      "fileLocations" : {
+        "inputFilePath" : "C:\\github\\solution-templates\\Manufacturing\\CallCenterCustomer360\\5.2\\data-hub\\data\\BrandAOrders",
+        "inputFileType" : "csv",
+        "outputURIReplacement" : "",
+        "separator" : ","
+      }
+    },
+    "3" : {
+      "name" : "BrandAProducts",
+      "description" : "",
+      "options" : {
+        "additionalCollections" : [ ],
+        "headers" : {
+          "sources" : [ {
+            "name" : "BrandAFlow"
+          } ],
+          "createdOn" : "currentDateTime",
+          "createdBy" : "currentUser"
+        },
+        "sourceQuery" : "cts.collectionQuery([])",
+        "collections" : [ "BrandAProducts" ],
+        "permissions" : "rest-reader,read,rest-writer,update",
+        "outputFormat" : "json",
+        "targetDatabase" : "data-hub-STAGING"
+      },
+      "customHook" : { },
+      "retryLimit" : 0,
+      "batchSize" : 0,
+      "threadCount" : 0,
+      "stepDefinitionName" : "default-ingestion",
+      "stepDefinitionType" : "INGESTION",
+      "fileLocations" : {
+        "inputFilePath" : "C:\\github\\solution-templates\\Manufacturing\\CallCenterCustomer360\\5.2\\data-hub\\data\\BrandAProducts",
+        "inputFileType" : "csv",
+        "outputURIReplacement" : "",
+        "separator" : ","
+      }
+    },
+    "4" : {
+      "name" : "BrandACustomerMapping",
+      "description" : "",
+      "options" : {
+        "additionalCollections" : [ ],
+        "sourceQuery" : "cts.collectionQuery([\"BrandACustomers\"])",
+        "mapping" : {
+          "name" : "BrandAFlow-BrandACustomerMapping",
+          "version" : 13
+        },
+        "targetEntity" : "Customer",
+        "sourceDatabase" : "data-hub-STAGING",
+        "collections" : [ "BrandACustomerMapping", "Customer" ],
+        "validateEntity" : false,
+        "sourceCollection" : "BrandACustomers",
+        "outputFormat" : "json",
+        "targetDatabase" : "data-hub-FINAL"
+      },
+      "customHook" : { },
+      "retryLimit" : 0,
+      "batchSize" : 0,
+      "threadCount" : 0,
+      "stepDefinitionName" : "entity-services-mapping",
+      "stepDefinitionType" : "MAPPING"
+    },
+    "5" : {
+      "name" : "BrandAOrderMapping",
+      "description" : "",
+      "options" : {
+        "additionalCollections" : [ ],
+        "sourceQuery" : "cts.collectionQuery([\"BrandAOrders\"])",
+        "mapping" : {
+          "name" : "BrandAFlow-BrandAOrderMapping",
+          "version" : 12
+        },
+        "targetEntity" : "Order",
+        "sourceDatabase" : "data-hub-STAGING",
+        "collections" : [ "BrandAOrderMapping", "Order" ],
+        "validateEntity" : false,
+        "sourceCollection" : "BrandAOrders",
+        "outputFormat" : "json",
+        "targetDatabase" : "data-hub-FINAL"
+      },
+      "customHook" : { },
+      "retryLimit" : 0,
+      "batchSize" : 0,
+      "threadCount" : 0,
+      "stepDefinitionName" : "entity-services-mapping",
+      "stepDefinitionType" : "MAPPING"
+    },
+    "6" : {
+      "name" : "BrandAProductMapping",
+      "description" : "",
+      "options" : {
+        "additionalCollections" : [ ],
+        "sourceQuery" : "cts.collectionQuery([\"BrandAProducts\"])",
+        "mapping" : {
+          "name" : "BrandAFlow-BrandAProductMapping",
+          "version" : 12
+        },
+        "targetEntity" : "Product",
+        "sourceDatabase" : "data-hub-STAGING",
+        "collections" : [ "BrandAProductMapping", "Product" ],
+        "validateEntity" : false,
+        "sourceCollection" : "BrandAProducts",
+        "outputFormat" : "json",
+        "targetDatabase" : "data-hub-FINAL"
+      },
+      "customHook" : { },
+      "retryLimit" : 0,
+      "batchSize" : 0,
+      "threadCount" : 0,
+      "stepDefinitionName" : "entity-services-mapping",
+      "stepDefinitionType" : "MAPPING"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "lang" : "zxx",
+  "name" : "BrandBOrdersProductsFlow-BrandBOrderMapping",
+  "description" : "",
+  "version" : 5,
+  "targetEntityType" : "http://marklogic.com/envision#Order-0.0.1/Order",
+  "sourceContext" : "/",
+  "sourceURI" : "/C/github/solution-templates/Manufacturing/CallCenterCustomer360/5.2/data-hub/data/BrandBOrders/e6d41834-69e1-4dc7-a60b-edb8a6b0deb4.json",
+  "properties" : {
+    "orderId" : {
+      "sourcedFrom" : "order_id"
+    },
+    "customerId" : {
+      "sourcedFrom" : "customer_id"
+    },
+    "creditCardType" : {
+      "sourcedFrom" : ""
+    },
+    "has" : {
+      "sourcedFrom" : ""
+    },
+    "pricePaid" : {
+      "sourcedFrom" : "total_price"
+    },
+    "shipDate" : {
+      "sourcedFrom" : "parseDate(ship_date,\"DD-Mon-YYYY\")"
+    },
+    "orderDate" : {
+      "sourcedFrom" : "order_date"
+    },
+    "status" : {
+      "sourcedFrom" : "status"
+    }
+  },
+  "namespaces" : { }
+}

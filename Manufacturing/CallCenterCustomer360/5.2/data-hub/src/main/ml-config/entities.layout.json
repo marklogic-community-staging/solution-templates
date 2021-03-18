@@ -1,0 +1,72 @@
+{
+  "Customer" : {
+    "x" : 61,
+    "y" : 104,
+    "width" : 464,
+    "height" : 240,
+    "vertices" : { }
+  },
+  "Order" : {
+    "x" : 600,
+    "y" : 147,
+    "width" : 471,
+    "height" : 225,
+    "vertices" : { }
+  },
+  "Department" : {
+    "x" : 451,
+    "y" : 25,
+    "width" : 372,
+    "height" : 318,
+    "vertices" : { }
+  },
+  "Employee" : {
+    "x" : 58,
+    "y" : 26,
+    "width" : 365,
+    "height" : 645,
+    "vertices" : { }
+  },
+  "JobOpening" : {
+    "x" : 1098,
+    "y" : 262,
+    "width" : 480,
+    "height" : 264,
+    "vertices" : { }
+  },
+  "JobReview" : {
+    "x" : 564,
+    "y" : 385,
+    "width" : 498,
+    "height" : 228,
+    "vertices" : { }
+  },
+  "Resume" : {
+    "x" : 871,
+    "y" : 24,
+    "width" : 353,
+    "height" : 198,
+    "vertices" : { }
+  },
+  "A" : {
+    "x" : 108,
+    "y" : 55,
+    "width" : 428,
+    "height" : 263,
+    "vertices" : { }
+  },
+  "B" : {
+    "x" : 667,
+    "y" : 170,
+    "width" : 491,
+    "height" : 235,
+    "vertices" : { }
+  },
+  "Address" : {
+    "x" : 1426,
+    "y" : 65,
+    "width" : 196,
+    "height" : 84,
+    "vertices" : { }
+  }
+}
