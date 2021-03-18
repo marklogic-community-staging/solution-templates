@@ -23,6 +23,8 @@ Each directory contains a README for getting started along with
 
 You can use gradle to quick deploy and undeploy different use cases and explore the walkthroughs.
 
+Remember to update gradle.properties first to deploy in your environment.jara -jar 
+
 ## Want to Contribute?
 Do you wish to enrich an existing hub project use case or add your own? Great!
 
