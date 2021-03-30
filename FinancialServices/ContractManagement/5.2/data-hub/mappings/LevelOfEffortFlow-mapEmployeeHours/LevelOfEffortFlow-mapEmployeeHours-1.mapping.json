@@ -1,0 +1,84 @@
+{
+  "lang" : "zxx",
+  "name" : "LevelOfEffortFlow-mapEmployeeHours",
+  "description" : "Default description",
+  "version" : 1,
+  "targetEntityType" : "http://marklogic.envision.com/EmployeeHours-0.0.1/EmployeeHours",
+  "sourceContext" : "/",
+  "sourceURI" : "/ingest/oslo/employeehours.csv/7773fbd5-adab-46d3-a62c-1a147fc7dbff.json",
+  "properties" : {
+    "lastName" : {
+      "sourcedFrom" : "LastName"
+    },
+    "unburdenCost" : {
+      "sourcedFrom" : ""
+    },
+    "levelOfEffort" : {
+      "sourcedFrom" : ""
+    },
+    "reportingPeriod" : {
+      "sourcedFrom" : "ReportingPeriod"
+    },
+    "contractorID" : {
+      "sourcedFrom" : "ContractorID"
+    },
+    "AIN" : {
+      "sourcedFrom" : ""
+    },
+    "contractType" : {
+      "sourcedFrom" : ""
+    },
+    "reportedHours" : {
+      "sourcedFrom" : "ReportedHours"
+    },
+    "contract" : {
+      "sourcedFrom" : "Contract"
+    },
+    "subContractor" : {
+      "sourcedFrom" : ""
+    },
+    "office" : {
+      "sourcedFrom" : ""
+    },
+    "onsite" : {
+      "sourcedFrom" : ""
+    },
+    "reportPeriodKey" : {
+      "sourcedFrom" : "concat(ContractorID,\":\",ReportingPeriod)"
+    },
+    "primeContractor" : {
+      "sourcedFrom" : ""
+    },
+    "firstName" : {
+      "sourcedFrom" : "FirstName"
+    },
+    "CLIN" : {
+      "sourcedFrom" : ""
+    },
+    "nameKey" : {
+      "sourcedFrom" : "concat(LastName,\", \",FirstName)"
+    },
+    "productServiceCode" : {
+      "sourcedFrom" : ""
+    },
+    "SLIN" : {
+      "sourcedFrom" : ""
+    },
+    "supports" : {
+      "sourcedFrom" : ""
+    },
+    "clearance" : {
+      "sourcedFrom" : ""
+    },
+    "comment" : {
+      "sourcedFrom" : ""
+    },
+    "burdenCost" : {
+      "sourcedFrom" : ""
+    },
+    "laborCategory" : {
+      "sourcedFrom" : ""
+    }
+  },
+  "namespaces" : { }
+}

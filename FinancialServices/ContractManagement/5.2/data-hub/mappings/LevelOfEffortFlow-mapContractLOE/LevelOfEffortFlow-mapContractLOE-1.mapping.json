@@ -1,0 +1,87 @@
+{
+  "lang" : "zxx",
+  "name" : "LevelOfEffortFlow-mapContractLOE",
+  "description" : "Default description",
+  "version" : 1,
+  "targetEntityType" : "http://marklogic.envision.com/ContractLOE-0.0.1/ContractLOE",
+  "sourceContext" : "/",
+  "sourceURI" : "/ingest/oslo/peoplereport.csv/555a84f6-2a49-4d29-875e-37c632f7c771.json",
+  "properties" : {
+    "lastName" : {
+      "sourcedFrom" : "LastName"
+    },
+    "contractType" : {
+      "sourcedFrom" : "CONTRACTTYPE"
+    },
+    "subContractor" : {
+      "sourcedFrom" : "SubContractor"
+    },
+    "office" : {
+      "sourcedFrom" : "Office"
+    },
+    "onsite" : {
+      "sourcedFrom" : "Onsite"
+    },
+    "CLIN" : {
+      "sourcedFrom" : "CLIN"
+    },
+    "provides" : {
+      "sourcedFrom" : ""
+    },
+    "SLIN" : {
+      "sourcedFrom" : "SLIN"
+    },
+    "clearance" : {
+      "sourcedFrom" : "ClearanceLevel"
+    },
+    "employer" : {
+      "sourcedFrom" : ""
+    },
+    "laborCategory" : {
+      "sourcedFrom" : "LaborCat"
+    },
+    "unburdenCost" : {
+      "sourcedFrom" : "UnburdenCost"
+    },
+    "levelOfEffort" : {
+      "sourcedFrom" : "LOECurrentPeriod"
+    },
+    "reportingPeriod" : {
+      "sourcedFrom" : "ReportingPeriod"
+    },
+    "contractorID" : {
+      "sourcedFrom" : "ContractorID"
+    },
+    "AIN" : {
+      "sourcedFrom" : "AIN"
+    },
+    "contract" : {
+      "sourcedFrom" : "Contract"
+    },
+    "reportPeriodKey" : {
+      "sourcedFrom" : "concat(ContractorID,\":\",ReportingPeriod)"
+    },
+    "primeContractor" : {
+      "sourcedFrom" : "PrimeContractor"
+    },
+    "firstName" : {
+      "sourcedFrom" : "FirstName"
+    },
+    "phoneNumber" : {
+      "sourcedFrom" : ""
+    },
+    "productServiceCode" : {
+      "sourcedFrom" : "ProductServiceCode"
+    },
+    "nameKey" : {
+      "sourcedFrom" : "concat(LastName,\", \",FirstName)"
+    },
+    "comment" : {
+      "sourcedFrom" : "Comment"
+    },
+    "burdenCost" : {
+      "sourcedFrom" : "BurdenCost"
+    }
+  },
+  "namespaces" : { }
+}

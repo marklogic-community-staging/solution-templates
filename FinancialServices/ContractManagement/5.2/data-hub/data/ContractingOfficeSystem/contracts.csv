@@ -1,0 +1,37 @@
+﻿POPStart,FUNDEDVALUE,POPEnd,ContractNumber,ContractType,CLIN,SUBCLIN,LABORCATEGORY,COMPONENT,RATE,PRIME,Project
+10/1/18,200000,9/31/2020,99ADA20181235,,1234,1,Applications Developer - Master,DA,215,Cougar Consulting,Harpers Ferry
+10/1/18,175000,9/31/2020,99ADA20181235,,1235,1,Training Specialist - Master,DA,250,Cougar Consulting,Harpers Ferry
+10/1/18,150000,9/31/2020,99ADO20181234,TM,1234,1,Applications Developer - Senior,DO,150,Statesman Consulting,Great Falls
+10/1/18,150000,9/31/2020,99ADO20181234,TM,1234,2,Applications Developer - Master,DO,175,Statesman Consulting,Great Falls
+10/1/18,150000,9/31/2020,99ADO20181234,TM,1234,3,Business Systems Analyst - Senior,DO,150,Statesman Consulting,Great Falls
+10/1/18,150000,9/31/2020,99ADO20181234,TM,1234,4,Applications Systems Analyst - Entry Level,DO,140,Statesman Consulting,Great Falls
+10/1/18,150000,9/31/2020,99ADO20181234,TM,1235,1,Database Specialist - Senior,DO,190,Statesman Consulting,Great Falls
+10/1/18,150000,9/31/2020,99ADO20181234,TM,1235,2,Database Specialist - Master,DO,250,Statesman Consulting,Great Falls
+10/1/18,150000,9/31/2020,99ADO20181234,TM,1237,1,Data Architect - Journeyman,DO,200,Statesman Consulting,Great Falls
+10/1/18,150000,9/31/2020,99ADO20181234,TM,1237,2,Data Architect - Senior,DO,230,Statesman Consulting,Great Falls
+10/1/18,150000,9/31/2020,99ADO20181234,TM,1238,1,Program Manager  - Senior,DO,225,Statesman Consulting,Great Falls
+10/1/18,150000,9/31/2020,99ADO20181234,TM,1238,2,Project Manager - Journeyman,DO,200,Statesman Consulting,Great Falls
+10/1/18,75000,9/31/2020,99ADO20181234,TM,1239,1,Technical Writer - Entry Level,DO,120,Statesman Consulting,Great Falls
+10/1/18,75000,9/31/2020,99ADO20181234,TM,1239,2,Technical Writer - Journeyman,DO,110,Statesman Consulting,Great Falls
+10/1/18,200000,9/31/2020,99ADO20181236,,1234,1,Database Specialist - Master,DO,275,Patriot Engineering,Wolf Trap
+10/1/18,200000,9/31/2020,99ADO20181236,,1235,1,Data Architect - Senior,DO,245,Patriot Engineering,Wolf Trap
+10/1/18,200000,9/31/2021,99ADO20181237,,1234,1,Database Specialist - Master,DO,265,Griffin Engineering,Jamestown
+10/1/18,200000,9/31/2021,99ADO20181237,,1235,1,Data Architect - Senior,DO,235,Griffin Engineering,Jamestown
+10/1/18,125000,9/31/2020,99ADO20181238,,1223,1,Helpdesk Specialist - Entry Level,DO,75,Patriot Engineering,Skyline
+10/1/18,125000,9/31/2020,99ADO20181238,,1224,1,Helpdesk Specialist - Journeyman,DO,88,Patriot Engineering,Skyline
+10/1/18,145000,9/31/2020,99ADO20181238,,1225,1,Test Engineer - Journeyman,DO,110,Patriot Engineering,Skyline
+10/1/18,160000,9/31/2020,99ADO20181238,,1225,2,Test Engineer - Senior,DO,140,Patriot Engineering,Skyline
+10/1/18,125000,9/31/2020,99ADO20181238,,1226,1,Quality Assurance Specialist - Journeyman,DO,110,Patriot Engineering,Skyline
+10/1/18,125000,9/31/2020,99ADO20181238,,1226,2,Quality Assurance Specialist - Senior,DO,140,Patriot Engineering,Skyline
+10/1/18,75000,9/31/2020,99ADO20182201,TM,1234,1,Information Assurance/Security Specialist - Journeyman,DO,140,Wildcat Engineering,Blue Ridge
+10/1/18,75000,9/31/2020,99ADO20182201,TM,1234,2,Information Assurance/Security Specialist - Senior,DO,180,Wildcat Engineering,Blue Ridge
+10/1/18,75000,9/31/2020,99ADO20182201,TM,1235,1,Systems Engineer - Journeyman,DO,155,Wildcat Engineering,Blue Ridge
+10/1/18,75000,9/31/2020,99ADO20182201,TM,1235,2,Systems Engineer - Senior,DO,190,Wildcat Engineering,Blue Ridge
+10/1/18,55000,9/31/2020,99ADO20182202,TM,1234,1,Information Assurance/Security Specialist - Journeyman,DO,125,Terrapin Technologies,PW Forest
+10/1/18,60000,9/31/2020,99ADO20182202,TM,1234,2,Information Assurance/Security Specialist - Senior,DO,175,Terrapin Technologies,PW Forest
+10/1/18,55000,9/31/2020,99ADO20182202,TM,1235,1,Systems Engineer - Journeyman,DO,145,Terrapin Technologies,PW Forest
+10/1/18,68000,9/31/2020,99ADO20182202,TM,1235,2,Systems Engineer - Senior,DO,180,Terrapin Technologies,PW Forest
+10/1/19,200000,9/31/2021,99ADO20199234,,1234,1,Applications Developer - Master,DO,210,Monarch Inc,Yorktown
+10/1/19,175000,9/31/2021,99ADO20199234,,1235,1,Training Specialist - Master,DO,240,Monarch Inc,Yorktown
+10/1/19,85000,9/31/2021,99ADO20199235,,1234,1,Helpdesk Specialist - Entry Level,DO,80,Cavalier LLC,Shenandoah
+10/1/19,95000,9/31/2021,99ADO20199235,,1235,1,Helpdesk Specialist - Journeyman,DO,95,Cavalier LLC,Shenandoah

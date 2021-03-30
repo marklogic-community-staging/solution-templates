@@ -1,0 +1,11 @@
+﻿TIN,SupplierName,Address,City,State ,Zip,ContactFirstName,ContactLastName,PhoneNumber,NAICSCode,SupplierClassification,WomanOwner,HubZone,VeteranOwned,DUNS,DBA,ParentCompanyTIN
+12345678,Statesman Consulting,731 Leesburg Pike,Falls Church,VA,22043,George ,Marshall,(703)867-5309,541330,LARGE,,,YES,123456789,,
+23456789,Cougar Consulting,8100 Wolftrap Rd,Vienna,VA,22182,Joyce,Kilmer,(703)555-1212,541330,LARGE,,,YES,,,12345678
+34567890,Freedom Hill Consulting,1945 Lord Fairfax Rd,Vienna,VA,22182,Thomas,Tyson,(703)555-1214,541511,LARGE,N,N,YES,,,12345678
+45678901,Cavalier LLC,400 Ray C. Hunt Drive,Charlottesville,VA,22904,Thomas,Jefferson,(434)924-0000,541511,LARGE,N,N,N,,,
+56789012,Wildcat Engineering,811 N Euclid Avenue,Tucson,AZ,85719,Steve,Kerr,(520)621-0000,541511,LARGE,N,N,N,,,
+67890123,Patriot Engineering,4400 University Dr,Fairfax,VA,22030,George ,Mason,(703)993-0000,541511,LARGE,N,N,N,,,
+78901234,Monarch Inc,5115 Hampton Blvd,Norfolk,VA,23529,Anne,Donovan,(757)683-0000,541511,SMALL,N,N,N,,,
+89012345,Griffin Engineering,200 Stadium Dr,Williamsburg,VA,23185,James ,Monrow,(757)221-0000,541511,LARGE,N,N,N,,,
+90123456,Terrapin Technologies,1 Main St,College Park,MD,20742,Connie ,Chung,(301)405-0000,541512,LARGE,YES,N,N,,,
+12345671,Hawk High Tech LLC,100 Water St,Princess Anne,MD,21853,Clarence,Clemmons,(301)405-0001,541512,LARGE,N,N,N,,,90123456

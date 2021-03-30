@@ -1,0 +1,298 @@
+{
+  "name" : "LevelOfEffortFlow",
+  "description" : "",
+  "batchSize" : 100,
+  "threadCount" : 4,
+  "stopOnError" : false,
+  "options" : { },
+  "version" : 0,
+  "steps" : {
+    "1" : {
+      "name" : "mapEmployeeHours",
+      "description" : "",
+      "options" : {
+        "additionalCollections" : [ ],
+        "sourceQuery" : "cts.collectionQuery([\"employeehours.csv\"])",
+        "mapping" : {
+          "name" : "LevelOfEffortFlow-mapEmployeeHours",
+          "version" : 1
+        },
+        "targetEntity" : "EmployeeHours",
+        "sourceDatabase" : "data-hub-STAGING",
+        "collections" : [ "EmployeeHours" ],
+        "permissions" : "data-hub-operator,read,data-hub-operator,update",
+        "sourceCollection" : "employeehours.csv",
+        "outputFormat" : "json",
+        "targetDatabase" : "data-hub-FINAL"
+      },
+      "customHook" : {
+        "module" : "/envision/customHooks/uriRemapper.sjs",
+        "parameters" : { },
+        "user" : "",
+        "runBefore" : false
+      },
+      "retryLimit" : 0,
+      "batchSize" : 100,
+      "threadCount" : 4,
+      "stepDefinitionName" : "entity-services-mapping",
+      "stepDefinitionType" : "MAPPING"
+    },
+    "2" : {
+      "name" : "mapSupplier",
+      "description" : "",
+      "options" : {
+        "additionalCollections" : [ ],
+        "sourceQuery" : "cts.collectionQuery([\"suppliers.csv\"])",
+        "mapping" : {
+          "name" : "LevelOfEffortFlow-mapSupplier",
+          "version" : 1
+        },
+        "targetEntity" : "Supplier",
+        "sourceDatabase" : "data-hub-STAGING",
+        "collections" : [ "Supplier" ],
+        "permissions" : "data-hub-operator,read,data-hub-operator,update",
+        "sourceCollection" : "suppliers.csv",
+        "outputFormat" : "json",
+        "targetDatabase" : "data-hub-FINAL"
+      },
+      "customHook" : {
+        "module" : "/envision/customHooks/uriRemapper.sjs",
+        "parameters" : { },
+        "user" : "",
+        "runBefore" : false
+      },
+      "retryLimit" : 0,
+      "batchSize" : 100,
+      "threadCount" : 4,
+      "stepDefinitionName" : "entity-services-mapping",
+      "stepDefinitionType" : "MAPPING"
+    },
+    "3" : {
+      "name" : "mapFacilityHours",
+      "description" : "",
+      "options" : {
+        "additionalCollections" : [ ],
+        "sourceQuery" : "cts.collectionQuery([\"badgeaccessreport.csv\"])",
+        "mapping" : {
+          "name" : "LevelOfEffortFlow-mapFacilityHours",
+          "version" : 1
+        },
+        "targetEntity" : "FacilityHours",
+        "sourceDatabase" : "data-hub-STAGING",
+        "collections" : [ "FacilityHours" ],
+        "permissions" : "data-hub-operator,read,data-hub-operator,update",
+        "sourceCollection" : "badgeaccessreport.csv",
+        "outputFormat" : "json",
+        "targetDatabase" : "data-hub-FINAL"
+      },
+      "customHook" : {
+        "module" : "/envision/customHooks/uriRemapper.sjs",
+        "parameters" : { },
+        "user" : "",
+        "runBefore" : false
+      },
+      "retryLimit" : 0,
+      "batchSize" : 100,
+      "threadCount" : 4,
+      "stepDefinitionName" : "entity-services-mapping",
+      "stepDefinitionType" : "MAPPING"
+    },
+    "4" : {
+      "name" : "mapContracts",
+      "description" : "",
+      "options" : {
+        "additionalCollections" : [ ],
+        "sourceQuery" : "cts.collectionQuery([\"contracts.csv\"])",
+        "mapping" : {
+          "name" : "LevelOfEffortFlow-mapContracts",
+          "version" : 1
+        },
+        "targetEntity" : "Contracts",
+        "sourceDatabase" : "data-hub-STAGING",
+        "collections" : [ "Contracts" ],
+        "permissions" : "data-hub-operator,read,data-hub-operator,update",
+        "sourceCollection" : "contracts.csv",
+        "outputFormat" : "json",
+        "targetDatabase" : "data-hub-FINAL"
+      },
+      "customHook" : {
+        "module" : "/envision/customHooks/uriRemapper.sjs",
+        "parameters" : { },
+        "user" : "",
+        "runBefore" : false
+      },
+      "retryLimit" : 0,
+      "batchSize" : 100,
+      "threadCount" : 4,
+      "stepDefinitionName" : "entity-services-mapping",
+      "stepDefinitionType" : "MAPPING"
+    },
+    "5" : {
+      "name" : "mapContractor",
+      "description" : "",
+      "options" : {
+        "additionalCollections" : [ ],
+        "sourceQuery" : "cts.collectionQuery([\"peoplereport.csv\"])",
+        "mapping" : {
+          "name" : "LevelOfEffortFlow-mapContractor",
+          "version" : 1
+        },
+        "targetEntity" : "Contractor",
+        "sourceDatabase" : "data-hub-STAGING",
+        "collections" : [ "Contractor" ],
+        "permissions" : "data-hub-operator,read,data-hub-operator,update",
+        "sourceCollection" : "peoplereport.csv",
+        "outputFormat" : "json",
+        "targetDatabase" : "data-hub-FINAL"
+      },
+      "customHook" : {
+        "module" : "/envision/customHooks/uriRemapper.sjs",
+        "parameters" : { },
+        "user" : "",
+        "runBefore" : false
+      },
+      "retryLimit" : 0,
+      "batchSize" : 100,
+      "threadCount" : 4,
+      "stepDefinitionName" : "entity-services-mapping",
+      "stepDefinitionType" : "MAPPING"
+    },
+    "6" : {
+      "name" : "mapContractLOE",
+      "description" : "",
+      "options" : {
+        "additionalCollections" : [ ],
+        "sourceQuery" : "cts.collectionQuery([\"loereport.csv\"])",
+        "mapping" : {
+          "name" : "LevelOfEffortFlow-mapContractLOE",
+          "version" : 1
+        },
+        "targetEntity" : "ContractLOE",
+        "sourceDatabase" : "data-hub-STAGING",
+        "collections" : [ "ContractLOE" ],
+        "permissions" : "data-hub-operator,read,data-hub-operator,update",
+        "sourceCollection" : "loereport.csv",
+        "outputFormat" : "json",
+        "targetDatabase" : "data-hub-FINAL"
+      },
+      "customHook" : {
+        "module" : "/envision/customHooks/uriRemapper.sjs",
+        "parameters" : { },
+        "user" : "",
+        "runBefore" : false
+      },
+      "retryLimit" : 0,
+      "batchSize" : 100,
+      "threadCount" : 4,
+      "stepDefinitionName" : "entity-services-mapping",
+      "stepDefinitionType" : "MAPPING"
+    },
+    "7" : {
+      "name" : "matchContractors",
+      "description" : "",
+      "options" : {
+        "additionalCollections" : [ ],
+        "sourceQuery" : "cts.collectionQuery([\"Contractor\"])",
+        "targetEntity" : "Contractor",
+        "sourceDatabase" : "data-hub-FINAL",
+        "collections" : [ "Contractor" ],
+        "permissions" : "data-hub-operator,read,data-hub-operator,update",
+        "matchOptions" : {
+          "scoring" : {
+            "add" : [ {
+              "propertyName" : "phoneNumber",
+              "weight" : "15"
+            }, {
+              "propertyName" : "firstName",
+              "weight" : "5"
+            }, {
+              "propertyName" : "lastName",
+              "weight" : "10"
+            } ],
+            "expand" : [ ],
+            "reduce" : [ ]
+          },
+          "propertyDefs" : {
+            "properties" : [ {
+              "localname" : "phoneNumber",
+              "name" : "phoneNumber"
+            }, {
+              "localname" : "firstName",
+              "name" : "firstName"
+            }, {
+              "localname" : "lastName",
+              "name" : "lastName"
+            } ]
+          },
+          "thresholds" : {
+            "threshold" : [ {
+              "label" : "goodMatch",
+              "above" : "25",
+              "action" : "notify"
+            } ]
+          }
+        },
+        "sourceCollection" : "Contractor",
+        "outputFormat" : "json",
+        "targetDatabase" : "data-hub-FINAL"
+      },
+      "customHook" : {
+        "module" : "",
+        "parameters" : { },
+        "user" : "",
+        "runBefore" : false
+      },
+      "retryLimit" : 0,
+      "batchSize" : 100,
+      "threadCount" : 4,
+      "stepDefinitionName" : "default-matching",
+      "stepDefinitionType" : "MATCHING"
+    },
+    "8" : {
+      "name" : "mergeContractors",
+      "description" : "",
+      "options" : {
+        "additionalCollections" : [ ],
+        "sourceQuery" : "cts.collectionQuery([\"Contractor\"])",
+        "targetEntity" : "Contractor",
+        "sourceDatabase" : "data-hub-FINAL",
+        "collections" : [ "Contractor" ],
+        "permissions" : "data-hub-operator,read,data-hub-operator,update",
+        "mergeOptions" : {
+          "propertyDefs" : {
+            "properties" : [ ],
+            "namespaces" : { }
+          },
+          "algorithms" : {
+            "stdAlgorithm" : {
+              "timestamp" : { }
+            },
+            "custom" : [ ],
+            "collections" : { }
+          },
+          "mergeStrategies" : [ ],
+          "merging" : [ {
+            "algorithmRef" : "standard",
+            "sourceWeights" : [ ],
+            "default" : true
+          } ]
+        },
+        "matchOptions" : "",
+        "sourceCollection" : "Contractor",
+        "outputFormat" : "json",
+        "targetDatabase" : "data-hub-FINAL"
+      },
+      "customHook" : {
+        "module" : "",
+        "parameters" : { },
+        "user" : "",
+        "runBefore" : false
+      },
+      "retryLimit" : 0,
+      "batchSize" : 100,
+      "threadCount" : 4,
+      "stepDefinitionName" : "default-merging",
+      "stepDefinitionType" : "MERGING"
+    }
+  }
+}

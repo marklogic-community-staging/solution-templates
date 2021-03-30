@@ -1,0 +1,69 @@
+{
+  "lang" : "zxx",
+  "name" : "LevelOfEffortFlow-mapContracts",
+  "description" : "Default description",
+  "version" : 1,
+  "targetEntityType" : "http://marklogic.envision.com/Contracts-0.0.1/Contracts",
+  "sourceContext" : "/",
+  "sourceURI" : "",
+  "properties" : {
+    "endPOP" : {
+      "sourcedFrom" : "POPEnd"
+    },
+    "lastName" : {
+      "sourcedFrom" : ""
+    },
+    "contractType" : {
+      "sourcedFrom" : "ContractType"
+    },
+    "isInvoicedBy" : {
+      "sourcedFrom" : ""
+    },
+    "contractNumber" : {
+      "sourcedFrom" : "ContractNumber"
+    },
+    "primeContractor" : {
+      "sourcedFrom" : "PRIME"
+    },
+    "CLIN" : {
+      "sourcedFrom" : "CLIN"
+    },
+    "firstName" : {
+      "sourcedFrom" : ""
+    },
+    "component" : {
+      "sourcedFrom" : "COMPONENT"
+    },
+    "startPOP" : {
+      "sourcedFrom" : "POPStart"
+    },
+    "phoneNumber" : {
+      "sourcedFrom" : ""
+    },
+    "nameKey" : {
+      "sourcedFrom" : ""
+    },
+    "provides" : {
+      "sourcedFrom" : ""
+    },
+    "SLIN" : {
+      "sourcedFrom" : "SUBCLIN"
+    },
+    "clearance" : {
+      "sourcedFrom" : ""
+    },
+    "employer" : {
+      "sourcedFrom" : ""
+    },
+    "hourlyRate" : {
+      "sourcedFrom" : "RATE"
+    },
+    "fundedValue" : {
+      "sourcedFrom" : "FUNDEDVALUE"
+    },
+    "laborCategory" : {
+      "sourcedFrom" : "LABORCATEGORY"
+    }
+  },
+  "namespaces" : { }
+}

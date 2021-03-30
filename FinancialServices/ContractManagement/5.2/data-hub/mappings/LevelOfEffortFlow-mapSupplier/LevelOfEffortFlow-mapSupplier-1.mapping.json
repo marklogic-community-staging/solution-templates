@@ -1,0 +1,87 @@
+{
+  "lang" : "zxx",
+  "name" : "LevelOfEffortFlow-mapSupplier",
+  "description" : "Default description",
+  "version" : 1,
+  "targetEntityType" : "http://marklogic.envision.com/Supplier-0.0.1/Supplier",
+  "sourceContext" : "/",
+  "sourceURI" : "/ingest/oslo/suppliers.csv/6fe9b45a-3cd9-4275-bacf-13227c833ea4.json",
+  "properties" : {
+    "lastName" : {
+      "sourcedFrom" : ""
+    },
+    "city" : {
+      "sourcedFrom" : "City"
+    },
+    "veteranOwned" : {
+      "sourcedFrom" : "VeteranOwned"
+    },
+    "parentCompanyTIN" : {
+      "sourcedFrom" : "ParentCompanyTIN"
+    },
+    "supplierClassification" : {
+      "sourcedFrom" : "SupplierClassification"
+    },
+    "NAICScode" : {
+      "sourcedFrom" : "NAICSCode"
+    },
+    "pocFirstName" : {
+      "sourcedFrom" : "ContactFirstName"
+    },
+    "pocLastName" : {
+      "sourcedFrom" : "ContactLastName"
+    },
+    "provides" : {
+      "sourcedFrom" : ""
+    },
+    "supports" : {
+      "sourcedFrom" : ""
+    },
+    "state" : {
+      "sourcedFrom" : "*[local-name(.)='State ']"
+    },
+    "supplierName" : {
+      "sourcedFrom" : "SupplierName"
+    },
+    "zip" : {
+      "sourcedFrom" : "Zip"
+    },
+    "address" : {
+      "sourcedFrom" : "Address"
+    },
+    "reportingPeriod" : {
+      "sourcedFrom" : ""
+    },
+    "contractorID" : {
+      "sourcedFrom" : ""
+    },
+    "contract" : {
+      "sourcedFrom" : ""
+    },
+    "reportPeriodKey" : {
+      "sourcedFrom" : ""
+    },
+    "womanOwned" : {
+      "sourcedFrom" : "WomanOwner"
+    },
+    "firstName" : {
+      "sourcedFrom" : ""
+    },
+    "phoneNumber" : {
+      "sourcedFrom" : "PhoneNumber"
+    },
+    "DUNS" : {
+      "sourcedFrom" : "DUNS"
+    },
+    "nameKey" : {
+      "sourcedFrom" : ""
+    },
+    "TIN" : {
+      "sourcedFrom" : "TIN"
+    },
+    "accessHours" : {
+      "sourcedFrom" : ""
+    }
+  },
+  "namespaces" : { }
+}

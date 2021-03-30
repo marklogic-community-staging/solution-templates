@@ -1,0 +1,33 @@
+{
+  "lang" : "zxx",
+  "name" : "LevelOfEffortFlow-mapContractor",
+  "description" : "Default description",
+  "version" : 1,
+  "targetEntityType" : "http://marklogic.envision.com/Contractor-0.0.1/Contractor",
+  "sourceContext" : "/",
+  "sourceURI" : "",
+  "properties" : {
+    "lastName" : {
+      "sourcedFrom" : "LastName"
+    },
+    "firstName" : {
+      "sourcedFrom" : "FirstName"
+    },
+    "phoneNumber" : {
+      "sourcedFrom" : "PhoneNumber"
+    },
+    "nameKey" : {
+      "sourcedFrom" : "concat(LastName,\", \",FirstName)"
+    },
+    "provides" : {
+      "sourcedFrom" : ""
+    },
+    "employer" : {
+      "sourcedFrom" : "Employer"
+    },
+    "clearance" : {
+      "sourcedFrom" : "ClearanceLevel"
+    }
+  },
+  "namespaces" : { }
+}

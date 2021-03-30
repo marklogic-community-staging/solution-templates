@@ -1,0 +1,75 @@
+{
+  "lang" : "zxx",
+  "name" : "LevelOfEffortFlow-mapFacilityHours",
+  "description" : "Default description",
+  "version" : 1,
+  "targetEntityType" : "http://marklogic.envision.com/FacilityHours-0.0.1/FacilityHours",
+  "sourceContext" : "/",
+  "sourceURI" : "/ingest/oslo/badgeaccessreport.csv/3742384d-2607-4e08-b9b5-381c787142fc.json",
+  "properties" : {
+    "endPOP" : {
+      "sourcedFrom" : ""
+    },
+    "lastName" : {
+      "sourcedFrom" : "LastName"
+    },
+    "reportingPeriod" : {
+      "sourcedFrom" : "ReportingPeriod"
+    },
+    "contractorID" : {
+      "sourcedFrom" : "ContractorID"
+    },
+    "contractType" : {
+      "sourcedFrom" : ""
+    },
+    "contract" : {
+      "sourcedFrom" : "Contract"
+    },
+    "isInvoicedBy" : {
+      "sourcedFrom" : ""
+    },
+    "contractNumber" : {
+      "sourcedFrom" : ""
+    },
+    "reportPeriodKey" : {
+      "sourcedFrom" : "concat(ContractorID,\":\",ReportingPeriod)"
+    },
+    "primeContractor" : {
+      "sourcedFrom" : ""
+    },
+    "firstName" : {
+      "sourcedFrom" : "FirstName"
+    },
+    "CLIN" : {
+      "sourcedFrom" : ""
+    },
+    "component" : {
+      "sourcedFrom" : ""
+    },
+    "startPOP" : {
+      "sourcedFrom" : ""
+    },
+    "nameKey" : {
+      "sourcedFrom" : "concat(LastName,\", \",FirstName)"
+    },
+    "SLIN" : {
+      "sourcedFrom" : ""
+    },
+    "supports" : {
+      "sourcedFrom" : "supports"
+    },
+    "accessHours" : {
+      "sourcedFrom" : "AccessHours"
+    },
+    "hourlyRate" : {
+      "sourcedFrom" : ""
+    },
+    "fundedValue" : {
+      "sourcedFrom" : ""
+    },
+    "laborCategory" : {
+      "sourcedFrom" : ""
+    }
+  },
+  "namespaces" : { }
+}

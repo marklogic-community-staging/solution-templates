@@ -1,10 +1,10 @@
 # HR360 Data Hub
 
-This sample data hub for HR360 is compatible with [DHF] 5.2.x and [Data Hub Central Community Edition] 2.0.5
+This sample data hub for Call Center Customer 360 is compatible with [DHF] 5.2.x and [Data Hub Central Community Edition] 2.0.5
 
 ## Walkthrough
 
-The HR360Walkthrough.docx accompanying this hub provides step by step instructions to walk through a user story for this data hub using Envision/Data Hub Central Community Edition (DHCCE). 
+The Call-Center-Customer360-Walkthrough.docx accompanying this hub provides step by step instructions to walk through a user story for this data hub using Envision/Data Hub Central Community Edition (DHCCE). 
 
 ## Getting Started
 

@@ -1,0 +1,51 @@
+{
+  "Employee" : {
+    "x" : 812,
+    "y" : 287,
+    "width" : 988,
+    "height" : 485,
+    "vertices" : { }
+  },
+  "Supplier" : {
+    "x" : 566,
+    "y" : 13,
+    "width" : 529,
+    "height" : 493,
+    "vertices" : { }
+  },
+  "Contracts" : {
+    "x" : 68,
+    "y" : 9,
+    "width" : 288,
+    "height" : 241,
+    "vertices" : { }
+  },
+  "ContractLOE" : {
+    "x" : 70,
+    "y" : 358,
+    "width" : 315,
+    "height" : 421,
+    "vertices" : { }
+  },
+  "EmployeeHours" : {
+    "x" : 1448,
+    "y" : 296,
+    "width" : 284,
+    "height" : 141,
+    "vertices" : { }
+  },
+  "Contractor" : {
+    "x" : 1386,
+    "y" : 78,
+    "width" : 288,
+    "height" : 121,
+    "vertices" : { }
+  },
+  "FacilityHours" : {
+    "x" : 1106,
+    "y" : 664,
+    "width" : 530,
+    "height" : 221,
+    "vertices" : { }
+  }
+}
