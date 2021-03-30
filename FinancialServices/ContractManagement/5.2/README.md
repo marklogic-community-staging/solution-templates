@@ -1,6 +1,6 @@
-# HR360 Data Hub
+# Contract Management 360 Data Hub
 
-This sample data hub for Conttract Management is compatible with [DHF] 5.2.x and [Data Hub Central Community Edition] 2.0.5
+This sample data hub for Contract Management is compatible with [DHF] 5.2.x and [Data Hub Central Community Edition] 2.0.5
 
 ## Walkthrough
 
