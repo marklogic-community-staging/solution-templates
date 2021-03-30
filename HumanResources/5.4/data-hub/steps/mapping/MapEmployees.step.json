@@ -1,0 +1,106 @@
+{
+  "stepId" : "MapEmployees-mapping",
+  "name" : "MapEmployees",
+  "description" : "",
+  "batchSize" : 100,
+  "threadCount" : 4,
+  "stepDefinitionName" : "entity-services-mapping",
+  "stepDefinitionType" : "MAPPING",
+  "stepNumber" : "6",
+  "sourceQuery" : "cts.collectionQuery([\"IngestEmployees\"])",
+  "mapping" : {
+    "name" : "MapEmployees"
+  },
+  "provenanceGranularityLevel" : "coarse",
+  "collections" : [ "MapEmployees", "Employee" ],
+  "sourceDatabase" : "data-hub-STAGING",
+  "targetEntityType" : "http://marklogic.envision.com/Employee-0.0.1/Employee",
+  "permissions" : "data-hub-operator,read,data-hub-operator,update",
+  "validateEntity" : "doNotValidate",
+  "outputFormat" : "json",
+  "targetDatabase" : "data-hub-FINAL",
+  "namespaces" : { },
+  "additionalCollections" : [ ],
+  "targetFormat" : "json",
+  "properties" : {
+    "lastName" : {
+      "sourcedFrom" : "last_name"
+    },
+    "country" : {
+      "sourcedFrom" : ""
+    },
+    "jobStatus" : {
+      "sourcedFrom" : "status"
+    },
+    "city" : {
+      "sourcedFrom" : "city"
+    },
+    "bonus" : {
+      "sourcedFrom" : "bonus"
+    },
+    "mobileNumber" : {
+      "sourcedFrom" : "mobile"
+    },
+    "departmentId" : {
+      "sourcedFrom" : "dept_num"
+    },
+    "postalCode" : {
+      "sourcedFrom" : "zip"
+    },
+    "jobTitle" : {
+      "sourcedFrom" : "job_title"
+    },
+    "baseSalary" : {
+      "sourcedFrom" : "base_salary"
+    },
+    "languageSkills" : {
+      "sourcedFrom" : "languages"
+    },
+    "toolSkills" : {
+      "sourcedFrom" : "tools"
+    },
+    "hasResume" : {
+      "sourcedFrom" : ""
+    },
+    "state" : {
+      "sourcedFrom" : "state"
+    },
+    "email" : {
+      "sourcedFrom" : "work_email"
+    },
+    "homeAddress" : {
+      "sourcedFrom" : ""
+    },
+    "jobEffectiveDate" : {
+      "sourcedFrom" : "parseDate(hire_date,\"MM/DD/YYYY\")"
+    },
+    "address" : {
+      "sourcedFrom" : "concat(addr1,' ',addr2)"
+    },
+    "profilePic" : {
+      "sourcedFrom" : "concat(\"/binaries/\",last_name,\".png\")"
+    },
+    "employeeId" : {
+      "sourcedFrom" : "emp_id"
+    },
+    "hasJobReview" : {
+      "sourcedFrom" : ""
+    },
+    "firstName" : {
+      "sourcedFrom" : "first_name"
+    },
+    "phoneNumber" : {
+      "sourcedFrom" : "mobile"
+    },
+    "geoLocation" : {
+      "sourcedFrom" : ""
+    },
+    "productSkills" : {
+      "sourcedFrom" : "primaryProduct"
+    },
+    "belongsTo" : {
+      "sourcedFrom" : ""
+    }
+  },
+  "selectedSource" : "query"
+}

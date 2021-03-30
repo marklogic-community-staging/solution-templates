@@ -1,0 +1,144 @@
+{
+  "name" : "CoastalEmployees",
+  "description" : "null",
+  "batchSize" : 100,
+  "threadCount" : 4,
+  "stopOnError" : false,
+  "options" : { },
+  "version" : 0,
+  "steps" : {
+    "1" : {
+      "name" : "PerformanceEvaluations",
+      "description" : "",
+      "options" : {
+        "additionalCollections" : [ ],
+        "headers" : {
+          "sources" : [ {
+            "name" : "CoastalEmployees"
+          } ],
+          "createdOn" : "currentDateTime",
+          "createdBy" : "currentUser"
+        },
+        "sourceQuery" : "cts.collectionQuery([])",
+        "collections" : [ "PerformanceEvaluations" ],
+        "permissions" : "rest-reader,read,rest-writer,update",
+        "outputFormat" : "json",
+        "targetDatabase" : "data-hub-STAGING"
+      },
+      "customHook" : {
+        "module" : "",
+        "parameters" : { },
+        "user" : "",
+        "runBefore" : false
+      },
+      "retryLimit" : 0,
+      "batchSize" : 100,
+      "threadCount" : 4,
+      "stepDefinitionName" : "default-ingestion",
+      "stepDefinitionType" : "INGESTION",
+      "fileLocations" : {
+        "inputFilePath" : "C:\\Users\\paven\\Desktop\\HR360\\CoastalEmployeeReviews",
+        "inputFileType" : "csv",
+        "outputURIReplacement" : "",
+        "separator" : ","
+      }
+    },
+    "2" : {
+      "name" : "Resumes",
+      "description" : "",
+      "options" : {
+        "additionalCollections" : [ ],
+        "headers" : {
+          "sources" : [ {
+            "name" : "CoastalEmployees"
+          } ],
+          "createdOn" : "currentDateTime",
+          "createdBy" : "currentUser"
+        },
+        "sourceQuery" : "cts.collectionQuery([])",
+        "collections" : [ "Resumes" ],
+        "permissions" : "rest-reader,read,rest-writer,update",
+        "outputFormat" : "json",
+        "targetDatabase" : "data-hub-STAGING"
+      },
+      "customHook" : {
+        "module" : "",
+        "parameters" : { },
+        "user" : "",
+        "runBefore" : false
+      },
+      "retryLimit" : 0,
+      "batchSize" : 100,
+      "threadCount" : 4,
+      "stepDefinitionName" : "default-ingestion",
+      "stepDefinitionType" : "INGESTION",
+      "fileLocations" : {
+        "inputFilePath" : "C:\\Users\\paven\\Desktop\\HR360\\CoastalResumes",
+        "inputFileType" : "json",
+        "outputURIReplacement" : "",
+        "separator" : ""
+      }
+    },
+    "3" : {
+      "name" : "MapPerfEvaluations",
+      "description" : "",
+      "options" : {
+        "additionalCollections" : [ ],
+        "sourceQuery" : "cts.collectionQuery([\"PerformanceEvaluations\"])",
+        "mapping" : {
+          "name" : "CoastalEmployees-MapPerfEvaluations",
+          "version" : 0
+        },
+        "targetEntity" : "JobReview",
+        "sourceDatabase" : "data-hub-STAGING",
+        "collections" : [ "MapPerfEvaluations", "JobReview" ],
+        "permissions" : "data-hub-operator,read,data-hub-operator,update",
+        "validateEntity" : false,
+        "sourceCollection" : "PerformanceEvaluations",
+        "outputFormat" : "json",
+        "targetDatabase" : "data-hub-FINAL"
+      },
+      "customHook" : {
+        "module" : "",
+        "parameters" : { },
+        "user" : "",
+        "runBefore" : false
+      },
+      "retryLimit" : 0,
+      "batchSize" : 100,
+      "threadCount" : 4,
+      "stepDefinitionName" : "entity-services-mapping",
+      "stepDefinitionType" : "MAPPING"
+    },
+    "4" : {
+      "name" : "MapCoastalResumes",
+      "description" : "",
+      "options" : {
+        "additionalCollections" : [ ],
+        "sourceQuery" : "cts.collectionQuery([\"Resumes\"])",
+        "mapping" : {
+          "name" : "CoastalEmployees-MapCoastalResumes",
+          "version" : 0
+        },
+        "targetEntity" : "Resume",
+        "sourceDatabase" : "data-hub-STAGING",
+        "collections" : [ "MapCoastalResumes", "Resume" ],
+        "validateEntity" : false,
+        "sourceCollection" : "Resumes",
+        "outputFormat" : "json",
+        "targetDatabase" : "data-hub-FINAL"
+      },
+      "customHook" : {
+        "module" : "",
+        "parameters" : { },
+        "user" : "",
+        "runBefore" : false
+      },
+      "retryLimit" : 0,
+      "batchSize" : 100,
+      "threadCount" : 4,
+      "stepDefinitionName" : "entity-services-mapping",
+      "stepDefinitionType" : "MAPPING"
+    }
+  }
+}

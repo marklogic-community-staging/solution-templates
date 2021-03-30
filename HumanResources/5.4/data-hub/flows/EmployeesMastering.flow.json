@@ -1,0 +1,31 @@
+{
+  "name" : "EmployeesMastering",
+  "description" : "null",
+  "batchSize" : 100,
+  "threadCount" : 4,
+  "stopOnError" : false,
+  "options" : null,
+  "version" : 0,
+  "steps" : {
+    "1" : {
+      "stepId" : "CoastalEmployees-ingestion",
+      "name" : "CoastalEmployees",
+      "stepDefinitionType" : "INGESTION"
+    },
+    "2" : {
+      "stepId" : "MapCoastalEmployees-mapping",
+      "name" : "MapCoastalEmployees",
+      "stepDefinitionType" : "MAPPING"
+    },
+    "3" : {
+      "stepId" : "MatchEmployees-matching",
+      "name" : "MatchEmployees",
+      "stepDefinitionType" : "MATCHING"
+    },
+    "4" : {
+      "stepId" : "MergeEmployees-merging",
+      "name" : "MergeEmployees",
+      "stepDefinitionType" : "MERGING"
+    }
+  }
+}
