@@ -1,0 +1,27 @@
+{
+  "name": "BrandBCustomers",
+  "description": "",
+  "batchSize": 100,
+  "threadCount": 4,
+  "stopOnError": false,
+  "options": { },
+  "version": 0,
+  "steps": {
+    "1": {
+      "stepId": "MapBCustomers-mapping",
+      "name": "MapBCustomers",
+      "stepDefinitionType": "MAPPING"
+    },
+    "2": {
+      "stepId": "MatchCustomers-matching",
+      "name": "MatchCustomers",
+      "stepDefinitionType": "MATCHING"
+    },
+    "3": {
+      "stepId": "MergeCustomers-merging",
+      "name": "MergeCustomers",
+      "stepDefinitionType": "MERGING"
+    }
+  },
+  "lastUpdated": "2021-03-31T11:19:07.9258046-04:00"
+}

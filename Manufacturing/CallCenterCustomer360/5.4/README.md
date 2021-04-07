@@ -1,6 +1,6 @@
-# Call Center Customer 360 Data Hub
+# HR360 Data Hub
 
-This sample data hub for Customer 360 is compatible with [DHF] 5.2.x and [Data Hub Central Community Edition] 2.0.5
+This sample data hub for Call Center Customer 360 is compatible with [DHF] 5.4.x and [Data Hub Central Community Edition] 5.4.1
 
 ## Walkthrough
 
@@ -21,7 +21,7 @@ Also update your application.properties file as needed.
 
 * Start QuickStart and DHCCE directly from this directory.
         
-        java -jar hub-central-community-2.0.5.jar
+        java -jar hub-central-community-5.4.1.jar
 
 The paths for ingest steps in the 3 flows may require update to reflect the location of where you've landed them on your file system.
 

@@ -1,0 +1,66 @@
+{
+  "batchSize": 100,
+  "sourceDatabase": "data-hub-FINAL",
+  "targetDatabase": "data-hub-FINAL",
+  "targetEntity": "Change this to a valid entity type name; e.g. Customer",
+  "sourceQuery": "cts.collectionQuery([\"Customer\"])",
+  "collections": [
+    "Customer"
+  ],
+  "permissions": "data-hub-common,read,data-hub-common,update",
+  "targetFormat": "json",
+  "matchRulesets": [
+    {
+      "name": "lastName - Exact",
+      "weight": "10",
+      "matchRules": [
+        {
+          "entityPropertyPath": "lastName",
+          "matchType": "exact",
+          "options": { }
+        }
+      ]
+    },
+    {
+      "name": "phoneNumber - Exact",
+      "weight": "15",
+      "matchRules": [
+        {
+          "entityPropertyPath": "phoneNumber",
+          "matchType": "exact",
+          "options": { }
+        }
+      ]
+    }
+  ],
+  "thresholds": [
+    {
+      "score": "25",
+      "action": "notify",
+      "thresholdName": "Potential Match"
+    }
+  ],
+  "stepId": "MatchCustomers-matching",
+  "name": "MatchCustomers",
+  "description": "",
+  "customHook": {
+    "module": "",
+    "parameters": { },
+    "user": "",
+    "runBefore": false
+  },
+  "threadCount": 4,
+  "stepDefinitionName": "default-matching",
+  "stepDefinitionType": "matching",
+  "stepNumber": "2",
+  "stepUpdate": false,
+  "provenanceGranularityLevel": "coarse",
+  "acceptsBatch": true,
+  "sourceCollection": "Customer",
+  "retryLimit": 0,
+  "targetEntityType": "http://marklogic.com/envision/Customer-0.0.1/Customer",
+  "outputFormat": "json",
+  "additionalCollections": [ ],
+  "selectedSource": "query",
+  "lastUpdated": "2021-03-31T11:19:08.6941949-04:00"
+}

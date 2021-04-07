@@ -1,0 +1,38 @@
+{
+  "batchSize": 100,
+  "sourceDatabase": "data-hub-FINAL",
+  "targetDatabase": "data-hub-FINAL",
+  "permissions": "data-hub-common,read,data-hub-common,update",
+  "targetEntity": "Change this to a valid entity type name; e.g. Customer",
+  "sourceQuery": "cts.collectionQuery([\"Customer\"])",
+  "provenanceGranularityLevel": "coarse",
+  "collections": [
+    "Customer"
+  ],
+  "targetFormat": "json",
+  "mergeRules": [ ],
+  "mergeStrategies": [ ],
+  "targetCollections": { },
+  "stepId": "MergeCustomers-merging",
+  "name": "MergeCustomers",
+  "description": "",
+  "customHook": {
+    "module": "",
+    "parameters": { },
+    "user": "",
+    "runBefore": false
+  },
+  "threadCount": 4,
+  "stepDefinitionName": "default-merging",
+  "stepDefinitionType": "merging",
+  "stepNumber": "3",
+  "stepUpdate": false,
+  "acceptsBatch": false,
+  "sourceCollection": "Customer",
+  "retryLimit": 0,
+  "targetEntityType": "http://marklogic.com/envision/Customer-0.0.1/Customer",
+  "outputFormat": "json",
+  "additionalCollections": [ ],
+  "selectedSource": "query",
+  "lastUpdated": "2021-03-31T11:19:08.7137312-04:00"
+}

@@ -1,0 +1,61 @@
+{
+  "collections": [
+    "Product"
+  ],
+  "additionalCollections": [ ],
+  "permissions": "data-hub-common,read,data-hub-common,update",
+  "batchSize": 100,
+  "validateEntity": "doNotValidate",
+  "targetFormat": "json",
+  "name": "MapBProducts",
+  "description": "",
+  "targetEntityType": "http://marklogic.com/envision/Product-0.0.1/Product",
+  "sourceDatabase": "data-hub-STAGING",
+  "targetDatabase": "data-hub-FINAL",
+  "selectedSource": "query",
+  "sourceCollection": "CC-BrandB-Products.csv",
+  "sourceQuery": "cts.collectionQuery([\"CC-BrandB-Products.csv\"])",
+  "outputFormat": "json",
+  "customHook": {
+    "module": "/envision/customHooks/uriRemapper.sjs",
+    "parameters": { },
+    "user": "",
+    "runBefore": false
+  },
+  "retryLimit": 0,
+  "threadCount": 4,
+  "stepDefinitionName": "entity-services-mapping",
+  "stepDefinitionType": "mapping",
+  "properties": {
+    "brandName": {
+      "sourcedFrom": "brandName"
+    },
+    "category": {
+      "sourcedFrom": "productCategory"
+    },
+    "color": {
+      "sourcedFrom": ""
+    },
+    "name": {
+      "sourcedFrom": "productName"
+    },
+    "orderId": {
+      "sourcedFrom": "orderId"
+    },
+    "productId": {
+      "sourcedFrom": "sku"
+    },
+    "size": {
+      "sourcedFrom": ""
+    },
+    "sku": {
+      "sourcedFrom": "sku"
+    },
+    "texture": {
+      "sourcedFrom": ""
+    }
+  },
+  "stepId": "MapBProducts-mapping",
+  "provenanceGranularityLevel": "coarse",
+  "lastUpdated": "2021-03-31T11:58:54.1548269-04:00"
+}

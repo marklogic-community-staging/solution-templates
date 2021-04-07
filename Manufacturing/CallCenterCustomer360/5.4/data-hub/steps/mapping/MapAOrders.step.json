@@ -1,0 +1,58 @@
+{
+  "collections": [
+    "Order"
+  ],
+  "additionalCollections": [ ],
+  "permissions": "data-hub-common,read,data-hub-common,update",
+  "batchSize": 100,
+  "validateEntity": "doNotValidate",
+  "targetFormat": "json",
+  "name": "MapAOrders",
+  "description": "",
+  "targetEntityType": "http://marklogic.com/envision/Order-0.0.1/Order",
+  "sourceDatabase": "data-hub-STAGING",
+  "targetDatabase": "data-hub-FINAL",
+  "selectedSource": "query",
+  "sourceCollection": "CC-BrandA-Orders.csv",
+  "sourceQuery": "cts.collectionQuery([\"CC-BrandA-Orders.csv\"])",
+  "outputFormat": "json",
+  "customHook": {
+    "module": "/envision/customHooks/uriRemapper.sjs",
+    "parameters": { },
+    "user": "",
+    "runBefore": false
+  },
+  "retryLimit": 0,
+  "threadCount": 4,
+  "stepDefinitionName": "entity-services-mapping",
+  "stepDefinitionType": "mapping",
+  "properties": {
+    "creditCardType": {
+      "sourcedFrom": "creditCardType"
+    },
+    "customerId": {
+      "sourcedFrom": "customerId"
+    },
+    "has": {
+      "sourcedFrom": ""
+    },
+    "orderDate": {
+      "sourcedFrom": "transactionDate"
+    },
+    "orderId": {
+      "sourcedFrom": "transactionId"
+    },
+    "pricePaid": {
+      "sourcedFrom": "pricePaid"
+    },
+    "shipDate": {
+      "sourcedFrom": "shipDate"
+    },
+    "status": {
+      "sourcedFrom": "orderStatus"
+    }
+  },
+  "stepId": "MapAOrders-mapping",
+  "provenanceGranularityLevel": "coarse",
+  "lastUpdated": "2021-03-31T11:44:38.963993-04:00"
+}

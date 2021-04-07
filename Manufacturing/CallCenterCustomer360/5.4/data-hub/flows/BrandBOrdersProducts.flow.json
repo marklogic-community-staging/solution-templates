@@ -1,0 +1,50 @@
+{
+  "name": "BrandBOrdersProducts",
+  "description": "",
+  "batchSize": 100,
+  "threadCount": 4,
+  "stopOnError": false,
+  "options": { },
+  "version": 0,
+  "steps": {
+    "1": {
+      "stepId": "MapBOrders-mapping",
+      "name": "MapBOrders",
+      "description": "",
+      "options": {
+        "sourceQuery": "cts.collectionQuery([\"CC-BrandB-Orders.csv\"])",
+        "mapping": {
+          "name": "MapBOrders"
+        },
+        "provenanceGranularityLevel": "coarse",
+        "collections": [
+          "Order"
+        ],
+        "targetEntityType": "http://marklogic.com/envision/Order-0.0.1/Order",
+        "sourceDatabase": "data-hub-STAGING",
+        "permissions": "data-hub-common,read,data-hub-common,update",
+        "validateEntity": "doNotValidate",
+        "sourceCollection": "CC-BrandB-Orders.csv",
+        "outputFormat": "json",
+        "retryLimit": 0,
+        "targetDatabase": "data-hub-FINAL"
+      },
+      "customHook": {
+        "module": "/envision/customHooks/uriRemapper.sjs",
+        "parameters": { },
+        "user": "",
+        "runBefore": false
+      },
+      "batchSize": 100,
+      "threadCount": 4,
+      "stepDefinitionName": "entity-services-mapping",
+      "stepDefinitionType": "MAPPING"
+    },
+    "2": {
+      "stepId": "MapBProducts-mapping",
+      "name": "MapBProducts",
+      "stepDefinitionType": "MAPPING"
+    }
+  },
+  "lastUpdated": "2021-03-31T11:19:08.0367344-04:00"
+}

@@ -1,0 +1,86 @@
+{
+  "collections": [
+    "Customer"
+  ],
+  "additionalCollections": [ ],
+  "permissions": "data-hub-common,read,data-hub-common,update",
+  "batchSize": 100,
+  "validateEntity": "doNotValidate",
+  "targetFormat": "json",
+  "stepId": "MapBCustomers-mapping",
+  "name": "MapBCustomers",
+  "description": "",
+  "customHook": {
+    "module": "/envision/customHooks/uriRemapper.sjs",
+    "parameters": { },
+    "user": "",
+    "runBefore": false
+  },
+  "threadCount": 4,
+  "stepDefinitionName": "entity-services-mapping",
+  "stepDefinitionType": "mapping",
+  "stepNumber": "1",
+  "sourceQuery": "cts.collectionQuery([\"CC-BrandB-Customers.csv\"])",
+  "mapping": {
+    "name": "MapBCustomers"
+  },
+  "provenanceGranularityLevel": "coarse",
+  "sourceCollection": "CC-BrandB-Customers.csv",
+  "retryLimit": 0,
+  "targetDatabase": "data-hub-FINAL",
+  "targetEntityType": "http://marklogic.com/envision/Customer-0.0.1/Customer",
+  "sourceDatabase": "data-hub-STAGING",
+  "outputFormat": "json",
+  "selectedSource": "query",
+  "properties": {
+    "address": {
+      "sourcedFrom": "street"
+    },
+    "age": {
+      "sourcedFrom": "age"
+    },
+    "city": {
+      "sourcedFrom": "city"
+    },
+    "customerId": {
+      "sourcedFrom": "brand_two_cust_id"
+    },
+    "email": {
+      "sourcedFrom": ""
+    },
+    "estIncomeHHLD": {
+      "sourcedFrom": "est_income_hhld"
+    },
+    "favoriteStoreType": {
+      "sourcedFrom": "favorite_store-_type"
+    },
+    "firstName": {
+      "sourcedFrom": "f_name"
+    },
+    "gender": {
+      "sourcedFrom": "gender"
+    },
+    "lastName": {
+      "sourcedFrom": "l_name"
+    },
+    "numberMinorsHHLD": {
+      "sourcedFrom": "nbr_minors_hhld"
+    },
+    "phoneNumber": {
+      "sourcedFrom": "home_phone"
+    },
+    "places": {
+      "sourcedFrom": ""
+    },
+    "postalCode": {
+      "sourcedFrom": "postal"
+    },
+    "segment": {
+      "sourcedFrom": ""
+    },
+    "state": {
+      "sourcedFrom": "state"
+    }
+  },
+  "lastUpdated": "2021-03-31T11:57:47.2805423-04:00"
+}

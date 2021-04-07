@@ -1,0 +1,82 @@
+{
+  "collections": [
+    "Customer"
+  ],
+  "additionalCollections": [ ],
+  "permissions": "data-hub-common,read,data-hub-common,update",
+  "batchSize": 100,
+  "validateEntity": "doNotValidate",
+  "targetFormat": "json",
+  "name": "MapACustomers",
+  "description": "",
+  "targetEntityType": "http://marklogic.com/envision/Customer-0.0.1/Customer",
+  "sourceDatabase": "data-hub-STAGING",
+  "targetDatabase": "data-hub-FINAL",
+  "selectedSource": "query",
+  "sourceCollection": "CC-BrandA-Customers.csv",
+  "sourceQuery": "cts.collectionQuery([\"CC-BrandA-Customers.csv\"])",
+  "outputFormat": "json",
+  "customHook": {
+    "module": "/envision/customHooks/uriRemapper.sjs",
+    "parameters": { },
+    "user": "",
+    "runBefore": false
+  },
+  "retryLimit": 0,
+  "threadCount": 4,
+  "stepDefinitionName": "entity-services-mapping",
+  "stepDefinitionType": "mapping",
+  "properties": {
+    "address": {
+      "sourcedFrom": "address"
+    },
+    "age": {
+      "sourcedFrom": "age"
+    },
+    "city": {
+      "sourcedFrom": "city"
+    },
+    "customerId": {
+      "sourcedFrom": "brandOneCustomerId"
+    },
+    "email": {
+      "sourcedFrom": "email"
+    },
+    "estIncomeHHLD": {
+      "sourcedFrom": ""
+    },
+    "favoriteStoreType": {
+      "sourcedFrom": ""
+    },
+    "firstName": {
+      "sourcedFrom": "firstName"
+    },
+    "gender": {
+      "sourcedFrom": "gender"
+    },
+    "lastName": {
+      "sourcedFrom": "lastName"
+    },
+    "numberMinorsHHLD": {
+      "sourcedFrom": ""
+    },
+    "phoneNumber": {
+      "sourcedFrom": "phoneNumber"
+    },
+    "places": {
+      "sourcedFrom": ""
+    },
+    "postalCode": {
+      "sourcedFrom": "zip"
+    },
+    "segment": {
+      "sourcedFrom": "segment"
+    },
+    "state": {
+      "sourcedFrom": "state"
+    }
+  },
+  "stepId": "MapACustomers-mapping",
+  "provenanceGranularityLevel": "coarse",
+  "lastUpdated": "2021-03-31T11:41:56.8342572-04:00"
+}
