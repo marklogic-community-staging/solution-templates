@@ -3,9 +3,9 @@
   "name" : "BrandAFlow-BrandAOrderMapping",
   "description" : "",
   "version" : 12,
-  "targetEntityType" : "http://marklogic.com/envision#Order-0.0.1/Order",
+  "targetEntityType" : "http://marklogic.com/envision#order-0.0.1/Order",
   "sourceContext" : "/",
-  "sourceURI" : "",
+  "sourceURI" : "/C/github/solution-templates/Manufacturing/CallCenterCustomer360/5.2/data-hub/data/BrandAOrders/a42a428f-5580-418d-a3b0-39af7e1726e0.json",
   "properties" : {
     "orderId" : {
       "sourcedFrom" : "transactionId"

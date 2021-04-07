@@ -5,7 +5,7 @@
   "version" : 5,
   "targetEntityType" : "http://marklogic.com/envision#Product-0.0.1/Product",
   "sourceContext" : "/",
-  "sourceURI" : "/C/github/solution-templates/Manufacturing/CallCenterCustomer360/5.2/data-hub/data/BrandBProducts/7d59c0e0-0ea5-4017-b277-6d0226471063.json",
+  "sourceURI" : "/C/github/solution-templates/Manufacturing/CallCenterCustomer360/5.2/data-hub/data/BrandBProducts/7b22734a-00f8-475c-bd88-9fbe583f6cc2.json",
   "properties" : {
     "brandName" : {
       "sourcedFrom" : "brandName"

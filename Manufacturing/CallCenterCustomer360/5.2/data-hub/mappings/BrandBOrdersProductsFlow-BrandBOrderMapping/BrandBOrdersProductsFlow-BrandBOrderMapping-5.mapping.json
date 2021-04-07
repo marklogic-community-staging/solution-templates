@@ -5,15 +5,36 @@
   "version" : 5,
   "targetEntityType" : "http://marklogic.com/envision#Order-0.0.1/Order",
   "sourceContext" : "/",
-  "sourceURI" : "/C/github/solution-templates/Manufacturing/CallCenterCustomer360/5.2/data-hub/data/BrandBOrders/e6d41834-69e1-4dc7-a60b-edb8a6b0deb4.json",
+  "sourceURI" : "/C/github/solution-templates/Manufacturing/CallCenterCustomer360/5.2/data-hub/data/BrandBProducts/81dccdfd-653e-45cf-81ae-fc9ac1582f06.json",
   "properties" : {
+    "brandName" : {
+      "sourcedFrom" : ""
+    },
+    "color" : {
+      "sourcedFrom" : ""
+    },
+    "productId" : {
+      "sourcedFrom" : ""
+    },
     "orderId" : {
       "sourcedFrom" : "order_id"
+    },
+    "texture" : {
+      "sourcedFrom" : ""
+    },
+    "creditCardType" : {
+      "sourcedFrom" : ""
+    },
+    "shipDate" : {
+      "sourcedFrom" : "parseDate(ship_date,\"DD-Mon-YYYY\")"
+    },
+    "size" : {
+      "sourcedFrom" : ""
     },
     "customerId" : {
       "sourcedFrom" : "customer_id"
     },
-    "creditCardType" : {
+    "name" : {
       "sourcedFrom" : ""
     },
     "has" : {
@@ -22,8 +43,11 @@
     "pricePaid" : {
       "sourcedFrom" : "total_price"
     },
-    "shipDate" : {
-      "sourcedFrom" : "parseDate(ship_date,\"DD-Mon-YYYY\")"
+    "category" : {
+      "sourcedFrom" : ""
+    },
+    "sku" : {
+      "sourcedFrom" : ""
     },
     "orderDate" : {
       "sourcedFrom" : "order_date"

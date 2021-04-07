@@ -3,9 +3,9 @@
   "name" : "BrandAFlow-BrandACustomerMapping",
   "description" : "",
   "version" : 13,
-  "targetEntityType" : "http://marklogic.com/envision#Customer-0.0.1/Customer",
+  "targetEntityType" : "http://marklogic.com/envision#customer-0.0.1/Customer",
   "sourceContext" : "/",
-  "sourceURI" : "/C/github/solution-templates/Manufacturing/CallCenterCustomer360/5.2/data-hub/data/BrandACustomers/3d59053d-a245-410b-9afa-30ce2c23e803.json",
+  "sourceURI" : "/C/github/solution-templates/Manufacturing/CallCenterCustomer360/5.2/data-hub/data/BrandACustomers/6a90092b-84ad-4a13-80c4-2875a515af04.json",
   "properties" : {
     "lastName" : {
       "sourcedFrom" : "lastName"

@@ -3,9 +3,9 @@
   "name" : "BrandAFlow-BrandAProductMapping",
   "description" : "",
   "version" : 12,
-  "targetEntityType" : "http://marklogic.com/envision#Product-0.0.1/Product",
+  "targetEntityType" : "http://marklogic.com/envision#product-0.0.1/Product",
   "sourceContext" : "/",
-  "sourceURI" : "/C/github/solution-templates/Manufacturing/CallCenterCustomer360/5.2/data-hub/data/BrandAOrders/0392ea7f-cfc7-4998-a4d8-a285d1c193d3.json",
+  "sourceURI" : "/C/github/solution-templates/Manufacturing/CallCenterCustomer360/5.2/data-hub/data/BrandAProducts/a6ba5023-f18d-41e8-b58a-abf341e26d1c.json",
   "properties" : {
     "brandName" : {
       "sourcedFrom" : "brandName"
@@ -16,44 +16,23 @@
     "color" : {
       "sourcedFrom" : ""
     },
+    "size" : {
+      "sourcedFrom" : ""
+    },
     "orderId" : {
       "sourcedFrom" : "orderId"
     },
     "texture" : {
       "sourcedFrom" : ""
     },
-    "creditCardType" : {
-      "sourcedFrom" : ""
-    },
-    "shipDate" : {
-      "sourcedFrom" : ""
-    },
-    "size" : {
-      "sourcedFrom" : ""
-    },
     "name" : {
       "sourcedFrom" : "productName"
-    },
-    "customerId" : {
-      "sourcedFrom" : ""
-    },
-    "has" : {
-      "sourcedFrom" : ""
     },
     "category" : {
       "sourcedFrom" : "productCategory"
     },
     "sku" : {
       "sourcedFrom" : "sku"
-    },
-    "pricePaid" : {
-      "sourcedFrom" : ""
-    },
-    "orderDate" : {
-      "sourcedFrom" : ""
-    },
-    "status" : {
-      "sourcedFrom" : ""
     }
   },
   "namespaces" : { }
