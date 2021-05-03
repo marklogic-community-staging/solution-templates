@@ -1,8 +1,13 @@
 {
+  "collections" : [ "MapEmployees", "Employee" ],
+  "additionalCollections" : [ ],
+  "permissions" : "data-hub-operator,read,data-hub-operator,update",
+  "batchSize" : 100,
+  "validateEntity" : "doNotValidate",
+  "targetFormat" : "json",
   "stepId" : "MapEmployees-mapping",
   "name" : "MapEmployees",
   "description" : "",
-  "batchSize" : 100,
   "threadCount" : 4,
   "stepDefinitionName" : "entity-services-mapping",
   "stepDefinitionType" : "MAPPING",
@@ -12,16 +17,11 @@
     "name" : "MapEmployees"
   },
   "provenanceGranularityLevel" : "coarse",
-  "collections" : [ "MapEmployees", "Employee" ],
   "sourceDatabase" : "data-hub-STAGING",
   "targetEntityType" : "http://marklogic.envision.com/Employee-0.0.1/Employee",
-  "permissions" : "data-hub-operator,read,data-hub-operator,update",
-  "validateEntity" : "doNotValidate",
   "outputFormat" : "json",
   "targetDatabase" : "data-hub-FINAL",
   "namespaces" : { },
-  "additionalCollections" : [ ],
-  "targetFormat" : "json",
   "properties" : {
     "lastName" : {
       "sourcedFrom" : "last_name"
@@ -102,5 +102,6 @@
       "sourcedFrom" : ""
     }
   },
-  "selectedSource" : "query"
+  "selectedSource" : "query",
+  "lastUpdated" : "2021-05-03T16:13:03.6112833-04:00"
 }

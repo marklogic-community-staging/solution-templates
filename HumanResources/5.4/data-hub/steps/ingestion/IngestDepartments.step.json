@@ -13,6 +13,10 @@
     "separator" : ","
   },
   "stepNumber" : "2",
+  "inputFileType" : "csv",
+  "inputFilePath" : "C:\\Users\\paven\\Desktop\\HR360\\Departments",
+  "outputURIReplacement" : "",
+  "separator" : ",",
   "headers" : {
     "sources" : [ {
       "name" : "MountainTopEmployees"
@@ -28,8 +32,5 @@
   "targetDatabase" : "data-hub-STAGING",
   "additionalCollections" : [ ],
   "targetFormat" : "json",
-  "inputFilePath" : "C:\\Users\\paven\\Desktop\\HR360\\Departments",
-  "outputURIReplacement" : "",
-  "separator" : ",",
   "sourceFormat" : "csv"
 }
