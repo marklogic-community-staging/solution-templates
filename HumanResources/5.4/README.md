@@ -1,6 +1,6 @@
 # HR360 Data Hub
 
-This sample data hub for HR360 is compatible with [DHF] 5.4.x and [Data Hub Central Community Edition] 5.4.1
+This sample data hub for HR360 is compatible with [DHF] 5.4.2 and [Data Hub Central Community Edition] 5.4.2
 
 ## Walkthrough
 
@@ -9,9 +9,9 @@ The HR360Walkthrough.docx accompanying this hub provides step by step instructio
 ## Getting Started
 
 * Start from the data-hub folder here as your project directory.
-* Place the DHF Quickstart.war and DHCCE.jar files in this directory
-* Use DHF QuickStart or gradle to initialize your Data Hub.
-* From the data-hub project folder here you can deploy your datahub project using: 
+* Place the DHF HubCentral.war and DHCCE.jar files in this directory
+* Use [gradle] to initialize your Data Hub.
+* From the data-hub project folder provided here you can deploy your datahub project using: 
 
         gradle mldeploy  
 
@@ -29,3 +29,4 @@ The paths for ingest steps in the 3 flows may require update to reflect the loca
 
 [DHF]:https://github.com/marklogic/marklogic-data-hub
 [Data Hub Central Community Edition]:https://github.com/marklogic-community/data-hub-central-community
+[gradle]:https://docs.marklogic.com/datahub/5.4/projects/create-project-using-gradle.html
