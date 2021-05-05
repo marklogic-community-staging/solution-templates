@@ -37,7 +37,7 @@
       "stepDefinitionName" : "default-ingestion",
       "stepDefinitionType" : "INGESTION",
       "fileLocations" : {
-        "inputFilePath" : "C:\\Users\\paven\\Desktop\\HR360\\CoastalEmployees",
+        "inputFilePath" : "data/CoastalEmployees",
         "inputFileType" : "json",
         "outputURIReplacement" : "",
         "separator" : ""

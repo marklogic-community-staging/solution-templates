@@ -8,7 +8,7 @@
   "stepDefinitionType" : "INGESTION",
   "fileLocations" : {
     "inputFileType" : "json",
-    "inputFilePath" : "C:\\github\\solution-templates\\HumanResources\\5.4\\data-hub\\data\\CoastalEmployees",
+    "inputFilePath" : "data/CoastalEmployees",
     "outputURIReplacement" : "",
     "separator" : ""
   },
@@ -28,7 +28,7 @@
   "targetDatabase" : "data-hub-STAGING",
   "additionalCollections" : [ ],
   "targetFormat" : "json",
-  "inputFilePath" : "C:\\Users\\paven\\Desktop\\HR360\\CoastalEmployees",
+  "inputFilePath" : "data/CoastalEmployees",
   "outputURIReplacement" : "",
   "separator" : "",
   "sourceFormat" : "json"

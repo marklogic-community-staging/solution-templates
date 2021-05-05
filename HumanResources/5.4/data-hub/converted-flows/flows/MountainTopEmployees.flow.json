@@ -37,7 +37,7 @@
       "stepDefinitionName" : "default-ingestion",
       "stepDefinitionType" : "INGESTION",
       "fileLocations" : {
-        "inputFilePath" : "C:\\Users\\paven\\Desktop\\HR360\\MountainTopEmployees",
+        "inputFilePath" : "data/MountainTopEmployees",
         "inputFileType" : "csv",
         "outputURIReplacement" : "",
         "separator" : ","
@@ -73,7 +73,7 @@
       "stepDefinitionName" : "default-ingestion",
       "stepDefinitionType" : "INGESTION",
       "fileLocations" : {
-        "inputFilePath" : "C:\\Users\\paven\\Desktop\\HR360\\Departments",
+        "inputFilePath" : "data/Departments",
         "inputFileType" : "csv",
         "outputURIReplacement" : "",
         "separator" : ","
@@ -109,7 +109,7 @@
       "stepDefinitionName" : "default-ingestion",
       "stepDefinitionType" : "INGESTION",
       "fileLocations" : {
-        "inputFilePath" : "C:\\Users\\paven\\Desktop\\HR360\\JobOpenings",
+        "inputFilePath" : "data/JobOpenings",
         "inputFileType" : "csv",
         "outputURIReplacement" : "",
         "separator" : ","
@@ -145,7 +145,7 @@
       "stepDefinitionName" : "default-ingestion",
       "stepDefinitionType" : "INGESTION",
       "fileLocations" : {
-        "inputFilePath" : "C:\\Users\\paven\\Desktop\\HR360\\MountaintopEmployeeReviews",
+        "inputFilePath" : "data/MountaintopEmployeeReviews",
         "inputFileType" : "csv",
         "outputURIReplacement" : "",
         "separator" : ","
@@ -181,7 +181,7 @@
       "stepDefinitionName" : "default-ingestion",
       "stepDefinitionType" : "INGESTION",
       "fileLocations" : {
-        "inputFilePath" : "C:\\Users\\paven\\Desktop\\HR360\\MountainTopResumes",
+        "inputFilePath" : "data/MountainTopResumes",
         "inputFileType" : "csv",
         "outputURIReplacement" : "",
         "separator" : ","

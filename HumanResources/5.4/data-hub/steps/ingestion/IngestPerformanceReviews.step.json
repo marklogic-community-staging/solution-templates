@@ -8,13 +8,13 @@
   "stepDefinitionType" : "INGESTION",
   "fileLocations" : {
     "inputFileType" : "csv",
-    "inputFilePath" : "C:\\github\\solution-templates\\HumanResources\\5.4\\data-hub\\data\\MountaintopEmployeeReviews",
+    "inputFilePath" : "data/MountaintopEmployeeReviews",
     "outputURIReplacement" : "",
     "separator" : ","
   },
   "stepNumber" : "4",
   "inputFileType" : "csv",
-  "inputFilePath" : "C:\\Users\\paven\\Desktop\\HR360\\MountaintopEmployeeReviews",
+  "inputFilePath" : "data/MountaintopEmployeeReviews",
   "outputURIReplacement" : "",
   "separator" : ",",
   "headers" : {

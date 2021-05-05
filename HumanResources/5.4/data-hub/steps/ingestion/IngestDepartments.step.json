@@ -8,13 +8,13 @@
   "stepDefinitionType" : "INGESTION",
   "fileLocations" : {
     "inputFileType" : "csv",
-    "inputFilePath" : "C:\\github\\solution-templates\\HumanResources\\5.4\\data-hub\\data\\Departments",
+    "inputFilePath" : "data/Departments",
     "outputURIReplacement" : "",
     "separator" : ","
   },
   "stepNumber" : "2",
   "inputFileType" : "csv",
-  "inputFilePath" : "C:\\Users\\paven\\Desktop\\HR360\\Departments",
+  "inputFilePath" : "data/Departments",
   "outputURIReplacement" : "",
   "separator" : ",",
   "headers" : {
