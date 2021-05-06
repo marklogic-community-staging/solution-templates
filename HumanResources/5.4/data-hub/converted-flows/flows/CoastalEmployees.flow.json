@@ -37,7 +37,7 @@
       "stepDefinitionName" : "default-ingestion",
       "stepDefinitionType" : "INGESTION",
       "fileLocations" : {
-        "inputFilePath" : "C:\\Users\\paven\\Desktop\\HR360\\CoastalEmployeeReviews",
+        "inputFilePath" : "data/CoastalEmployeeReviews",
         "inputFileType" : "csv",
         "outputURIReplacement" : "",
         "separator" : ","
@@ -73,7 +73,7 @@
       "stepDefinitionName" : "default-ingestion",
       "stepDefinitionType" : "INGESTION",
       "fileLocations" : {
-        "inputFilePath" : "C:\\Users\\paven\\Desktop\\HR360\\CoastalResumes",
+        "inputFilePath" : "data/CoastalResumes",
         "inputFileType" : "json",
         "outputURIReplacement" : "",
         "separator" : ""
