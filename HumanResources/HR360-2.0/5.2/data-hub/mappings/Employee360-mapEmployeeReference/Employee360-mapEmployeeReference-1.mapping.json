@@ -1,0 +1,24 @@
+{
+  "lang" : "zxx",
+  "name" : "Employee360-mapEmployeeReference",
+  "description" : "Default description",
+  "version" : 1,
+  "targetEntityType" : "http://marklogic.envision.com/EmployeeReference-0.0.1/EmployeeReference",
+  "sourceContext" : "/",
+  "sourceURI" : "/C:/github/solution-templates/HumanResources/HR360-2.0/5.2/csv-data/employee-roster/EmployeeeTable.csv-0-2",
+  "properties" : {
+    "EmployeeId" : {
+      "sourcedFrom" : "EmployeeId"
+    },
+    "EmployeeName" : {
+      "sourcedFrom" : "Employeename"
+    },
+    "hasPayPeriods" : {
+      "sourcedFrom" : ""
+    },
+    "hasEmployee" : {
+      "sourcedFrom" : "hasEmployee"
+    }
+  },
+  "namespaces" : { }
+}

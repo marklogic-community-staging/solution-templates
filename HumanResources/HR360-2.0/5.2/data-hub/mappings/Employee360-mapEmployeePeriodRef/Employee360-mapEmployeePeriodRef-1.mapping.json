@@ -1,0 +1,36 @@
+{
+  "lang" : "zxx",
+  "name" : "Employee360-mapEmployeePeriodRef",
+  "description" : "Default description",
+  "version" : 1,
+  "targetEntityType" : "http://marklogic.envision.com/EmployeePeriod-0.0.1/EmployeePeriod",
+  "sourceContext" : "/",
+  "sourceURI" : "/employee-period-ref/Tom Hanks - 2016-11-12.json",
+  "properties" : {
+    "hasTimeEvents" : {
+      "sourcedFrom" : "hasTimeEvents"
+    },
+    "EmployeeIdPeriod" : {
+      "sourcedFrom" : "concat(EmployeeId,\"-\",PeriodEndDate)"
+    },
+    "EmployeeId" : {
+      "sourcedFrom" : "EmployeeId"
+    },
+    "EmployeeName" : {
+      "sourcedFrom" : "EmployeeName"
+    },
+    "PeriodEndDate" : {
+      "sourcedFrom" : "PeriodEndDate"
+    },
+    "hasTemperatureCheckIn" : {
+      "sourcedFrom" : "hasTemperatureCheckIn"
+    },
+    "hayPayrollData" : {
+      "sourcedFrom" : "hayPayrollData"
+    },
+    "PeriodStartDate" : {
+      "sourcedFrom" : "PeriodStartDate"
+    }
+  },
+  "namespaces" : { }
+}

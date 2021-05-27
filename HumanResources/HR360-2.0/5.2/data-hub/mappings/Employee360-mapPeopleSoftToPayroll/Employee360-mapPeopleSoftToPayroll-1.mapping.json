@@ -1,0 +1,159 @@
+{
+  "lang" : "zxx",
+  "name" : "Employee360-mapPeopleSoftToPayroll",
+  "description" : "Default description",
+  "version" : 1,
+  "targetEntityType" : "http://marklogic.envision.com/PayrollData-0.0.1/PayrollData",
+  "sourceContext" : "/",
+  "sourceURI" : "/C:/github/solution-templates/HumanResources/HR360-2.0/5.2/csv-data/PeopleSoft/PeopleSoftHRdata.csv-0-13",
+  "properties" : {
+    "WorkersCompensationAccountCode" : {
+      "sourcedFrom" : "ACCT_CD"
+    },
+    "WorkersCompensationAmount" : {
+      "sourcedFrom" : "O_WC_PAID"
+    },
+    "MiscAccountCode" : {
+      "sourcedFrom" : "ACCT_CD"
+    },
+    "PeriodEndDate" : {
+      "sourcedFrom" : "getIsoDatefromDatetime(PAY_END_DT)"
+    },
+    "AutoAllowanceAmount" : {
+      "sourcedFrom" : "O_AUTO_ALLOW"
+    },
+    "SalaryOverTimeAccountName" : {
+      "sourcedFrom" : ""
+    },
+    "EarningsSuspenseAccountCode" : {
+      "sourcedFrom" : "ACCT_CD"
+    },
+    "SalaryFullTimeAccountCode" : {
+      "sourcedFrom" : "ACCT_CD"
+    },
+    "FireCALPERSAmount" : {
+      "sourcedFrom" : ""
+    },
+    "EmployeeIdPeriodSourceKey" : {
+      "sourcedFrom" : "concat(EMPLID,\"-\",getIsoDatefromDatetime(PAY_END_DT),\"-\",\"PeopleSoft\")"
+    },
+    "FringeBenefitsAccountCode" : {
+      "sourcedFrom" : "ACCT_CD"
+    },
+    "MiscAccountName" : {
+      "sourcedFrom" : ""
+    },
+    "UniformAllowanceAccountCode" : {
+      "sourcedFrom" : "ACCT_CD"
+    },
+    "AutoAllowanceAccountName" : {
+      "sourcedFrom" : ""
+    },
+    "ExpenseSuspenseAmount" : {
+      "sourcedFrom" : ""
+    },
+    "EarningsSuspenseAccountName" : {
+      "sourcedFrom" : ""
+    },
+    "SalaryFullTimeAccountName" : {
+      "sourcedFrom" : ""
+    },
+    "EmployeeIdPeriod" : {
+      "sourcedFrom" : "concat(EMPLID,\"-\",getIsoDatefromDatetime(PAY_END_DT))"
+    },
+    "Disability_UI_Amount" : {
+      "sourcedFrom" : "O_DIS_INS+O_SUI_PAID"
+    },
+    "FiscalYear" : {
+      "sourcedFrom" : "year-from-date(getIsoDatefromDatetime(PAY_END_DT))"
+    },
+    "UniformAllowanceAccountName" : {
+      "sourcedFrom" : ""
+    },
+    "PoliceCALPERSAccountCode" : {
+      "sourcedFrom" : "ACCT_CD"
+    },
+    "Disability_UI_AccountCode" : {
+      "sourcedFrom" : "ACCT_CD"
+    },
+    "PayrollSource" : {
+      "sourcedFrom" : "\"PeopleSoft\""
+    },
+    "FringeBenefitsAmount" : {
+      "sourcedFrom" : "O_FRINGE_TOT"
+    },
+    "FireCALPERSAccountName" : {
+      "sourcedFrom" : ""
+    },
+    "ExpenseSuspenseAccountCode" : {
+      "sourcedFrom" : "ACCT_CD"
+    },
+    "UniformAllowanceAmount" : {
+      "sourcedFrom" : "O_UNIFORM_ALLOW"
+    },
+    "FundCode" : {
+      "sourcedFrom" : ""
+    },
+    "PoliceCALPERSAccountName" : {
+      "sourcedFrom" : ""
+    },
+    "EmployeeDepartmentId" : {
+      "sourcedFrom" : "DEPTID"
+    },
+    "AutoAllowanceAccountCode" : {
+      "sourcedFrom" : "ACCT_CD"
+    },
+    "FireCalPERSAmount" : {
+      "sourcedFrom" : "O_FIRE_HOL"
+    },
+    "EmployeeId" : {
+      "sourcedFrom" : "EMPLID"
+    },
+    "SalaryOverTimeAmount" : {
+      "sourcedFrom" : "O_OVT_AMT"
+    },
+    "WorkersCompensationAccountName" : {
+      "sourcedFrom" : ""
+    },
+    "EarningsSuspenseAmount" : {
+      "sourcedFrom" : ""
+    },
+    "PositionId" : {
+      "sourcedFrom" : ""
+    },
+    "ProjectId" : {
+      "sourcedFrom" : ""
+    },
+    "Disability_UI_AccountName" : {
+      "sourcedFrom" : ""
+    },
+    "FireCALPERSAccountCode" : {
+      "sourcedFrom" : "ACCT_CD"
+    },
+    "ProgramCode" : {
+      "sourcedFrom" : ""
+    },
+    "PoliceCALPERSAmount" : {
+      "sourcedFrom" : ""
+    },
+    "SalaryFullTimeAmount" : {
+      "sourcedFrom" : "O_SAL_AMT"
+    },
+    "MiscAmount" : {
+      "sourcedFrom" : "O_TEMP_AMT+O_SPECIAL_MEETING"
+    },
+    "SalaryOverTimeAccountCode" : {
+      "sourcedFrom" : "ACCT_CD"
+    },
+    "FringeBenefitsAccountName" : {
+      "sourcedFrom" : ""
+    },
+    "ExpenseSuspenseAccountName" : {
+      "sourcedFrom" : ""
+    },
+    "DepartmentId" : {
+      "sourcedFrom" : "DEPTID"
+    }
+  },
+  "namespaces" : { }
+}

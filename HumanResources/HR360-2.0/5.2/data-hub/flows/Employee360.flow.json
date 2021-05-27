@@ -1,0 +1,217 @@
+{
+  "name" : "Employee360",
+  "description" : "",
+  "batchSize" : 100,
+  "threadCount" : 4,
+  "stopOnError" : false,
+  "options" : { },
+  "version" : 0,
+  "steps" : {
+    "1" : {
+      "name" : "mapEmployeeReference",
+      "description" : "",
+      "options" : {
+        "additionalCollections" : [ ],
+        "sourceQuery" : "cts.collectionQuery([\"EmployeeTable.csv\"])",
+        "mapping" : {
+          "name" : "Employee360-mapEmployeeReference",
+          "version" : 1
+        },
+        "targetEntity" : "EmployeeReference",
+        "sourceDatabase" : "ontario-ca-STAGING",
+        "collections" : [ "EmployeeReference" ],
+        "permissions" : "data-hub-operator,read,data-hub-operator,update",
+        "sourceCollection" : "EmployeeTable.csv",
+        "outputFormat" : "json",
+        "targetDatabase" : "ontario-ca-FINAL"
+      },
+      "customHook" : {
+        "module" : "/envision/customHooks/uriRemapper.sjs",
+        "parameters" : { },
+        "user" : "",
+        "runBefore" : false
+      },
+      "retryLimit" : 0,
+      "batchSize" : 100,
+      "threadCount" : 4,
+      "stepDefinitionName" : "entity-services-mapping",
+      "stepDefinitionType" : "MAPPING"
+    },
+    "2" : {
+      "name" : "mapEmployeePeriodRef",
+      "description" : "",
+      "options" : {
+        "additionalCollections" : [ ],
+        "sourceQuery" : "cts.collectionQuery([\"Employee-Period-Ref\"])",
+        "mapping" : {
+          "name" : "Employee360-mapEmployeePeriodRef",
+          "version" : 1
+        },
+        "targetEntity" : "EmployeePeriod",
+        "sourceDatabase" : "ontario-ca-STAGING",
+        "collections" : [ "EmployeePeriod" ],
+        "permissions" : "data-hub-operator,read,data-hub-operator,update",
+        "sourceCollection" : "Employee-Period-Ref",
+        "outputFormat" : "json",
+        "targetDatabase" : "ontario-ca-FINAL"
+      },
+      "customHook" : {
+        "module" : "/envision/customHooks/uriRemapper.sjs",
+        "parameters" : { },
+        "user" : "",
+        "runBefore" : false
+      },
+      "retryLimit" : 0,
+      "batchSize" : 100,
+      "threadCount" : 4,
+      "stepDefinitionName" : "entity-services-mapping",
+      "stepDefinitionType" : "MAPPING"
+    },
+    "3" : {
+      "name" : "mapKronosEvents",
+      "description" : "",
+      "options" : {
+        "additionalCollections" : [ ],
+        "sourceQuery" : "cts.collectionQuery([\"Kronos.csv\"])",
+        "mapping" : {
+          "name" : "Employee360-mapKronosEvents",
+          "version" : 1
+        },
+        "targetEntity" : "KronosEvents",
+        "sourceDatabase" : "ontario-ca-STAGING",
+        "collections" : [ "KronosEvents" ],
+        "permissions" : "data-hub-operator,read,data-hub-operator,update",
+        "sourceCollection" : "Kronos.csv",
+        "outputFormat" : "json",
+        "targetDatabase" : "ontario-ca-FINAL"
+      },
+      "customHook" : {
+        "module" : "/envision/customHooks/uriRemapper.sjs",
+        "parameters" : { },
+        "user" : "",
+        "runBefore" : false
+      },
+      "retryLimit" : 0,
+      "batchSize" : 100,
+      "threadCount" : 4,
+      "stepDefinitionName" : "entity-services-mapping",
+      "stepDefinitionType" : "MAPPING"
+    },
+    "4" : {
+      "name" : "mapToWellnessEvents",
+      "description" : "",
+      "options" : {
+        "additionalCollections" : [ ],
+        "sourceQuery" : "cts.collectionQuery([\"WellnessSurvey.csv\"])",
+        "mapping" : {
+          "name" : "Employee360-mapToWellnessEvents",
+          "version" : 1
+        },
+        "targetEntity" : "WellnessEvents",
+        "sourceDatabase" : "ontario-ca-STAGING",
+        "collections" : [ "WellnessEvents" ],
+        "permissions" : "data-hub-operator,read,data-hub-operator,update",
+        "sourceCollection" : "WellnessSurvey.csv",
+        "outputFormat" : "json",
+        "targetDatabase" : "ontario-ca-FINAL"
+      },
+      "customHook" : {
+        "module" : "/envision/customHooks/uriRemapper.sjs",
+        "parameters" : { },
+        "user" : "",
+        "runBefore" : false
+      },
+      "retryLimit" : 0,
+      "batchSize" : 100,
+      "threadCount" : 4,
+      "stepDefinitionName" : "entity-services-mapping",
+      "stepDefinitionType" : "MAPPING"
+    },
+    "5" : {
+      "name" : "mapPeopleSoftToPayroll",
+      "description" : "",
+      "options" : {
+        "additionalCollections" : [ ],
+        "sourceQuery" : "cts.collectionQuery([\"PeopleSoftHRData.csv\"])",
+        "mapping" : {
+          "name" : "Employee360-mapPeopleSoftToPayroll",
+          "version" : 1
+        },
+        "targetEntity" : "PayrollData",
+        "sourceDatabase" : "ontario-ca-STAGING",
+        "collections" : [ "PayrollData" ],
+        "permissions" : "data-hub-operator,read,data-hub-operator,update",
+        "sourceCollection" : "PeopleSoftHRData.csv",
+        "outputFormat" : "json",
+        "targetDatabase" : "ontario-ca-FINAL"
+      },
+      "customHook" : {
+        "module" : "/envision/customHooks/uriRemapper.sjs",
+        "parameters" : { },
+        "user" : "",
+        "runBefore" : false
+      },
+      "retryLimit" : 0,
+      "batchSize" : 100,
+      "threadCount" : 4,
+      "stepDefinitionName" : "entity-services-mapping",
+      "stepDefinitionType" : "MAPPING"
+    },
+    "6" : {
+      "name" : "normalizeWDPeriods",
+      "description" : "",
+      "options" : {
+        "additionalCollections" : [ ],
+        "sourceQuery" : "cts.collectionQuery([\"PayrollExpenseJournalLine_WD_LTD.csv\"])",
+        "targetEntity" : "PayrollData",
+        "sourceDatabase" : "ontario-ca-STAGING",
+        "collections" : [ "WorkDay-Normalized-Periods" ],
+        "permissions" : "data-hub-operator,read,data-hub-operator,update",
+        "sourceCollection" : "PayrollExpenseJournalLine_WD_LTD.csv",
+        "outputFormat" : "json",
+        "targetDatabase" : "ontario-ca-STAGING"
+      },
+      "customHook" : {
+        "module" : "/envision/customHooks/uriRemapper.sjs",
+        "parameters" : { },
+        "user" : "",
+        "runBefore" : false
+      },
+      "retryLimit" : 0,
+      "batchSize" : 100,
+      "threadCount" : 4,
+      "stepDefinitionName" : "normalizeWDPeriods",
+      "stepDefinitionType" : "CUSTOM"
+    },
+    "7" : {
+      "name" : "mapWorkDayToPayroll",
+      "description" : "",
+      "options" : {
+        "additionalCollections" : [ ],
+        "sourceQuery" : "cts.andQuery([cts.collectionQuery([\"Employee-Period-Ref\"]),cts.jsonPropertyRangeQuery(\"PeriodEndDate\",\">=\",\"2016-10-01\"),cts.jsonPropertyRangeQuery(\"PeriodEndDate\",\"<=\",\"2021-01-02\")  ])",
+        "mapping" : {
+          "name" : "Employee360-mapWorkDayToPayroll",
+          "version" : 1
+        },
+        "targetEntity" : "PayrollData",
+        "sourceDatabase" : "ontario-ca-STAGING",
+        "collections" : [ "PayrollData" ],
+        "permissions" : "data-hub-operator,read,data-hub-operator,update",
+        "sourceCollection" : "Employee-Period-Ref",
+        "outputFormat" : "json",
+        "targetDatabase" : "ontario-ca-FINAL"
+      },
+      "customHook" : {
+        "module" : "/envision/customHooks/uriRemapper.sjs",
+        "parameters" : { },
+        "user" : "",
+        "runBefore" : false
+      },
+      "retryLimit" : 0,
+      "batchSize" : 100,
+      "threadCount" : 4,
+      "stepDefinitionName" : "entity-services-mapping",
+      "stepDefinitionType" : "MAPPING"
+    }
+  }
+}

@@ -1,0 +1,210 @@
+{
+  "info" : {
+    "title" : "PayrollData",
+    "version" : "0.0.1",
+    "baseUri" : "http://marklogic.envision.com/"
+  },
+  "definitions" : {
+    "PayrollData" : {
+      "required" : [ ],
+      "pii" : [ "SalaryFullTimeAmount" ],
+      "elementRangeIndex" : [ "EmployeeIdPeriod", "PayrollSource", "EmployeeId", "PeriodEndDate", "FiscalYear" ],
+      "rangeIndex" : [ ],
+      "wordLexicon" : [ ],
+      "properties" : {
+        "EmployeeIdPeriod" : {
+          "datatype" : "string",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "PayrollSource" : {
+          "datatype" : "string",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "EmployeeIdPeriodSourceKey" : {
+          "datatype" : "string",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "EmployeeId" : {
+          "datatype" : "string",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "PeriodEndDate" : {
+          "datatype" : "date",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "FiscalYear" : {
+          "datatype" : "integer",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "DepartmentId" : {
+          "datatype" : "string",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "EmployeeDepartmentId" : {
+          "datatype" : "string",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "PositionId" : {
+          "datatype" : "string",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "FundCode" : {
+          "datatype" : "string",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "ProgramCode" : {
+          "datatype" : "string",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "ProjectId" : {
+          "datatype" : "string",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "SalaryFullTimeAmount" : {
+          "datatype" : "decimal",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "SalaryFullTimeAccountCode" : {
+          "datatype" : "string",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "SalaryFullTimeAccountName" : {
+          "datatype" : "string",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "SalaryOverTimeAmount" : {
+          "datatype" : "decimal",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "SalaryOverTimeAccountCode" : {
+          "datatype" : "string",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "SalaryOverTimeAccountName" : {
+          "datatype" : "string",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "FringeBenefitsAmount" : {
+          "datatype" : "decimal",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "FringeBenefitsAccountCode" : {
+          "datatype" : "string",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "FringeBenefitsAccountName" : {
+          "datatype" : "string",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "AutoAllowanceAmount" : {
+          "datatype" : "decimal",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "AutoAllowanceAccountCode" : {
+          "datatype" : "string",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "AutoAllowanceAccountName" : {
+          "datatype" : "string",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "UniformAllowanceAmount" : {
+          "datatype" : "decimal",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "UniformAllowanceAccountCode" : {
+          "datatype" : "string",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "UniformAllowanceAccountName" : {
+          "datatype" : "string",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "WorkersCompensationAmount" : {
+          "datatype" : "decimal",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "WorkersCompensationAccountCode" : {
+          "datatype" : "string",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "WorkersCompensationAccountName" : {
+          "datatype" : "string",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "FireCALPERSAmount" : {
+          "datatype" : "decimal",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "FireCALPERSAccountCode" : {
+          "datatype" : "string",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "FireCALPERSAccountName" : {
+          "datatype" : "string",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "PoliceCALPERSAmount" : {
+          "datatype" : "decimal",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "PoliceCALPERSAccountCode" : {
+          "datatype" : "string",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "PoliceCALPERSAccountName" : {
+          "datatype" : "string",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "Disability_UI_Amount" : {
+          "datatype" : "decimal",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "Disability_UI_AccountCode" : {
+          "datatype" : "string",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "Disability_UI_AccountName" : {
+          "datatype" : "string",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "EarningsSuspenseAmount" : {
+          "datatype" : "decimal",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "EarningsSuspenseAccountCode" : {
+          "datatype" : "string",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "EarningsSuspenseAccountName" : {
+          "datatype" : "string",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "ExpenseSuspenseAmount" : {
+          "datatype" : "decimal",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "ExpenseSuspenseAccountCode" : {
+          "datatype" : "string",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "ExpenseSuspenseAccountName" : {
+          "datatype" : "string",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "MiscAmount" : {
+          "datatype" : "decimal",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "MiscAccountCode" : {
+          "datatype" : "string",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "MiscAccountName" : {
+          "datatype" : "string",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        }
+      }
+    }
+  }
+}

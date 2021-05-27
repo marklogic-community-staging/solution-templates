@@ -1,0 +1,19 @@
+{
+  "lang" : "zxx",
+  "name" : "normalizeWDperiodend",
+  "description" : "",
+  "type" : "CUSTOM",
+  "version" : 1,
+  "options" : {
+    "collections" : [ "normalizeWDperiodend" ],
+    "sourceDatabase" : "data-hub-STAGING",
+    "permissions" : "data-hub-operator,read,data-hub-operator,update",
+    "outputFormat" : "json",
+    "targetDatabase" : "data-hub-STAGING"
+  },
+  "customHook" : { },
+  "modulePath" : "/custom-modules/custom/normalizeWDperiodend/main.sjs",
+  "retryLimit" : 0,
+  "batchSize" : 100,
+  "threadCount" : 4
+}

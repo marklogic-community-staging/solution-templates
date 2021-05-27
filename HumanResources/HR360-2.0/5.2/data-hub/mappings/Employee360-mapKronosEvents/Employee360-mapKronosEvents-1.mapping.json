@@ -1,0 +1,84 @@
+{
+  "lang" : "zxx",
+  "name" : "Employee360-mapKronosEvents",
+  "description" : "Default description",
+  "version" : 1,
+  "targetEntityType" : "http://marklogic.envision.com/KronosEvents-0.0.1/KronosEvents",
+  "sourceContext" : "/",
+  "sourceURI" : "",
+  "properties" : {
+    "DurationInSeconds" : {
+      "sourcedFrom" : "number(DURATIONINSECONDS)"
+    },
+    "EventDate" : {
+      "sourcedFrom" : "getIsoDatefromDatetime(EVENTDATE)"
+    },
+    "CurrentPeriodStart" : {
+      "sourcedFrom" : "getIsoDatefromDatetime(CURRPAYPERIODSTART)"
+    },
+    "NextPeriodStart" : {
+      "sourcedFrom" : "getIsoDatefromDatetime(NEXTPAYPERIODSTART)"
+    },
+    "WorkRuleName" : {
+      "sourcedFrom" : "WORKRULENAME"
+    },
+    "TimesheetType" : {
+      "sourcedFrom" : "TIMESHEETITEMTYPE"
+    },
+    "CurrentPeriodEnd" : {
+      "sourcedFrom" : "getIsoDatefromDatetime(CURRPAYPERIODEND)"
+    },
+    "PeriodEndDate" : {
+      "sourcedFrom" : "getPeriodforEventDate(PERSONNUM,EVENTDATE,\"PeriodEndDate\")"
+    },
+    "PeriodStartDate" : {
+      "sourcedFrom" : "getPeriodforEventDate(PERSONNUM,EVENTDATE,\"PeriodStartDate\")"
+    },
+    "EventSource" : {
+      "sourcedFrom" : "\"Kronos\""
+    },
+    "TimeInSeconds" : {
+      "sourcedFrom" : "TIMEINSECONDS"
+    },
+    "NextPeriodEnd" : {
+      "sourcedFrom" : "getIsoDatefromDatetime(NEXTPAYPERIODEND)"
+    },
+    "EndReason" : {
+      "sourcedFrom" : "ENDREASON"
+    },
+    "EventEndDate" : {
+      "sourcedFrom" : "getIsoDatefromDatetime(ENDDTM)"
+    },
+    "PreviousPeriodEnd" : {
+      "sourcedFrom" : "getIsoDatefromDatetime(PREVPAYPERIODEND)"
+    },
+    "EventStartDate" : {
+      "sourcedFrom" : "getIsoDatefromDatetime(STARTDTM)"
+    },
+    "StartReason" : {
+      "sourcedFrom" : "STARTREASON"
+    },
+    "EmployeeIdPeriod" : {
+      "sourcedFrom" : "concat(PERSONNUM,\"-\",getPeriodforEventDate(PERSONNUM,EVENTDATE,\"PeriodEndDate\"))"
+    },
+    "EmployeeIdPeriodSourceKey" : {
+      "sourcedFrom" : "concat(PERSONNUM,\"-\",getPeriodforEventDate(PERSONNUM,EVENTDATE,\"PeriodEndDate\"),\"-\",\"Kronos\")"
+    },
+    "EmployeeId" : {
+      "sourcedFrom" : "PERSONNUM"
+    },
+    "EventStartDateTime" : {
+      "sourcedFrom" : "getIsoDateTimefromDatetime(STARTDTM)"
+    },
+    "PreviousPeriodStart" : {
+      "sourcedFrom" : "getIsoDatefromDatetime(PREVPAYPERIODSTART)"
+    },
+    "PayCodeName" : {
+      "sourcedFrom" : "PAYCODENAME"
+    },
+    "EventEndDateTime" : {
+      "sourcedFrom" : "getIsoDateTimefromDatetime(ENDDTM)"
+    }
+  },
+  "namespaces" : { }
+}

@@ -1,0 +1,21 @@
+{
+  "user-name": "MrBond",
+  "description": "User with PII reading permission",
+  "password": "demo",
+  "role": [
+    "envision",
+    "pii-reader",
+    "redaction-user",
+    "salary-reader"
+  ],
+  "permission": [
+    {
+      "role-name": "envision",
+      "capability": "update"
+    },
+    {
+      "role-name": "envision",
+      "capability": "read"
+    }
+  ]
+}

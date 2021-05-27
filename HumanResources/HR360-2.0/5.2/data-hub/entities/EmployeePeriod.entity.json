@@ -1,0 +1,56 @@
+{
+  "info" : {
+    "title" : "EmployeePeriod",
+    "version" : "0.0.1",
+    "baseUri" : "http://marklogic.envision.com/"
+  },
+  "definitions" : {
+    "EmployeePeriod" : {
+      "required" : [ ],
+      "pii" : [ ],
+      "elementRangeIndex" : [ "EmployeeIdPeriod", "EmployeeId", "EmployeeName", "PeriodStartDate", "PeriodEndDate" ],
+      "rangeIndex" : [ ],
+      "wordLexicon" : [ ],
+      "properties" : {
+        "EmployeeIdPeriod" : {
+          "datatype" : "string",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "EmployeeId" : {
+          "datatype" : "string",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "EmployeeName" : {
+          "datatype" : "string",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "PeriodStartDate" : {
+          "datatype" : "date",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "PeriodEndDate" : {
+          "datatype" : "date",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "hasTimeEvents" : {
+          "datatype" : "array",
+          "items" : {
+            "$ref" : "http://marklogic.envision.com/KronosEvents-0.0.1/KronosEvents"
+          }
+        },
+        "hasTemperatureCheckIn" : {
+          "datatype" : "array",
+          "items" : {
+            "$ref" : "http://marklogic.envision.com/WellnessEvents-0.0.1/WellnessEvents"
+          }
+        },
+        "hayPayrollData" : {
+          "datatype" : "array",
+          "items" : {
+            "$ref" : "http://marklogic.envision.com/PayrollData-0.0.1/PayrollData"
+          }
+        }
+      }
+    }
+  }
+}

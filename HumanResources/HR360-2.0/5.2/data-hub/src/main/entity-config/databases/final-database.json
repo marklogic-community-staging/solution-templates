@@ -1,0 +1,57 @@
+{
+  "lang" : "zxx",
+  "path-namespace" : [ {
+    "prefix" : "es",
+    "namespace-uri" : "http://marklogic.com/entity-services"
+  } ],
+  "range-element-index" : [ {
+    "invalid-values" : "reject",
+    "localname" : "EmployeeId",
+    "namespace-uri" : null,
+    "range-value-positions" : false,
+    "scalar-type" : "string",
+    "collation" : "http://marklogic.com/collation/codepoint"
+  }, {
+    "invalid-values" : "reject",
+    "localname" : "PeriodEndDate",
+    "namespace-uri" : null,
+    "range-value-positions" : false,
+    "scalar-type" : "date"
+  }, {
+    "invalid-values" : "reject",
+    "localname" : "PeriodStartDate",
+    "namespace-uri" : null,
+    "range-value-positions" : false,
+    "scalar-type" : "date"
+  }, {
+    "invalid-values" : "reject",
+    "localname" : "PayrollSource",
+    "namespace-uri" : null,
+    "range-value-positions" : false,
+    "scalar-type" : "string",
+    "collation" : "http://marklogic.com/collation/codepoint"
+  },{
+    "invalid-values" : "reject",
+    "localname" : "EventSource",
+    "namespace-uri" : null,
+    "range-value-positions" : false,
+    "scalar-type" : "string",
+    "collation" : "http://marklogic.com/collation/codepoint"
+  },
+  {
+    "invalid-values" : "reject",
+    "localname" : "TimesheetType",
+    "namespace-uri" : null,
+    "range-value-positions" : false,
+    "scalar-type" : "string",
+    "collation" : "http://marklogic.com/collation/codepoint"
+  },
+   {
+    "invalid-values" : "reject",
+    "localname" : "FiscalYear",
+    "namespace-uri" : null,
+    "range-value-positions" : false,
+    "scalar-type" : "int"
+  } ],
+  "database-name" : "%%mlFinalDbName%%"
+}

@@ -1,0 +1,102 @@
+{
+  "info" : {
+    "title" : "KronosEvents",
+    "version" : "0.0.1",
+    "baseUri" : "http://marklogic.envision.com/"
+  },
+  "definitions" : {
+    "KronosEvents" : {
+      "required" : [ ],
+      "pii" : [ ],
+      "elementRangeIndex" : [ "EmployeeIdPeriod", "EventSource", "EmployeeId", "EventDate", "TimesheetType" ],
+      "rangeIndex" : [ ],
+      "wordLexicon" : [ ],
+      "properties" : {
+        "EmployeeIdPeriod" : {
+          "datatype" : "string",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "EventSource" : {
+          "datatype" : "string",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "EmployeeIdPeriodSourceKey" : {
+          "datatype" : "string",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "EmployeeId" : {
+          "datatype" : "string",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "EventDate" : {
+          "datatype" : "date",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "EventStartDateTime" : {
+          "datatype" : "dateTime",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "EventEndDateTime" : {
+          "datatype" : "dateTime",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "PeriodStartDate" : {
+          "datatype" : "date",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "PeriodEndDate" : {
+          "datatype" : "date",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "StartReason" : {
+          "datatype" : "string",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "EndReason" : {
+          "datatype" : "string",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "TimeInSeconds" : {
+          "datatype" : "integer",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "TimesheetType" : {
+          "datatype" : "string",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "WorkRuleName" : {
+          "datatype" : "string",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "PayCodeName" : {
+          "datatype" : "string",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "CurrentPeriodStart" : {
+          "datatype" : "date",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "CurrentPeriodEnd" : {
+          "datatype" : "date",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "PreviousPeriodStart" : {
+          "datatype" : "date",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "PreviousPeriodEnd" : {
+          "datatype" : "date",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "NextPeriodStart" : {
+          "datatype" : "date",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "NextPeriodEnd" : {
+          "datatype" : "date",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "info" : {
+    "title" : "WellnessEvents",
+    "version" : "0.0.1",
+    "baseUri" : "http://marklogic.envision.com/"
+  },
+  "definitions" : {
+    "WellnessEvents" : {
+      "required" : [ ],
+      "pii" : [ ],
+      "elementRangeIndex" : [ "EmployeeIdPeriod", "EventSource", "EmployeeId", "EditDate", "PeriodEndDate" ],
+      "rangeIndex" : [ ],
+      "wordLexicon" : [ ],
+      "properties" : {
+        "EmployeeIdPeriod" : {
+          "datatype" : "string",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "EventSource" : {
+          "datatype" : "string",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "EmployeeIdPeriodSourceKey" : {
+          "datatype" : "string",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "EmployeeId" : {
+          "datatype" : "string",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "CreateDate" : {
+          "datatype" : "date",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "EditDate" : {
+          "datatype" : "date",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "TimeofTemperature" : {
+          "datatype" : "string",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "Temperature" : {
+          "datatype" : "decimal",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "TodaysWork" : {
+          "datatype" : "string",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "AreYouEx" : {
+          "datatype" : "string",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "NewSymptom" : {
+          "datatype" : "string",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "Field14" : {
+          "datatype" : "string",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "Field14O" : {
+          "datatype" : "string",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "PeriodStartDate" : {
+          "datatype" : "date",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "PeriodEndDate" : {
+          "datatype" : "date",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        }
+      }
+    }
+  }
+}

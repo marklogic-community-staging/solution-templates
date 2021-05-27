@@ -1,0 +1,32 @@
+{
+  "info" : {
+    "title" : "PeriodReference",
+    "version" : "0.0.1",
+    "baseUri" : "http://marklogic.envision.com/"
+  },
+  "definitions" : {
+    "PeriodReference" : {
+      "required" : [ ],
+      "pii" : [ ],
+      "elementRangeIndex" : [ "PeriodStartDate", "PeriodEndDate" ],
+      "rangeIndex" : [ ],
+      "wordLexicon" : [ ],
+      "properties" : {
+        "PeriodStartDate" : {
+          "datatype" : "date",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "PeriodEndDate" : {
+          "datatype" : "date",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "hasPeriod" : {
+          "datatype" : "array",
+          "items" : {
+            "$ref" : "http://marklogic.envision.com/EmployeePeriod-0.0.1/EmployeePeriod"
+          }
+        }
+      }
+    }
+  }
+}

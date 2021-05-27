@@ -1,0 +1,32 @@
+{
+  "info" : {
+    "title" : "EmployeeReference",
+    "version" : "0.0.1",
+    "baseUri" : "http://marklogic.envision.com/"
+  },
+  "definitions" : {
+    "EmployeeReference" : {
+      "required" : [ ],
+      "pii" : [ ],
+      "elementRangeIndex" : [ "EmployeeId", "EmployeeName" ],
+      "rangeIndex" : [ ],
+      "wordLexicon" : [ ],
+      "properties" : {
+        "EmployeeId" : {
+          "datatype" : "string",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "EmployeeName" : {
+          "datatype" : "string",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "hasPayPeriods" : {
+          "datatype" : "array",
+          "items" : {
+            "$ref" : "http://marklogic.envision.com/EmployeePeriod-0.0.1/EmployeePeriod"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,185 @@
+<export><workspace name="SLED-Ontario"><query name="ingest-Employee-Period-ref" focus="false" listorder="1" taborder="1" active="true" database="17816365583486690416" server="1604504004844655322" database-name="ontario-ca-STAGING" server-name="ontario-ca-STAGING" mode="javascript">'use strict';
+declareUpdate();
+//var ingestforest = xdmp.forest("ontario-ca-STAGING-1");
+var employeedocs = fn.collection(["EmployeeTable.csv"]);
+var perioddocs = fn.collection("Period-Table.csv");
+
+for(var emp of employeedocs){
+    var newemp = emp.root.envelope.instance.EmployeeId
+    
+   for (var period of perioddocs)  {
+     var newperiodstart = period.root.envelope.instance.Period_Start_Date;
+     var newperiodend = period.root.envelope.instance.Period_End_Date;
+     var newdoc = {
+                    "envelope": {
+                                 "headers": {},
+                                 "triples": [],
+                                  "instance": {"EmployeeId" : newemp,
+                                               "Period_Start_Date": newperiodstart,
+                                               "Period_End_Date": newperiodend
+                                               },
+                                  "attachments": null
+                                 }
+                   }
+// Ingest newdoc to the staging database in "Employee-Period-Ref" collection
+     var newdocUri = '/employee-period-ref/'+newemp+' - '+newperiodend+'.json';
+     const newCollection = "Employee-Period-Ref";
+//     const newForest = {"forests" : ingestforest}
+       const permissions = [
+		                        xdmp.permission("data-hub-developer", "update"),
+		                        xdmp.permission("data-hub-operator", "read"),
+                            xdmp.permission("data-hub-operator", "update"),
+		                        xdmp.permission("envision", "read"),
+                            xdmp.permission("envision", "update")         
+	                         ]
+     xdmp.documentInsert(newdocUri, newdoc, permissions, newCollection);
+   } 
+}
+newperiodstart</query><query name="delete-collection" focus="false" listorder="2" taborder="2" active="true" database="4928349474996236135" server="7762245090999504539" database-name="ontario-ca-FINAL" server-name="ontario-ca-FINAL" mode="javascript">'use strict';
+declareUpdate();
+xdmp.collectionDelete("Payroll")
+</query><query name="Query 1" focus="false" listorder="3" taborder="3" active="true" database="17816365583486690416" server="1604504004844655322" database-name="ontario-ca-STAGING" server-name="ontario-ca-STAGING" mode="javascript">'use strict';
+var stringdate = "8/13/19 0:00";
+  var eventdate = xs.date(xdmp.parseDateTime('[M01]/[D01]/[Y01] [h01]:[s01]', stringdate ).toString().slice(0, 10));
+//  var eventdate = xs.date(xdmp.parseDateTime('[M01]/[D01]/[Y01] [h01]:[s01]', instance.EVENTDATE ).toString().slice(0, 10));
+  var perioddoc = cts.search(cts.andQuery([
+                                              cts.collectionQuery("normalizeEmployeePeriod"),
+                                              cts.jsonPropertyRangeQuery("PeriodStartDate","&lt;=",eventdate),
+                                              cts.jsonPropertyRangeQuery("PeriodEndDate","&gt;=",eventdate)    
+                                             ])
+                                ) //.toObject()[0];
+eventdate</query><query name="Query 2" focus="false" listorder="4" taborder="4" active="true" database="4928349474996236135" server="7762245090999504539" database-name="ontario-ca-FINAL" server-name="ontario-ca-FINAL" mode="javascript">-- query
+select * from PayrollData where DepartmentId = '161'</query><query name="Query 3" focus="false" listorder="5" taborder="6" active="true" database="4928349474996236135" server="7762245090999504539" database-name="ontario-ca-FINAL" server-name="ontario-ca-FINAL" mode="javascript">'use strict';
+declareUpdate();
+var employeedocs = fn.collection(["EmployeeTable.csv"]);
+var perioddocs = fn.collection("Period-Table.csv");
+
+for(var emp of employeedocs){
+    var newemp = emp.root.EmployeeId
+    
+   for (var period of perioddocs)  {
+     var newperiodstart = fn.string(period.root.Period_Start_Date);
+     var newperiodend = fn.string(period.root.Period_End_Date);
+     // transform the date to ISO standard date form of YYYY-MM-DD
+     let isoStartDate = xs.date(xdmp.parseDateTime('[M01]/[D01]/[Y01] [h1]:[s1]', newperiodstart).toString().slice(0, 10));
+     let isoEndDate = xs.date(xdmp.parseDateTime('[M01]/[D01]/[Y01] [h1]:[s1]', newperiodend).toString().slice(0, 10));
+ 
+     var newdoc = {
+                    "envelope": {
+                                 "headers": {},
+                                 "triples": [],
+                                  "instance": {"EmployeeId" : newemp,
+                                               "PeriodStartDate": isoStartDate,
+                                               "PeriodEndDate": isoEndDate
+                                               },
+                                  "attachments": null
+                                 }
+                   }
+// Ingest newdoc to the staging database in "Employee-Period-Ref" collection
+     var newdocUri = '/employee-period-ref/'+newemp+' - '+isoEndDate+'.json';
+     const newCollection = "Employee-Period-Ref";
+       const permissions = [
+		                        xdmp.permission("data-hub-developer", "update"),
+		                        xdmp.permission("data-hub-operator", "read"),
+                            xdmp.permission("data-hub-operator", "update"),
+		                        xdmp.permission("envision", "read"),
+                            xdmp.permission("envision", "update")         
+	                         ]
+     xdmp.documentInsert(newdocUri, newdoc, permissions, newCollection);
+   } 
+}
+</query><query name="Query 4" focus="false" listorder="6" taborder="7" active="true" database="13223510849383802357" server="13576460302679792879" database-name="ontario-ca-MODULES" server-name="App-Services" mode="javascript">'use strict';
+//var periodenddate = "2020-01-18"
+//periodenddate = xs.date(xdmp.parseDateTime('[Y01]-[M01]-[D01]', periodenddate ))
+//periodenddate = xs.date(periodenddate)
+//periodenddate
+var field ="SalaryCode"
+var result = ""
+if (field.endsWith("Amount")){
+   result = 'Its Amount'
+} else {
+  result = "Its code"
+}
+result</query><query name="Query 5" focus="false" listorder="7" taborder="8" active="true" database="17816365583486690416" server="1604504004844655322" database-name="ontario-ca-STAGING" server-name="ontario-ca-STAGING" mode="javascript">'use strict';
+var empid = "17104";
+var result = "";
+var periodenddate = xs.date("2018-04-14");
+var field = "SalaryFullTimeAmount";
+var amount = 0.00;
+var acctcode= "";
+var acctname = "";
+
+var wddocs = cts.search(cts.andQuery([
+        cts.collectionQuery('WorkDay-Normalized-Periods'),
+        cts.jsonPropertyRangeQuery("EmployeeId", "=", empid ),
+        cts.jsonPropertyRangeQuery("PeriodEndDate", "=", periodenddate),
+        cts.jsonPropertyValueQuery("Account", "51010")
+         ])
+      );
+  console.log("Field is: ",field)
+case   
+if (field.endsWith("Amount") | field.endsWith("Code") | field.endsWith("Name")){
+  console.log ("Field Ends with is: ",true)
+  for (var doc of wddocs){
+    amount = amount + fn.number(fn.string(doc.root.envelope.instance.TransactionAmount).replace(/,/g, ''));
+    acctcode = doc.root.envelope.instance.Account;
+    acctname = doc.root.envelope.instance.Account_Name;
+   }
+}
+   if (field.endsWith("Amount")){
+      result = amount;
+   } 
+result</query><query name="Query 6" focus="false" listorder="8" taborder="9" active="true" database="17816365583486690416" server="1604504004844655322" database-name="ontario-ca-STAGING" server-name="ontario-ca-STAGING" mode="javascript">'use strict';
+var eventdate = "6/1/16 0:00";
+var employeeid = "17104";
+var field = "PeriodStartDate"
+// get Period-Start and Period-End Dates from Period-ref based on EventDate
+eventdate = xs.date(xdmp.parseDateTime('[M01]/[D01]/[Y01] [h01]:[s01]', eventdate ).toString().slice(0, 10));
+  var perioddoc = fn.head(cts.search(cts.andQuery([
+                                              cts.collectionQuery("Employee-Period-Ref"),
+                                              cts.jsonPropertyRangeQuery("EmployeeId", "=", employeeid),
+                                              cts.jsonPropertyRangeQuery("PeriodStartDate","&lt;=",eventdate),
+                                              cts.jsonPropertyRangeQuery("PeriodEndDate","&gt;=",eventdate)    
+                                             ])
+                                )).toObject()
+     var periodenddate = perioddoc.envelope.instance.PeriodEndDate;
+     var periodstartdate = perioddoc.envelope.instance.PeriodStartDate;
+
+     if (field.endsWith("EndDate")){
+        var result = periodenddate;
+     } 
+     if (field.endsWith("StartDate")){
+      var result = periodstartdate;
+     } 
+result</query><query name="Query 7" focus="false" listorder="9" taborder="10" active="true" database="17816365583486690416" server="1604504004844655322" database-name="ontario-ca-STAGING" server-name="ontario-ca-STAGING" mode="javascript">'use strict';
+let enddtm = "3/28/16 19:45";
+let stringdate = fn.string(enddtm);
+let isoDate = xs.dateTime(xdmp.parseDateTime('[M01]/[D01]/[Y01] [h01]:[m01]', stringdate).toString());
+//.slice(0, 16)
+isoDate
+</query><query name="Query 8" focus="false" listorder="10" taborder="11" active="true" database="17816365583486690416" server="1604504004844655322" database-name="ontario-ca-STAGING" server-name="ontario-ca-STAGING" mode="javascript">'use strict';
+//cts.search('/envelope//instance//PayrollData/SalaryFullTimeAmount')
+var empid = '17104';
+var periodenddate = '2016-10-01'
+var wddoc = fn.head(cts.search(cts.andQuery([
+    cts.collectionQuery('WorkDay-Normalized-Periods'),
+    cts.jsonPropertyRangeQuery("EmployeeId", "=", empid ),
+    cts.jsonPropertyRangeQuery("PeriodEndDate", "=", periodenddate)
+     ])
+  ));
+var result='';
+
+if (wddoc != null) {
+  result = 'true'
+  }
+  else {
+  result = 'false'  
+  }
+result</query><query name="Query 9" focus="true" listorder="11" taborder="5" active="true" database="4928349474996236135" server="7762245090999504539" database-name="ontario-ca-FINAL" server-name="ontario-ca-FINAL" mode="sql">-- query
+select EmployeeIdPeriod, EditDate, count(DataHubGeneratedPrimaryKey) 
+from Wellnessevents
+where EmployeeId = '17104'
+group by EmployeeIdPeriod, EditDate
+
+</query><query name="Query 10" focus="false" listorder="12" taborder="12" active="true" database="4928349474996236135" server="7762245090999504539" database-name="ontario-ca-FINAL" server-name="ontario-ca-FINAL" mode="sql">-- query
+select * from WellnessEvents</query></workspace></export>

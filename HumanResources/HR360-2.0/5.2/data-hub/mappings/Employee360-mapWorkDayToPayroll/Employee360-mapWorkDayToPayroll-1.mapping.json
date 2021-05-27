@@ -1,0 +1,159 @@
+{
+  "lang" : "zxx",
+  "name" : "Employee360-mapWorkDayToPayroll",
+  "description" : "Default description",
+  "version" : 1,
+  "targetEntityType" : "http://marklogic.envision.com/PayrollData-0.0.1/PayrollData",
+  "sourceContext" : "/",
+  "sourceURI" : "/employee-period-ref/Matt Damon - 2017-04-15.json",
+  "properties" : {
+    "WorkersCompensationAccountCode" : {
+      "sourcedFrom" : "getWDayField(EmployeeId,PeriodEndDate,\"WorkersCompensationAccountCode\")"
+    },
+    "WorkersCompensationAmount" : {
+      "sourcedFrom" : "getWDayField(EmployeeId,PeriodEndDate,\"WorkersCompensationAmount\")"
+    },
+    "MiscAccountCode" : {
+      "sourcedFrom" : "getWDayField(EmployeeId,PeriodEndDate,\"MiscAccountCode\")"
+    },
+    "PeriodEndDate" : {
+      "sourcedFrom" : "PeriodEndDate"
+    },
+    "AutoAllowanceAmount" : {
+      "sourcedFrom" : "getWDayField(EmployeeId,PeriodEndDate,\"AutoAllowanceAmount\")"
+    },
+    "SalaryOverTimeAccountName" : {
+      "sourcedFrom" : "getWDayField(EmployeeId,PeriodEndDate,\"SalaryOverTimeAccountCode\")"
+    },
+    "EarningsSuspenseAccountCode" : {
+      "sourcedFrom" : "getWDayField(EmployeeId,PeriodEndDate,\"EarningSuspenseAccountCode\")"
+    },
+    "SalaryFullTimeAccountCode" : {
+      "sourcedFrom" : "getWDayField(EmployeeId,PeriodEndDate,\"SalaryFullTimeAccountCode\")"
+    },
+    "FireCALPERSAmount" : {
+      "sourcedFrom" : "getWDayField(EmployeeId,PeriodEndDate,\"FireCALPERSAmount\")"
+    },
+    "EmployeeIdPeriodSourceKey" : {
+      "sourcedFrom" : "concat(EmployeeId,\"-\",PeriodEndDate,\"WorkDay\")"
+    },
+    "FringeBenefitsAccountCode" : {
+      "sourcedFrom" : "getWDayField(EmployeeId,PeriodEndDate,\"FringeBenefitsAccountCode\")"
+    },
+    "MiscAccountName" : {
+      "sourcedFrom" : "getWDayField(EmployeeId,PeriodEndDate,\"MiscAccountName\")"
+    },
+    "UniformAllowanceAccountCode" : {
+      "sourcedFrom" : "getWDayField(EmployeeId,PeriodEndDate,\"UniformAllowanceAccountCode\")"
+    },
+    "AutoAllowanceAccountName" : {
+      "sourcedFrom" : "getWDayField(EmployeeId,PeriodEndDate,\"AutoAllowanceAccountName\")"
+    },
+    "ExpenseSuspenseAmount" : {
+      "sourcedFrom" : "getWDayField(EmployeeId,PeriodEndDate,\"ExpenseSuspenseAmount\")"
+    },
+    "EarningsSuspenseAccountName" : {
+      "sourcedFrom" : "getWDayField(EmployeeId,PeriodEndDate,\"EarningSuspenseAccountName\")"
+    },
+    "SalaryFullTimeAccountName" : {
+      "sourcedFrom" : "getWDayField(EmployeeId,PeriodEndDate,\"SalaryFullTimeAccountName\")"
+    },
+    "EmployeeIdPeriod" : {
+      "sourcedFrom" : "concat(EmployeeId,\"-\",PeriodEndDate)"
+    },
+    "Disability_UI_Amount" : {
+      "sourcedFrom" : "getWDayField(EmployeeId,PeriodEndDate,\"Disability_UI_Amount\")"
+    },
+    "FiscalYear" : {
+      "sourcedFrom" : "year-from-date(PeriodEndDate)"
+    },
+    "UniformAllowanceAccountName" : {
+      "sourcedFrom" : "getWDayField(EmployeeId,PeriodEndDate,\"UniformAllowanceAccountName\")"
+    },
+    "PoliceCALPERSAccountCode" : {
+      "sourcedFrom" : "getWDayField(EmployeeId,PeriodEndDate,\"PoliceCALPERSAccountCode\")"
+    },
+    "Disability_UI_AccountCode" : {
+      "sourcedFrom" : "getWDayField(EmployeeId,PeriodEndDate,\"Disability_UI_AccountCode\")"
+    },
+    "PayrollSource" : {
+      "sourcedFrom" : "\"WorkDay\""
+    },
+    "FringeBenefitsAmount" : {
+      "sourcedFrom" : "getWDayField(EmployeeId,PeriodEndDate,\"FringeBenefitsAmount\")"
+    },
+    "FireCALPERSAccountName" : {
+      "sourcedFrom" : "getWDayField(EmployeeId,PeriodEndDate,\"FireCALPERSAccountName\")"
+    },
+    "ExpenseSuspenseAccountCode" : {
+      "sourcedFrom" : "getWDayField(EmployeeId,PeriodEndDate,\"ExpenseSuspenseAccountCode\")"
+    },
+    "UniformAllowanceAmount" : {
+      "sourcedFrom" : "getWDayField(EmployeeId,PeriodEndDate,\"UniformAllowanceAmount\")"
+    },
+    "FundCode" : {
+      "sourcedFrom" : "getWDayField(EmployeeId,PeriodEndDate,\"FundCode\")"
+    },
+    "PoliceCALPERSAccountName" : {
+      "sourcedFrom" : "getWDayField(EmployeeId,PeriodEndDate,\"PoliceCALPERSAccountName\")"
+    },
+    "EmployeeDepartmentId" : {
+      "sourcedFrom" : "getWDayField(EmployeeId,PeriodEndDate,\"EmployeeDepartmentId\")"
+    },
+    "AutoAllowanceAccountCode" : {
+      "sourcedFrom" : "getWDayField(EmployeeId,PeriodEndDate,\"AutoAllowanceAccountCode\")"
+    },
+    "FireCalPERSAmount" : {
+      "sourcedFrom" : ""
+    },
+    "EmployeeId" : {
+      "sourcedFrom" : "EmployeeId"
+    },
+    "SalaryOverTimeAmount" : {
+      "sourcedFrom" : "getWDayField(EmployeeId,PeriodEndDate,\"SalaryOverTimeAmount\")"
+    },
+    "WorkersCompensationAccountName" : {
+      "sourcedFrom" : "getWDayField(EmployeeId,PeriodEndDate,\"WorkersCompensationAccountName\")"
+    },
+    "EarningsSuspenseAmount" : {
+      "sourcedFrom" : "getWDayField(EmployeeId,PeriodEndDate,\"EarningSuspenseAmount\")"
+    },
+    "PositionId" : {
+      "sourcedFrom" : "getWDayField(EmployeeId,PeriodEndDate,\"PositionId\")"
+    },
+    "ProjectId" : {
+      "sourcedFrom" : "getWDayField(EmployeeId,PeriodEndDate,\"ProjectId\")"
+    },
+    "Disability_UI_AccountName" : {
+      "sourcedFrom" : "getWDayField(EmployeeId,PeriodEndDate,\"Disability_UI_AccountName\")"
+    },
+    "FireCALPERSAccountCode" : {
+      "sourcedFrom" : "getWDayField(EmployeeId,PeriodEndDate,\"FireCALPERSAccountCode\")"
+    },
+    "ProgramCode" : {
+      "sourcedFrom" : "getWDayField(EmployeeId,PeriodEndDate,\"ProgramCode\")"
+    },
+    "PoliceCALPERSAmount" : {
+      "sourcedFrom" : "getWDayField(EmployeeId,PeriodEndDate,\"PoliceCALPERSAmount\")"
+    },
+    "SalaryFullTimeAmount" : {
+      "sourcedFrom" : "getWDayField(EmployeeId,PeriodEndDate,\"SalaryFullTimeAmount\")"
+    },
+    "MiscAmount" : {
+      "sourcedFrom" : "getWDayField(EmployeeId,PeriodEndDate,\"MiscAmount\")"
+    },
+    "SalaryOverTimeAccountCode" : {
+      "sourcedFrom" : "getWDayField(EmployeeId,PeriodEndDate,\"SalaryOverTimeAccountCode\")"
+    },
+    "FringeBenefitsAccountName" : {
+      "sourcedFrom" : "getWDayField(EmployeeId,PeriodEndDate,\"FringeBenefitsAccountName\")"
+    },
+    "ExpenseSuspenseAccountName" : {
+      "sourcedFrom" : "getWDayField(EmployeeId,PeriodEndDate,\"ExpenseSuspenseAccountName\")"
+    },
+    "DepartmentId" : {
+      "sourcedFrom" : "getWDayField(EmployeeId,PeriodEndDate,\"DepartmentId\")"
+    }
+  },
+  "namespaces" : { }
+}

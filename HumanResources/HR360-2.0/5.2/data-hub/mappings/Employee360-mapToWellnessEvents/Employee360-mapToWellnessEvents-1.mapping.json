@@ -1,0 +1,57 @@
+{
+  "lang" : "zxx",
+  "name" : "Employee360-mapToWellnessEvents",
+  "description" : "Default description",
+  "version" : 1,
+  "targetEntityType" : "http://marklogic.envision.com/WellnessEvents-0.0.1/WellnessEvents",
+  "sourceContext" : "/",
+  "sourceURI" : "/Users/lsheth/ml-projects/sled-ontario-ca/csv-data/Wellness/WellnessSurvey.csv-0-301",
+  "properties" : {
+    "Temperature" : {
+      "sourcedFrom" : "temperatur"
+    },
+    "EditDate" : {
+      "sourcedFrom" : "getIsoDatefromDate(EditDate)"
+    },
+    "Field14O" : {
+      "sourcedFrom" : "field_14_o"
+    },
+    "NewSymptom" : {
+      "sourcedFrom" : "new_sympto"
+    },
+    "TodaysWork" : {
+      "sourcedFrom" : "todays_wor"
+    },
+    "CreateDate" : {
+      "sourcedFrom" : "getIsoDatefromDate(CreationDa)"
+    },
+    "PeriodEndDate" : {
+      "sourcedFrom" : "getPeriodforEventDate(please_ent,EditDate,\"PeriodEndDate\")"
+    },
+    "PeriodStartDate" : {
+      "sourcedFrom" : "getPeriodforEventDate(please_ent,EditDate,\"PeriodStartDate\")"
+    },
+    "EventSource" : {
+      "sourcedFrom" : "\"Wellness\""
+    },
+    "AreYouEx" : {
+      "sourcedFrom" : "are_you_ex"
+    },
+    "EmployeeIdPeriod" : {
+      "sourcedFrom" : "concat(please_ent,\"-\",getPeriodforEventDate(please_ent,EditDate,\"PeriodEndDate\"))"
+    },
+    "TimeofTemperature" : {
+      "sourcedFrom" : "time_of_te"
+    },
+    "EmployeeIdPeriodSourceKey" : {
+      "sourcedFrom" : "concat(please_ent,\"-\",getPeriodforEventDate(please_ent,EditDate,\"PeriodEndDate\"),\"-\",\"Wellness\")"
+    },
+    "EmployeeId" : {
+      "sourcedFrom" : "please_ent"
+    },
+    "Field14" : {
+      "sourcedFrom" : "field_14"
+    }
+  },
+  "namespaces" : { }
+}

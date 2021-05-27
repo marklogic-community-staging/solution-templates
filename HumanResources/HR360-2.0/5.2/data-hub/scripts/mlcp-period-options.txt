@@ -1,0 +1,23 @@
+import
+-mode
+local
+-host
+localhost
+-port
+8110
+-username
+admin
+-password
+admin
+-database
+ontario-ca-STAGING
+-input_file_type
+delimited_text
+-input_file_path 
+ /Users/lsheth/ml-projects/sled-ontario-ca/employee-17104-data/Period/
+-generate_uri
+true
+-output_collections
+'Period-Table.csv'
+-output_permissions
+data-hub-operator,read,data-hub-operator,update
