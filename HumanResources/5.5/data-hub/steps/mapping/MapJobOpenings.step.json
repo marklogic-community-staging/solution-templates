@@ -1,0 +1,49 @@
+{
+  "stepId" : "MapJobOpenings-mapping",
+  "name" : "MapJobOpenings",
+  "description" : "",
+  "batchSize" : 100,
+  "threadCount" : 4,
+  "stepDefinitionName" : "entity-services-mapping",
+  "stepDefinitionType" : "MAPPING",
+  "stepNumber" : "8",
+  "sourceQuery" : "cts.collectionQuery([\"IngestJobOpenings\"])",
+  "mapping" : {
+    "name" : "MapJobOpenings"
+  },
+  "provenanceGranularityLevel" : "coarse",
+  "collections" : [ "MapJobOpenings", "JobOpening" ],
+  "sourceDatabase" : "data-hub-STAGING",
+  "targetEntityType" : "http://marklogic.com/envision/JobOpening-0.0.1/JobOpening",
+  "permissions" : "data-hub-operator,read,data-hub-operator,update",
+  "validateEntity" : "doNotValidate",
+  "outputFormat" : "json",
+  "targetDatabase" : "data-hub-FINAL",
+  "namespaces" : { },
+  "additionalCollections" : [ ],
+  "targetFormat" : "json",
+  "properties" : {
+    "requiredCompetency" : {
+      "sourcedFrom" : "competency"
+    },
+    "jobId" : {
+      "sourcedFrom" : "jobId"
+    },
+    "reqStatus" : {
+      "sourcedFrom" : "status"
+    },
+    "departmentId" : {
+      "sourcedFrom" : "deptId"
+    },
+    "jobTitle" : {
+      "sourcedFrom" : "jobTitle"
+    },
+    "employeeStartDate" : {
+      "sourcedFrom" : "parseDate(startDate,\"MM/DD/YYYY\")"
+    },
+    "focusArea" : {
+      "sourcedFrom" : "productFocus"
+    }
+  },
+  "selectedSource" : "query"
+}

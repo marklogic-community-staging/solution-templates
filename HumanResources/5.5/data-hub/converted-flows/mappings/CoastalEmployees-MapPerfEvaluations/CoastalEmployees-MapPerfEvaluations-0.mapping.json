@@ -1,0 +1,33 @@
+{
+  "lang" : "zxx",
+  "name" : "CoastalEmployees-MapPerfEvaluations",
+  "description" : "",
+  "version" : 0,
+  "targetEntityType" : "http://marklogic.com/envision/JobReview-0.0.1/JobReview",
+  "sourceContext" : "/",
+  "sourceURI" : "/C/Users/paven/Desktop/HR360/CoastalEmployeeReviews/d4f6c394-4acb-44ac-bfe3-e8256c2afdaf.json",
+  "properties" : {
+    "test" : {
+      "sourcedFrom" : ""
+    },
+    "reviewDate" : {
+      "sourcedFrom" : "parseDate(reviewDate,\"MM/DD/YYYY\")"
+    },
+    "reviewCode" : {
+      "sourcedFrom" : "reviewScore"
+    },
+    "employeeId" : {
+      "sourcedFrom" : "employeeId"
+    },
+    "reviewer" : {
+      "sourcedFrom" : "reviewerEmployeeId"
+    },
+    "reasonType" : {
+      "sourcedFrom" : "reasonType"
+    },
+    "reviewId" : {
+      "sourcedFrom" : "reviewId"
+    }
+  },
+  "namespaces" : { }
+}

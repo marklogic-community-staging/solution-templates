@@ -1,0 +1,35 @@
+2021-03-25 21:24:06,511 INFO org.springframework.boot.StartupInfoLogger [main] Starting Application on hpzbookg5-6001 with PID 23984 (C:\dhcce\marklogic-data-hub-central-5.4.0.war started by paven in c:\dhcce)
+2021-03-25 21:24:06,521 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-03-25 21:24:13,927 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-25 21:24:13,928 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2021-03-25 21:24:13,929 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-03-25 21:24:17,780 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2021-03-25 21:24:18,630 INFO com.marklogic.hub.central.HubCentral [main] Will connect to MarkLogic host: localhost
+2021-03-25 21:24:18,631 INFO com.marklogic.hub.central.HubCentral [main] Hub Central is available at port: 8080
+2021-03-25 21:24:21,810 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2021-03-25 21:24:21,915 INFO org.springframework.boot.StartupInfoLogger [main] Started Application in 17.45 seconds (JVM running for 19.198)
+2021-03-25 21:24:22,210 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-25 21:24:22,903 WARN org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [572] milliseconds.
+2021-03-25 21:24:29,547 INFO com.marklogic.appdeployer.DefaultAppConfigFactory [http-nio-8080-exec-10] App host: localhost
+2021-03-25 21:24:29,549 INFO com.marklogic.appdeployer.DefaultAppConfigFactory [http-nio-8080-exec-10] REST admin username: baloo
+2021-03-25 21:24:29,550 INFO com.marklogic.appdeployer.DefaultAppConfigFactory [http-nio-8080-exec-10] App Services username: baloo
+2021-03-25 21:24:29,567 INFO com.marklogic.mgmt.admin.DefaultAdminConfigFactory [http-nio-8080-exec-10] Admin interface host: localhost
+2021-03-25 21:24:29,568 INFO com.marklogic.mgmt.admin.DefaultAdminConfigFactory [http-nio-8080-exec-10] Admin interface username: baloo
+2021-03-25 21:24:29,574 INFO com.marklogic.mgmt.DefaultManageConfigFactory [http-nio-8080-exec-10] Manage host: localhost
+2021-03-25 21:24:29,575 INFO com.marklogic.mgmt.DefaultManageConfigFactory [http-nio-8080-exec-10] Manage username: baloo
+2021-03-25 21:24:29,576 INFO com.marklogic.mgmt.DefaultManageConfigFactory [http-nio-8080-exec-10] Manage user with security role: baloo
+2021-03-25 21:24:30,391 INFO com.marklogic.mgmt.ManageClient [http-nio-8080-exec-10] Initializing ManageClient with manage config of: [ManageConfig host: localhost, port: 8002, username: baloo, security username: baloo]
+2021-03-25 21:24:30,897 INFO com.marklogic.mgmt.ManageClient [http-nio-8080-exec-10] Initializing ManageClient with manage config of: [ManageConfig host: localhost, port: 8002, username: baloo, security username: baloo]
+2021-03-25 21:26:20,218 INFO com.marklogic.hub.central.controllers.FlowController [http-nio-8080-exec-4] Uploading files to C:\Users\paven\AppData\Local\Temp\ingestion-16903243839321346778 in the server. If 'inputFilePath'  is specified in the ingestion step, this path overrides it.
+2021-03-25 21:26:20,228 INFO com.marklogic.hub.central.controllers.FlowController [http-nio-8080-exec-4] Files successfully uploaded
+2021-03-25 21:26:20,977 INFO com.marklogic.client.datamovement.impl.WriteBatcherImpl [pool-1-thread-1] (withForestConfig) Using forests on [localhost] hosts for "data-hub-STAGING"
+2021-03-25 21:26:20,988 INFO com.marklogic.client.datamovement.impl.WriteBatcherImpl [pool-1-thread-1] Adding DatabaseClient on port 8010 for host "localhost" to the rotation
+2021-03-25 21:26:21,041 INFO com.marklogic.client.datamovement.impl.WriteBatcherImpl [pool-1-thread-1] threadCount=4
+2021-03-25 21:26:21,051 INFO com.marklogic.client.datamovement.impl.WriteBatcherImpl [pool-1-thread-1] batchSize=100
+2021-03-25 21:26:21,251 INFO com.marklogic.client.datamovement.impl.WriteBatcherImpl [Thread-3] flushing 20 queued docs
+2021-03-25 21:26:28,071 INFO com.marklogic.hub.step.impl.QueryStepRunner [pool-3-thread-1] Collecting items for step '3' in flow 'CoastalEmployees'
+2021-03-25 21:26:28,152 INFO com.marklogic.client.datamovement.impl.QueryBatcherImpl [pool-3-thread-1] (withForestConfig) Using forests on [localhost] hosts for "data-hub-STAGING"
+2021-03-25 21:26:28,160 INFO com.marklogic.hub.step.impl.QueryStepRunner [pool-3-thread-1] Starting processing of items for step '3' in flow 'CoastalEmployees'
+2021-03-25 21:26:28,161 INFO com.marklogic.client.datamovement.impl.QueryBatcherImpl [pool-3-thread-1] Starting job batchSize=100, threadCount=4, onUrisReady listeners=2, failure listeners=4
+2021-03-25 21:26:29,544 INFO com.marklogic.client.datamovement.impl.QueryBatcherImpl$QueryThreadPoolExecutor [Thread-4] Job complete, jobBatchNumber=1, jobResultsSoFar=20
+2021-03-25 21:26:29,546 INFO com.marklogic.hub.step.impl.QueryStepRunner [Thread-4] Finished processing of items for step '3' in flow 'CoastalEmployees'
