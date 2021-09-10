@@ -1,0 +1,43 @@
+{
+  "stepId" : "MergeEmployees-merging",
+  "name" : "MergeEmployees",
+  "description" : "",
+  "batchSize" : 100,
+  "threadCount" : 4,
+  "stepDefinitionName" : "default-merging",
+  "stepDefinitionType" : "MERGING",
+  "stepNumber" : "4",
+  "stepUpdate" : false,
+  "sourceQuery" : "cts.collectionQuery([\"MatchEmployees\"])",
+  "provenanceGranularityLevel" : "coarse",
+  "targetEntity" : "Change this to a valid entity type name; e.g. Customer",
+  "acceptsBatch" : false,
+  "targetCollections" : {
+    "onMerge" : {
+      "add" : [ ],
+      "remove" : [ ]
+    },
+    "onNoMatch" : {
+      "add" : [ ],
+      "remove" : [ ]
+    },
+    "onArchive" : {
+      "add" : [ ],
+      "remove" : [ ]
+    },
+    "onNotification" : {
+      "add" : [ ],
+      "remove" : [ ]
+    }
+  },
+  "targetDatabase" : "data-hub-FINAL",
+  "sourceDatabase" : "data-hub-FINAL",
+  "collections" : [ "MergeEmployees", "Employee" ],
+  "targetEntityType" : "Employee",
+  "permissions" : "data-hub-operator,read,data-hub-operator,update",
+  "mergeStrategies" : [ ],
+  "outputFormat" : "json",
+  "mergeRules" : [ ],
+  "additionalCollections" : [ ],
+  "targetFormat" : "json"
+}
