@@ -1,0 +1,40 @@
+{
+  "stepId" : "MapResumes-mapping",
+  "name" : "MapResumes",
+  "description" : "",
+  "batchSize" : 100,
+  "threadCount" : 4,
+  "stepDefinitionName" : "entity-services-mapping",
+  "stepDefinitionType" : "MAPPING",
+  "stepNumber" : "10",
+  "sourceQuery" : "cts.collectionQuery([\"IngestResumes\"])",
+  "mapping" : {
+    "name" : "MapResumes"
+  },
+  "provenanceGranularityLevel" : "coarse",
+  "collections" : [ "MapResumes", "Resume" ],
+  "sourceDatabase" : "data-hub-STAGING",
+  "targetEntityType" : "http://marklogic.com/envision/Resume-0.0.1/Resume",
+  "permissions" : "data-hub-operator,read,data-hub-operator,update",
+  "validateEntity" : "doNotValidate",
+  "outputFormat" : "json",
+  "targetDatabase" : "data-hub-FINAL",
+  "namespaces" : { },
+  "additionalCollections" : [ ],
+  "targetFormat" : "json",
+  "properties" : {
+    "resumeText" : {
+      "sourcedFrom" : "Resume"
+    },
+    "resumeId" : {
+      "sourcedFrom" : "ID"
+    },
+    "employeeId" : {
+      "sourcedFrom" : "EmployeeId"
+    },
+    "category" : {
+      "sourcedFrom" : "Category"
+    }
+  },
+  "selectedSource" : "query"
+}

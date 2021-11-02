@@ -1,0 +1,40 @@
+{
+  "stepId" : "MapCoastalResumes-mapping",
+  "name" : "MapCoastalResumes",
+  "description" : "",
+  "batchSize" : 100,
+  "threadCount" : 4,
+  "stepDefinitionName" : "entity-services-mapping",
+  "stepDefinitionType" : "MAPPING",
+  "stepNumber" : "4",
+  "sourceQuery" : "cts.collectionQuery([\"Resumes\"])",
+  "mapping" : {
+    "name" : "MapCoastalResumes"
+  },
+  "provenanceGranularityLevel" : "coarse",
+  "collections" : [ "MapCoastalResumes", "Resume" ],
+  "sourceDatabase" : "data-hub-STAGING",
+  "targetEntityType" : "http://marklogic.com/envision#Resume-0.0.1/Resume",
+  "permissions" : "data-hub-common,read,data-hub-common,update",
+  "validateEntity" : "doNotValidate",
+  "outputFormat" : "json",
+  "targetDatabase" : "data-hub-FINAL",
+  "namespaces" : { },
+  "additionalCollections" : [ ],
+  "targetFormat" : "json",
+  "properties" : {
+    "resumeText" : {
+      "sourcedFrom" : ""
+    },
+    "resumeId" : {
+      "sourcedFrom" : ""
+    },
+    "employeeId" : {
+      "sourcedFrom" : ""
+    },
+    "category" : {
+      "sourcedFrom" : ""
+    }
+  },
+  "selectedSource" : "query"
+}

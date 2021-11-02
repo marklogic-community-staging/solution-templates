@@ -1,0 +1,27 @@
+{
+  "lang" : "zxx",
+  "name" : "MountainTopEmployees-MapDepartments",
+  "description" : "",
+  "version" : 0,
+  "targetEntityType" : "http://marklogic.com/envision/Department-0.0.1/Department",
+  "sourceContext" : "/",
+  "sourceURI" : "/C/Users/paven/Desktop/HR360/Departments/b3e00a7f-4d06-4ff1-bb70-9add0b71f2db.json",
+  "properties" : {
+    "departmentName" : {
+      "sourcedFrom" : "dept_name"
+    },
+    "departmentId" : {
+      "sourcedFrom" : "dept_num"
+    },
+    "location" : {
+      "sourcedFrom" : "location"
+    },
+    "employeeId" : {
+      "sourcedFrom" : ""
+    },
+    "hasJobOpening" : {
+      "sourcedFrom" : ""
+    }
+  },
+  "namespaces" : { }
+}

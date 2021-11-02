@@ -1,0 +1,43 @@
+{
+  "stepId" : "MapDepartments-mapping",
+  "name" : "MapDepartments",
+  "description" : "",
+  "batchSize" : 100,
+  "threadCount" : 4,
+  "stepDefinitionName" : "entity-services-mapping",
+  "stepDefinitionType" : "MAPPING",
+  "stepNumber" : "7",
+  "sourceQuery" : "cts.collectionQuery([\"IngestDepartments\"])",
+  "mapping" : {
+    "name" : "MapDepartments"
+  },
+  "provenanceGranularityLevel" : "coarse",
+  "collections" : [ "MapDepartments", "Department" ],
+  "sourceDatabase" : "data-hub-STAGING",
+  "targetEntityType" : "http://marklogic.com/envision/Department-0.0.1/Department",
+  "permissions" : "data-hub-operator,read,data-hub-operator,update",
+  "validateEntity" : "doNotValidate",
+  "outputFormat" : "json",
+  "targetDatabase" : "data-hub-FINAL",
+  "namespaces" : { },
+  "additionalCollections" : [ ],
+  "targetFormat" : "json",
+  "properties" : {
+    "departmentName" : {
+      "sourcedFrom" : "dept_name"
+    },
+    "departmentId" : {
+      "sourcedFrom" : "dept_num"
+    },
+    "location" : {
+      "sourcedFrom" : "location"
+    },
+    "employeeId" : {
+      "sourcedFrom" : ""
+    },
+    "hasJobOpening" : {
+      "sourcedFrom" : ""
+    }
+  },
+  "selectedSource" : "query"
+}

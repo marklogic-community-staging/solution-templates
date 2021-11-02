@@ -1,0 +1,36 @@
+{
+  "stepId" : "Resumes-ingestion",
+  "name" : "Resumes",
+  "description" : "",
+  "batchSize" : 100,
+  "threadCount" : 4,
+  "stepDefinitionName" : "default-ingestion",
+  "stepDefinitionType" : "INGESTION",
+  "fileLocations" : {
+    "inputFileType" : "json",
+    "inputFilePath" : "data/CoastalResumes",
+    "outputURIReplacement" : "",
+    "separator" : ""
+  },
+  "stepNumber" : "2",
+  "inputFileType" : "json",
+  "inputFilePath" : "data/CoastalResumes",
+  "outputURIReplacement" : "",
+  "separator" : "",
+  "headers" : {
+    "sources" : [ {
+      "name" : "CoastalEmployees"
+    } ],
+    "createdOn" : "currentDateTime",
+    "createdBy" : "currentUser"
+  },
+  "sourceQuery" : "cts.collectionQuery([])",
+  "provenanceGranularityLevel" : "coarse",
+  "collections" : [ "Resumes" ],
+  "permissions" : "rest-reader,read,rest-writer,update",
+  "outputFormat" : "json",
+  "targetDatabase" : "data-hub-STAGING",
+  "additionalCollections" : [ ],
+  "targetFormat" : "json",
+  "sourceFormat" : "json"
+}
