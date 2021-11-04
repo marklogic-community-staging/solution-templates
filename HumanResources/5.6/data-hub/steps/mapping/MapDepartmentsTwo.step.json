@@ -1,0 +1,47 @@
+{
+  "collections" : [ "Department" ],
+  "additionalCollections" : [ ],
+  "permissions" : "data-hub-common,read,data-hub-common,update",
+  "batchSize" : 100,
+  "validateEntity" : "doNotValidate",
+  "targetFormat" : "json",
+  "name" : "MapDepartmentsTwo",
+  "description" : "",
+  "targetEntityType" : "http://marklogic.com/envision/Department-0.0.1/Department",
+  "sourceDatabase" : "data-hub-STAGING",
+  "targetDatabase" : "data-hub-FINAL",
+  "selectedSource" : "query",
+  "sourceCollection" : "IngestDepartments",
+  "sourceQuery" : "cts.collectionQuery([\"IngestDepartments\"])",
+  "outputFormat" : "json",
+  "customHook" : {
+    "module" : "/envision/customHooks/uriRemapper.sjs",
+    "parameters" : { },
+    "user" : "",
+    "runBefore" : false
+  },
+  "retryLimit" : 0,
+  "threadCount" : 4,
+  "stepDefinitionName" : "entity-services-mapping",
+  "stepDefinitionType" : "mapping",
+  "properties" : {
+    "departmentId" : {
+      "sourcedFrom" : "dept_num"
+    },
+    "departmentName" : {
+      "sourcedFrom" : "dept_name"
+    },
+    "employeeId" : {
+      "sourcedFrom" : ""
+    },
+    "hasJobOpening" : {
+      "sourcedFrom" : ""
+    },
+    "location" : {
+      "sourcedFrom" : "location"
+    }
+  },
+  "stepId" : "MapDepartmentsTwo-mapping",
+  "provenanceGranularityLevel" : "coarse",
+  "lastUpdated" : "2021-05-12T09:50:36.7465857-04:00"
+}

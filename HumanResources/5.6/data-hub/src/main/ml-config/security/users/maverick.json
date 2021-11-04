@@ -1,0 +1,13 @@
+{
+  "user-name": "maverick",
+  "description": "DHCCE user",
+  "password": "goose",
+  "role": [
+    "hub-central-developer",
+    "data-hub-developer",
+    "pii-reader",
+    "tde-admin",
+    "tde-view",
+    "admin"
+  ]
+}
