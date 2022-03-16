@@ -1,0 +1,24 @@
+{
+  "lang" : "zxx",
+  "name" : "MountainTopEmployees-MapResumes",
+  "description" : "",
+  "version" : 0,
+  "targetEntityType" : "http://marklogic.com/envision/Resume-0.0.1/Resume",
+  "sourceContext" : "/",
+  "sourceURI" : "/C/Users/paven/Desktop/HR360/MountainTopResumes/50e5c493-f4e8-48eb-b1ff-e7beae07df29.json",
+  "properties" : {
+    "resumeText" : {
+      "sourcedFrom" : "Resume"
+    },
+    "resumeId" : {
+      "sourcedFrom" : "ID"
+    },
+    "employeeId" : {
+      "sourcedFrom" : "EmployeeId"
+    },
+    "category" : {
+      "sourcedFrom" : "Category"
+    }
+  },
+  "namespaces" : { }
+}

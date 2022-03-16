@@ -1,0 +1,53 @@
+{
+  "stepId" : "MatchEmployees-matching",
+  "name" : "MatchEmployees",
+  "description" : "",
+  "batchSize" : 100,
+  "threadCount" : 4,
+  "stepDefinitionName" : "default-matching",
+  "stepDefinitionType" : "MATCHING",
+  "stepNumber" : "3",
+  "stepUpdate" : false,
+  "sourceQuery" : "cts.collectionQuery([\"MapEmployees\",\"MapCoastalEmployees\"])",
+  "provenanceGranularityLevel" : "coarse",
+  "targetEntity" : "Change this to a valid entity type name; e.g. Customer",
+  "acceptsBatch" : true,
+  "matchRulesets" : [ {
+    "name" : "firstName - Exact",
+    "weight" : "5",
+    "matchRules" : [ {
+      "entityPropertyPath" : "firstName",
+      "matchType" : "exact",
+      "options" : { }
+    } ]
+  }, {
+    "name" : "lastName - Exact",
+    "weight" : "10",
+    "matchRules" : [ {
+      "entityPropertyPath" : "lastName",
+      "matchType" : "exact",
+      "options" : { }
+    } ]
+  }, {
+    "name" : "mobileNumber - Exact",
+    "weight" : "10",
+    "matchRules" : [ {
+      "entityPropertyPath" : "mobileNumber",
+      "matchType" : "exact",
+      "options" : { }
+    } ]
+  } ],
+  "targetDatabase" : "data-hub-FINAL",
+  "thresholds" : [ {
+    "thresholdName" : "Potential Match",
+    "score" : 25,
+    "action" : "notify"
+  } ],
+  "sourceDatabase" : "data-hub-FINAL",
+  "collections" : [ "MatchEmployees", "Employee" ],
+  "targetEntityType" : "Employee",
+  "permissions" : "data-hub-operator,read,data-hub-operator,update",
+  "outputFormat" : "json",
+  "additionalCollections" : [ ],
+  "targetFormat" : "json"
+}

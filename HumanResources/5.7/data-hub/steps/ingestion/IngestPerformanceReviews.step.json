@@ -1,0 +1,36 @@
+{
+  "stepId" : "IngestPerformanceReviews-ingestion",
+  "name" : "IngestPerformanceReviews",
+  "description" : "",
+  "batchSize" : 100,
+  "threadCount" : 4,
+  "stepDefinitionName" : "default-ingestion",
+  "stepDefinitionType" : "INGESTION",
+  "fileLocations" : {
+    "inputFileType" : "csv",
+    "inputFilePath" : "data/MountaintopEmployeeReviews",
+    "outputURIReplacement" : "",
+    "separator" : ","
+  },
+  "stepNumber" : "4",
+  "inputFileType" : "csv",
+  "inputFilePath" : "data/MountaintopEmployeeReviews",
+  "outputURIReplacement" : "",
+  "separator" : ",",
+  "headers" : {
+    "sources" : [ {
+      "name" : "MountainTopEmployees"
+    } ],
+    "createdOn" : "currentDateTime",
+    "createdBy" : "currentUser"
+  },
+  "sourceQuery" : "cts.collectionQuery([])",
+  "provenanceGranularityLevel" : "coarse",
+  "collections" : [ "IngestPerformanceReviews" ],
+  "permissions" : "rest-reader,read,rest-writer,update",
+  "outputFormat" : "json",
+  "targetDatabase" : "data-hub-STAGING",
+  "additionalCollections" : [ ],
+  "targetFormat" : "json",
+  "sourceFormat" : "csv"
+}
