@@ -1,0 +1,78 @@
+{
+  "lang" : "zxx",
+  "name" : "EmployeesMastering-MapCoastalEmployees",
+  "description" : "",
+  "version" : 0,
+  "targetEntityType" : "http://marklogic.com/envision#Employee-0.0.1/Employee",
+  "sourceContext" : "/",
+  "sourceURI" : "",
+  "properties" : {
+    "lastName" : {
+      "sourcedFrom" : "l_name"
+    },
+    "country" : {
+      "sourcedFrom" : ""
+    },
+    "jobEffectiveDate" : {
+      "sourcedFrom" : "start_date"
+    },
+    "jobStatus" : {
+      "sourcedFrom" : "status"
+    },
+    "address" : {
+      "sourcedFrom" : "concat(address1,\" \",address2)"
+    },
+    "city" : {
+      "sourcedFrom" : "city"
+    },
+    "mobileNumber" : {
+      "sourcedFrom" : "cell_phone"
+    },
+    "departmentId" : {
+      "sourcedFrom" : "dept_num"
+    },
+    "jobTitle" : {
+      "sourcedFrom" : "job_title"
+    },
+    "postalCode" : {
+      "sourcedFrom" : "zip"
+    },
+    "profilePic" : {
+      "sourcedFrom" : ""
+    },
+    "employeeId" : {
+      "sourcedFrom" : "employee_id"
+    },
+    "hasJobReview" : {
+      "sourcedFrom" : ""
+    },
+    "languageSkills" : {
+      "sourcedFrom" : "string-join(competency/languages,\" , \")"
+    },
+    "firstName" : {
+      "sourcedFrom" : "f_name"
+    },
+    "toolSkills" : {
+      "sourcedFrom" : "string-join(competency/tools,\" , \")"
+    },
+    "geoLocation" : {
+      "sourcedFrom" : ""
+    },
+    "hasResume" : {
+      "sourcedFrom" : ""
+    },
+    "state" : {
+      "sourcedFrom" : "state"
+    },
+    "productSkills" : {
+      "sourcedFrom" : "primary_prod"
+    },
+    "belongsTo" : {
+      "sourcedFrom" : ""
+    },
+    "email" : {
+      "sourcedFrom" : "email"
+    }
+  },
+  "namespaces" : { }
+}

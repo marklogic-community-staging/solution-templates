@@ -1,0 +1,49 @@
+{
+  "stepId" : "MapPerfEvaluations-mapping",
+  "name" : "MapPerfEvaluations",
+  "description" : "",
+  "batchSize" : 100,
+  "threadCount" : 4,
+  "stepDefinitionName" : "entity-services-mapping",
+  "stepDefinitionType" : "MAPPING",
+  "stepNumber" : "3",
+  "sourceQuery" : "cts.collectionQuery([\"PerformanceEvaluations\"])",
+  "mapping" : {
+    "name" : "MapPerfEvaluations"
+  },
+  "provenanceGranularityLevel" : "coarse",
+  "collections" : [ "MapPerfEvaluations", "JobReview" ],
+  "sourceDatabase" : "data-hub-STAGING",
+  "targetEntityType" : "http://marklogic.com/envision/JobReview-0.0.1/JobReview",
+  "permissions" : "data-hub-operator,read,data-hub-operator,update",
+  "validateEntity" : "doNotValidate",
+  "outputFormat" : "json",
+  "targetDatabase" : "data-hub-FINAL",
+  "namespaces" : { },
+  "additionalCollections" : [ ],
+  "targetFormat" : "json",
+  "properties" : {
+    "test" : {
+      "sourcedFrom" : ""
+    },
+    "reviewDate" : {
+      "sourcedFrom" : "parseDate(reviewDate,\"MM/DD/YYYY\")"
+    },
+    "reviewCode" : {
+      "sourcedFrom" : "reviewScore"
+    },
+    "employeeId" : {
+      "sourcedFrom" : "employeeId"
+    },
+    "reviewer" : {
+      "sourcedFrom" : "reviewerEmployeeId"
+    },
+    "reasonType" : {
+      "sourcedFrom" : "reasonType"
+    },
+    "reviewId" : {
+      "sourcedFrom" : "reviewId"
+    }
+  },
+  "selectedSource" : "query"
+}
