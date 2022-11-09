@@ -1,6 +1,6 @@
 # HR360 Data Hub
 
-This sample data hub for HR360 is compatible with [DHF] 5.4.2 and [Data Hub Central Community Edition] 5.4.2
+This sample data hub for HR360 is compatible with [DHF] 5.6.0 and [Data Hub Central Community Edition] 5.4.2
 
 ## Walkthrough
 

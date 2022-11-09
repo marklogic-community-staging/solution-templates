@@ -1,0 +1,24 @@
+{
+  "lang" : "zxx",
+  "name" : "CoastalEmployees-MapCoastalResumes",
+  "description" : "",
+  "version" : 0,
+  "targetEntityType" : "http://marklogic.com/envision#Resume-0.0.1/Resume",
+  "sourceContext" : "/",
+  "sourceURI" : "",
+  "properties" : {
+    "resumeText" : {
+      "sourcedFrom" : ""
+    },
+    "resumeId" : {
+      "sourcedFrom" : ""
+    },
+    "employeeId" : {
+      "sourcedFrom" : ""
+    },
+    "category" : {
+      "sourcedFrom" : ""
+    }
+  },
+  "namespaces" : { }
+}

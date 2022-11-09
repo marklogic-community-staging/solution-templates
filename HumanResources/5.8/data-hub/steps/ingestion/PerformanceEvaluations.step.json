@@ -1,0 +1,36 @@
+{
+  "stepId" : "PerformanceEvaluations-ingestion",
+  "name" : "PerformanceEvaluations",
+  "description" : "",
+  "batchSize" : 100,
+  "threadCount" : 4,
+  "stepDefinitionName" : "default-ingestion",
+  "stepDefinitionType" : "INGESTION",
+  "fileLocations" : {
+    "inputFileType" : "csv",
+    "inputFilePath" : "data/CoastalEmployeeReviews",
+    "outputURIReplacement" : "",
+    "separator" : ","
+  },
+  "stepNumber" : "1",
+  "inputFileType" : "csv",
+  "inputFilePath" : "data/CoastalEmployeeReviews",
+  "outputURIReplacement" : "",
+  "separator" : ",",
+  "headers" : {
+    "sources" : [ {
+      "name" : "CoastalEmployees"
+    } ],
+    "createdOn" : "currentDateTime",
+    "createdBy" : "currentUser"
+  },
+  "sourceQuery" : "cts.collectionQuery([])",
+  "provenanceGranularityLevel" : "coarse",
+  "collections" : [ "PerformanceEvaluations" ],
+  "permissions" : "rest-reader,read,rest-writer,update",
+  "outputFormat" : "json",
+  "targetDatabase" : "data-hub-STAGING",
+  "additionalCollections" : [ ],
+  "targetFormat" : "json",
+  "sourceFormat" : "csv"
+}

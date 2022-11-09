@@ -1,0 +1,36 @@
+{
+  "stepId" : "IngestEmployees-ingestion",
+  "name" : "IngestEmployees",
+  "description" : "",
+  "batchSize" : 100,
+  "threadCount" : 4,
+  "stepDefinitionName" : "default-ingestion",
+  "stepDefinitionType" : "INGESTION",
+  "fileLocations" : {
+    "inputFileType" : "csv",
+    "inputFilePath" : "data/MountainTopEmployees",
+    "outputURIReplacement" : "",
+    "separator" : ","
+  },
+  "stepNumber" : "1",
+  "inputFileType" : "csv",
+  "inputFilePath" : "data/MountainTopEmployees",
+  "outputURIReplacement" : "",
+  "separator" : ",",
+  "headers" : {
+    "sources" : [ {
+      "name" : "MountainTopEmployees"
+    } ],
+    "createdOn" : "currentDateTime",
+    "createdBy" : "currentUser"
+  },
+  "sourceQuery" : "cts.collectionQuery([])",
+  "provenanceGranularityLevel" : "coarse",
+  "collections" : [ "IngestEmployees" ],
+  "permissions" : "rest-reader,read,rest-writer,update",
+  "outputFormat" : "json",
+  "targetDatabase" : "data-hub-STAGING",
+  "additionalCollections" : [ ],
+  "targetFormat" : "json",
+  "sourceFormat" : "csv"
+}
