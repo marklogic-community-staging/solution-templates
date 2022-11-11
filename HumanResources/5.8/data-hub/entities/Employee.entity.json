@@ -91,14 +91,20 @@
         "hasJobReview" : {
           "datatype" : "array",
           "items" : {
-            "$ref" : "http://marklogic.com/envision/JobReview-0.0.1/JobReview"
+            "relatedEntityType" : "http://marklogic.com/envision/JobReview-0.0.1/JobReview",
+            "joinPropertyName" : "employeeId",
+            "datatype" : "string"
           }
         },
         "hasResume" : {
-          "$ref" : "http://marklogic.com/envision/Resume-0.0.1/Resume"
+          "relatedEntityType" : "http://marklogic.com/envision/Resume-0.0.1/Resume",
+          "joinPropertyName" : "employeeId",
+          "datatype" : "string"
         },
         "belongsTo" : {
-          "$ref" : "http://marklogic.com/envision/Department-0.0.1/Department"
+          "relatedEntityType" : "http://marklogic.com/envision/Department-0.0.1/Department",
+          "joinPropertyName" : "departmentId",
+          "datatype" : "string"
         }
       }
     }
