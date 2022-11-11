@@ -31,7 +31,9 @@
         "hasJobOpening" : {
           "datatype" : "array",
           "items" : {
-            "$ref" : "http://marklogic.com/envision/JobOpening-0.0.1/JobOpening"
+            "relatedEntityType" : "http://marklogic.com/envision/JobOpening-0.0.1/JobOpening",
+            "joinPropertyName" : "departmentId",
+            "datatype" : "string"
           }
         }
       }
