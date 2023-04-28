@@ -60,7 +60,7 @@
       "sourcedFrom" : "tools"
     },
     "hasResume" : {
-      "sourcedFrom" : ""
+      "sourcedFrom" : "emp_id"
     },
     "state" : {
       "sourcedFrom" : "state"
@@ -84,7 +84,8 @@
       "sourcedFrom" : "emp_id"
     },
     "hasJobReview" : {
-      "sourcedFrom" : ""
+      "datatype" : "array",
+      "sourcedFrom" : "emp_id"
     },
     "firstName" : {
       "sourcedFrom" : "first_name"
@@ -99,7 +100,7 @@
       "sourcedFrom" : "primaryProduct"
     },
     "belongsTo" : {
-      "sourcedFrom" : ""
+      "sourcedFrom" : "dept_num"
     }
   },
   "selectedSource" : "query",

@@ -60,7 +60,8 @@
       "sourcedFrom" : "employee_id"
     },
     "hasJobReview" : {
-      "sourcedFrom" : ""
+      "datatype" : "array",
+      "sourcedFrom" : "emp_id"
     },
     "languageSkills" : {
       "sourcedFrom" : "string-join(competency/languages,\" , \")"
@@ -75,7 +76,7 @@
       "sourcedFrom" : ""
     },
     "hasResume" : {
-      "sourcedFrom" : ""
+      "sourcedFrom" : "emp_id"
     },
     "state" : {
       "sourcedFrom" : "state"
@@ -84,7 +85,7 @@
       "sourcedFrom" : "primary_prod"
     },
     "belongsTo" : {
-      "sourcedFrom" : ""
+      "sourcedFrom" : "dept_num"
     },
     "email" : {
       "sourcedFrom" : "email"
