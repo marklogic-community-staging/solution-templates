@@ -32,11 +32,8 @@
     "location" : {
       "sourcedFrom" : "location"
     },
-    "employeeId" : {
-      "sourcedFrom" : ""
-    },
     "hasJobOpening" : {
-      "sourcedFrom" : ""
+      "sourcedFrom" : "dept_num"
     }
   },
   "selectedSource" : "query"
