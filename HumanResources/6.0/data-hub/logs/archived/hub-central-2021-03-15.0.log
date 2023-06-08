@@ -1,0 +1,326 @@
+2021-03-15 16:58:38,594 INFO org.springframework.boot.StartupInfoLogger [main] Starting Application on hpzbookg5-6001 with PID 20320 (C:\dhcce\marklogic-data-hub-central-5.4.0.war started by paven in c:\dhcce)
+2021-03-15 16:58:38,598 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-03-15 16:58:43,585 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-15 16:58:43,587 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2021-03-15 16:58:43,588 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-03-15 16:58:46,823 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2021-03-15 16:58:47,769 INFO com.marklogic.hub.central.HubCentral [main] Will connect to MarkLogic host: localhost
+2021-03-15 16:58:47,770 INFO com.marklogic.hub.central.HubCentral [main] Hub Central is available at port: 8080
+2021-03-15 16:58:51,336 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2021-03-15 16:58:51,431 INFO org.springframework.boot.StartupInfoLogger [main] Started Application in 13.954 seconds (JVM running for 14.919)
+2021-03-15 16:59:15,702 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-15 16:59:16,276 WARN org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [440] milliseconds.
+2021-03-15 16:59:21,909 INFO com.marklogic.appdeployer.DefaultAppConfigFactory [http-nio-8080-exec-8] App host: localhost
+2021-03-15 16:59:21,910 INFO com.marklogic.appdeployer.DefaultAppConfigFactory [http-nio-8080-exec-8] REST admin username: baloo
+2021-03-15 16:59:21,911 INFO com.marklogic.appdeployer.DefaultAppConfigFactory [http-nio-8080-exec-8] App Services username: baloo
+2021-03-15 16:59:21,926 INFO com.marklogic.mgmt.admin.DefaultAdminConfigFactory [http-nio-8080-exec-8] Admin interface host: localhost
+2021-03-15 16:59:21,927 INFO com.marklogic.mgmt.admin.DefaultAdminConfigFactory [http-nio-8080-exec-8] Admin interface username: baloo
+2021-03-15 16:59:21,934 INFO com.marklogic.mgmt.DefaultManageConfigFactory [http-nio-8080-exec-8] Manage host: localhost
+2021-03-15 16:59:21,935 INFO com.marklogic.mgmt.DefaultManageConfigFactory [http-nio-8080-exec-8] Manage username: baloo
+2021-03-15 16:59:21,936 INFO com.marklogic.mgmt.DefaultManageConfigFactory [http-nio-8080-exec-8] Manage user with security role: baloo
+2021-03-15 16:59:22,811 INFO com.marklogic.mgmt.ManageClient [http-nio-8080-exec-8] Initializing ManageClient with manage config of: [ManageConfig host: localhost, port: 8002, username: baloo, security username: baloo]
+2021-03-15 16:59:23,323 INFO com.marklogic.mgmt.ManageClient [http-nio-8080-exec-8] Initializing ManageClient with manage config of: [ManageConfig host: localhost, port: 8002, username: baloo, security username: baloo]
+2021-03-15 17:15:39,331 INFO org.springframework.boot.StartupInfoLogger [main] Starting Application on hpzbookg5-6001 with PID 17076 (C:\dhcce\marklogic-data-hub-central-5.4.0.war started by paven in c:\dhcce)
+2021-03-15 17:15:39,336 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-03-15 17:15:43,657 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-15 17:15:43,658 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2021-03-15 17:15:43,662 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-03-15 17:15:45,714 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2021-03-15 17:15:46,271 INFO com.marklogic.hub.central.HubCentral [main] Will connect to MarkLogic host: localhost
+2021-03-15 17:15:46,272 INFO com.marklogic.hub.central.HubCentral [main] Hub Central is available at port: 8080
+2021-03-15 17:15:48,047 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2021-03-15 17:15:48,107 INFO org.springframework.boot.StartupInfoLogger [main] Started Application in 9.999 seconds (JVM running for 10.986)
+2021-03-15 17:16:25,399 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-15 17:16:25,832 WARN org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [323] milliseconds.
+2021-03-15 17:16:32,031 INFO com.marklogic.appdeployer.DefaultAppConfigFactory [http-nio-8080-exec-6] App host: localhost
+2021-03-15 17:16:32,032 INFO com.marklogic.appdeployer.DefaultAppConfigFactory [http-nio-8080-exec-6] REST admin username: baloo
+2021-03-15 17:16:32,034 INFO com.marklogic.appdeployer.DefaultAppConfigFactory [http-nio-8080-exec-6] App Services username: baloo
+2021-03-15 17:16:32,048 INFO com.marklogic.mgmt.admin.DefaultAdminConfigFactory [http-nio-8080-exec-6] Admin interface host: localhost
+2021-03-15 17:16:32,050 INFO com.marklogic.mgmt.admin.DefaultAdminConfigFactory [http-nio-8080-exec-6] Admin interface username: baloo
+2021-03-15 17:16:32,056 INFO com.marklogic.mgmt.DefaultManageConfigFactory [http-nio-8080-exec-6] Manage host: localhost
+2021-03-15 17:16:32,056 INFO com.marklogic.mgmt.DefaultManageConfigFactory [http-nio-8080-exec-6] Manage username: baloo
+2021-03-15 17:16:32,057 INFO com.marklogic.mgmt.DefaultManageConfigFactory [http-nio-8080-exec-6] Manage user with security role: baloo
+2021-03-15 17:16:32,916 INFO com.marklogic.mgmt.ManageClient [http-nio-8080-exec-6] Initializing ManageClient with manage config of: [ManageConfig host: localhost, port: 8002, username: baloo, security username: baloo]
+2021-03-15 17:16:33,471 INFO com.marklogic.mgmt.ManageClient [http-nio-8080-exec-6] Initializing ManageClient with manage config of: [ManageConfig host: localhost, port: 8002, username: baloo, security username: baloo]
+2021-03-15 17:24:22,094 INFO com.marklogic.hub.central.controllers.FlowController [http-nio-8080-exec-3] Uploading files to C:\Users\paven\AppData\Local\Temp\ingestion-4447643934778838347 in the server. If 'inputFilePath'  is specified in the ingestion step, this path overrides it.
+2021-03-15 17:24:22,100 INFO com.marklogic.hub.central.controllers.FlowController [http-nio-8080-exec-3] Files successfully uploaded
+2021-03-15 17:24:23,833 ERROR com.marklogic.hub.central.exceptions.CustomExceptionHandler [http-nio-8080-exec-1] Unable to get job document
+java.lang.RuntimeException: Unable to get job document
+	at com.marklogic.hub.central.controllers.JobsController.getJobs(JobsController.java:51)
+	at com.marklogic.hub.central.controllers.JobsController.getJob(JobsController.java:44)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.AbstractRequestLoggingFilter.doFilterInternal(AbstractRequestLoggingFilter.java:289)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:118)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:158)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.valves.RemoteIpValve.invoke(RemoteIpValve.java:764)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-03-15 17:24:24,785 INFO com.marklogic.client.datamovement.impl.WriteBatcherImpl [pool-1-thread-1] (withForestConfig) Using forests on [localhost] hosts for "data-hub-STAGING"
+2021-03-15 17:24:24,788 INFO com.marklogic.client.datamovement.impl.WriteBatcherImpl [pool-1-thread-1] Adding DatabaseClient on port 8010 for host "localhost" to the rotation
+2021-03-15 17:24:24,801 INFO com.marklogic.client.datamovement.impl.WriteBatcherImpl [pool-1-thread-1] threadCount=4
+2021-03-15 17:24:24,802 INFO com.marklogic.client.datamovement.impl.WriteBatcherImpl [pool-1-thread-1] batchSize=100
+2021-03-15 17:24:24,839 INFO com.marklogic.client.datamovement.impl.WriteBatcherImpl [Thread-3] flushing 20 queued docs
+2021-03-15 17:24:47,797 INFO com.marklogic.hub.central.controllers.FlowController [http-nio-8080-exec-4] Uploading files to C:\Users\paven\AppData\Local\Temp\ingestion-4937959291316782880 in the server. If 'inputFilePath'  is specified in the ingestion step, this path overrides it.
+2021-03-15 17:24:47,801 INFO com.marklogic.hub.central.controllers.FlowController [http-nio-8080-exec-4] Files successfully uploaded
+2021-03-15 17:24:47,890 INFO com.marklogic.client.datamovement.impl.WriteBatcherImpl [pool-3-thread-1] (withForestConfig) Using forests on [localhost] hosts for "data-hub-STAGING"
+2021-03-15 17:24:47,891 INFO com.marklogic.client.datamovement.impl.WriteBatcherImpl [pool-3-thread-1] Adding DatabaseClient on port 8010 for host "localhost" to the rotation
+2021-03-15 17:24:47,892 INFO com.marklogic.client.datamovement.impl.WriteBatcherImpl [pool-3-thread-1] threadCount=4
+2021-03-15 17:24:47,893 INFO com.marklogic.client.datamovement.impl.WriteBatcherImpl [pool-3-thread-1] batchSize=100
+2021-03-15 17:24:47,896 INFO com.marklogic.client.datamovement.impl.WriteBatcherImpl [Thread-4] flushing 5 queued docs
+2021-03-15 17:24:57,453 INFO com.marklogic.hub.central.controllers.FlowController [http-nio-8080-exec-2] Uploading files to C:\Users\paven\AppData\Local\Temp\ingestion-14499565600778960169 in the server. If 'inputFilePath'  is specified in the ingestion step, this path overrides it.
+2021-03-15 17:24:57,458 INFO com.marklogic.hub.central.controllers.FlowController [http-nio-8080-exec-2] Files successfully uploaded
+2021-03-15 17:24:57,629 INFO com.marklogic.client.datamovement.impl.WriteBatcherImpl [pool-5-thread-1] (withForestConfig) Using forests on [localhost] hosts for "data-hub-STAGING"
+2021-03-15 17:24:57,629 INFO com.marklogic.client.datamovement.impl.WriteBatcherImpl [pool-5-thread-1] Adding DatabaseClient on port 8010 for host "localhost" to the rotation
+2021-03-15 17:24:57,631 INFO com.marklogic.client.datamovement.impl.WriteBatcherImpl [pool-5-thread-1] threadCount=4
+2021-03-15 17:24:57,632 INFO com.marklogic.client.datamovement.impl.WriteBatcherImpl [pool-5-thread-1] batchSize=100
+2021-03-15 17:24:57,636 INFO com.marklogic.client.datamovement.impl.WriteBatcherImpl [Thread-5] flushing 20 queued docs
+2021-03-15 17:25:10,288 INFO com.marklogic.hub.central.controllers.FlowController [http-nio-8080-exec-6] Uploading files to C:\Users\paven\AppData\Local\Temp\ingestion-10048681667934428177 in the server. If 'inputFilePath'  is specified in the ingestion step, this path overrides it.
+2021-03-15 17:25:10,294 INFO com.marklogic.hub.central.controllers.FlowController [http-nio-8080-exec-6] Files successfully uploaded
+2021-03-15 17:25:10,439 INFO com.marklogic.client.datamovement.impl.WriteBatcherImpl [pool-7-thread-1] (withForestConfig) Using forests on [localhost] hosts for "data-hub-STAGING"
+2021-03-15 17:25:10,439 INFO com.marklogic.client.datamovement.impl.WriteBatcherImpl [pool-7-thread-1] Adding DatabaseClient on port 8010 for host "localhost" to the rotation
+2021-03-15 17:25:10,441 INFO com.marklogic.client.datamovement.impl.WriteBatcherImpl [pool-7-thread-1] threadCount=4
+2021-03-15 17:25:10,442 INFO com.marklogic.client.datamovement.impl.WriteBatcherImpl [pool-7-thread-1] batchSize=100
+2021-03-15 17:25:10,447 INFO com.marklogic.client.datamovement.impl.WriteBatcherImpl [Thread-6] flushing 20 queued docs
+2021-03-15 17:25:23,971 INFO com.marklogic.hub.central.controllers.FlowController [http-nio-8080-exec-7] Uploading files to C:\Users\paven\AppData\Local\Temp\ingestion-8691438583484367853 in the server. If 'inputFilePath'  is specified in the ingestion step, this path overrides it.
+2021-03-15 17:25:24,001 INFO com.marklogic.hub.central.controllers.FlowController [http-nio-8080-exec-7] Files successfully uploaded
+2021-03-15 17:25:24,276 INFO com.marklogic.client.datamovement.impl.WriteBatcherImpl [pool-9-thread-1] (withForestConfig) Using forests on [localhost] hosts for "data-hub-STAGING"
+2021-03-15 17:25:24,277 INFO com.marklogic.client.datamovement.impl.WriteBatcherImpl [pool-9-thread-1] Adding DatabaseClient on port 8010 for host "localhost" to the rotation
+2021-03-15 17:25:24,280 INFO com.marklogic.client.datamovement.impl.WriteBatcherImpl [pool-9-thread-1] threadCount=4
+2021-03-15 17:25:24,280 INFO com.marklogic.client.datamovement.impl.WriteBatcherImpl [pool-9-thread-1] batchSize=100
+2021-03-15 17:25:24,304 INFO com.marklogic.client.datamovement.impl.WriteBatcherImpl [Thread-7] flushing 20 queued docs
+2021-03-15 17:26:05,088 INFO com.marklogic.hub.step.impl.QueryStepRunner [pool-11-thread-1] Collecting items for step '6' in flow 'MountainTopEmployees'
+2021-03-15 17:26:05,123 INFO com.marklogic.client.datamovement.impl.QueryBatcherImpl [pool-11-thread-1] (withForestConfig) Using forests on [localhost] hosts for "data-hub-STAGING"
+2021-03-15 17:26:05,126 INFO com.marklogic.hub.step.impl.QueryStepRunner [pool-11-thread-1] Starting processing of items for step '6' in flow 'MountainTopEmployees'
+2021-03-15 17:26:05,127 INFO com.marklogic.client.datamovement.impl.QueryBatcherImpl [pool-11-thread-1] Starting job batchSize=100, threadCount=4, onUrisReady listeners=2, failure listeners=4
+2021-03-15 17:26:06,258 INFO com.marklogic.client.datamovement.impl.QueryBatcherImpl$QueryThreadPoolExecutor [Thread-8] Job complete, jobBatchNumber=1, jobResultsSoFar=20
+2021-03-15 17:26:06,258 INFO com.marklogic.hub.step.impl.QueryStepRunner [Thread-8] Finished processing of items for step '6' in flow 'MountainTopEmployees'
+2021-03-15 17:26:09,618 INFO com.marklogic.hub.step.impl.QueryStepRunner [pool-13-thread-1] Collecting items for step '7' in flow 'MountainTopEmployees'
+2021-03-15 17:26:09,644 INFO com.marklogic.client.datamovement.impl.QueryBatcherImpl [pool-13-thread-1] (withForestConfig) Using forests on [localhost] hosts for "data-hub-STAGING"
+2021-03-15 17:26:09,645 INFO com.marklogic.hub.step.impl.QueryStepRunner [pool-13-thread-1] Starting processing of items for step '7' in flow 'MountainTopEmployees'
+2021-03-15 17:26:09,646 INFO com.marklogic.client.datamovement.impl.QueryBatcherImpl [pool-13-thread-1] Starting job batchSize=100, threadCount=4, onUrisReady listeners=2, failure listeners=4
+2021-03-15 17:26:09,718 INFO com.marklogic.client.datamovement.impl.QueryBatcherImpl$QueryThreadPoolExecutor [Thread-9] Job complete, jobBatchNumber=1, jobResultsSoFar=5
+2021-03-15 17:26:09,719 INFO com.marklogic.hub.step.impl.QueryStepRunner [Thread-9] Finished processing of items for step '7' in flow 'MountainTopEmployees'
+2021-03-15 17:26:13,119 INFO com.marklogic.hub.step.impl.QueryStepRunner [pool-15-thread-1] Collecting items for step '8' in flow 'MountainTopEmployees'
+2021-03-15 17:26:13,142 INFO com.marklogic.client.datamovement.impl.QueryBatcherImpl [pool-15-thread-1] (withForestConfig) Using forests on [localhost] hosts for "data-hub-STAGING"
+2021-03-15 17:26:13,143 INFO com.marklogic.hub.step.impl.QueryStepRunner [pool-15-thread-1] Starting processing of items for step '8' in flow 'MountainTopEmployees'
+2021-03-15 17:26:13,145 INFO com.marklogic.client.datamovement.impl.QueryBatcherImpl [pool-15-thread-1] Starting job batchSize=100, threadCount=4, onUrisReady listeners=2, failure listeners=4
+2021-03-15 17:26:13,461 INFO com.marklogic.client.datamovement.impl.QueryBatcherImpl$QueryThreadPoolExecutor [Thread-10] Job complete, jobBatchNumber=1, jobResultsSoFar=20
+2021-03-15 17:26:13,462 INFO com.marklogic.hub.step.impl.QueryStepRunner [Thread-10] Finished processing of items for step '8' in flow 'MountainTopEmployees'
+2021-03-15 17:26:16,036 INFO com.marklogic.hub.step.impl.QueryStepRunner [pool-17-thread-1] Collecting items for step '9' in flow 'MountainTopEmployees'
+2021-03-15 17:26:16,063 INFO com.marklogic.client.datamovement.impl.QueryBatcherImpl [pool-17-thread-1] (withForestConfig) Using forests on [localhost] hosts for "data-hub-STAGING"
+2021-03-15 17:26:16,064 INFO com.marklogic.hub.step.impl.QueryStepRunner [pool-17-thread-1] Starting processing of items for step '9' in flow 'MountainTopEmployees'
+2021-03-15 17:26:16,065 INFO com.marklogic.client.datamovement.impl.QueryBatcherImpl [pool-17-thread-1] Starting job batchSize=100, threadCount=4, onUrisReady listeners=2, failure listeners=4
+2021-03-15 17:26:16,484 INFO com.marklogic.client.datamovement.impl.QueryBatcherImpl$QueryThreadPoolExecutor [Thread-11] Job complete, jobBatchNumber=1, jobResultsSoFar=20
+2021-03-15 17:26:16,485 INFO com.marklogic.hub.step.impl.QueryStepRunner [Thread-11] Finished processing of items for step '9' in flow 'MountainTopEmployees'
+2021-03-15 17:26:19,161 INFO com.marklogic.hub.step.impl.QueryStepRunner [pool-19-thread-1] Collecting items for step '10' in flow 'MountainTopEmployees'
+2021-03-15 17:26:19,186 INFO com.marklogic.client.datamovement.impl.QueryBatcherImpl [pool-19-thread-1] (withForestConfig) Using forests on [localhost] hosts for "data-hub-STAGING"
+2021-03-15 17:26:19,187 INFO com.marklogic.hub.step.impl.QueryStepRunner [pool-19-thread-1] Starting processing of items for step '10' in flow 'MountainTopEmployees'
+2021-03-15 17:26:19,188 INFO com.marklogic.client.datamovement.impl.QueryBatcherImpl [pool-19-thread-1] Starting job batchSize=100, threadCount=4, onUrisReady listeners=2, failure listeners=4
+2021-03-15 17:26:19,572 INFO com.marklogic.client.datamovement.impl.QueryBatcherImpl$QueryThreadPoolExecutor [Thread-12] Job complete, jobBatchNumber=1, jobResultsSoFar=20
+2021-03-15 17:26:19,572 INFO com.marklogic.hub.step.impl.QueryStepRunner [Thread-12] Finished processing of items for step '10' in flow 'MountainTopEmployees'
+2021-03-15 17:33:05,489 INFO com.marklogic.hub.central.controllers.FlowController [http-nio-8080-exec-1] Uploading files to C:\Users\paven\AppData\Local\Temp\ingestion-4909758243904092521 in the server. If 'inputFilePath'  is specified in the ingestion step, this path overrides it.
+2021-03-15 17:33:05,537 INFO com.marklogic.hub.central.controllers.FlowController [http-nio-8080-exec-1] Files successfully uploaded
+2021-03-15 17:33:07,090 ERROR com.marklogic.hub.central.exceptions.CustomExceptionHandler [http-nio-8080-exec-10] Unable to get job document
+java.lang.RuntimeException: Unable to get job document
+	at com.marklogic.hub.central.controllers.JobsController.getJobs(JobsController.java:51)
+	at com.marklogic.hub.central.controllers.JobsController.getJob(JobsController.java:44)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.AbstractRequestLoggingFilter.doFilterInternal(AbstractRequestLoggingFilter.java:289)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:118)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:158)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.valves.RemoteIpValve.invoke(RemoteIpValve.java:764)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-03-15 17:33:07,960 INFO com.marklogic.client.datamovement.impl.WriteBatcherImpl [pool-21-thread-1] (withForestConfig) Using forests on [localhost] hosts for "data-hub-STAGING"
+2021-03-15 17:33:07,960 INFO com.marklogic.client.datamovement.impl.WriteBatcherImpl [pool-21-thread-1] Adding DatabaseClient on port 8010 for host "localhost" to the rotation
+2021-03-15 17:33:07,962 INFO com.marklogic.client.datamovement.impl.WriteBatcherImpl [pool-21-thread-1] threadCount=4
+2021-03-15 17:33:07,963 INFO com.marklogic.client.datamovement.impl.WriteBatcherImpl [pool-21-thread-1] batchSize=100
+2021-03-15 17:33:07,981 INFO com.marklogic.client.datamovement.impl.WriteBatcherImpl [Thread-13] flushing 20 queued docs
+2021-03-15 17:33:14,426 INFO com.marklogic.hub.step.impl.QueryStepRunner [pool-23-thread-1] Collecting items for step '2' in flow 'EmployeesMastering'
+2021-03-15 17:33:14,459 INFO com.marklogic.client.datamovement.impl.QueryBatcherImpl [pool-23-thread-1] (withForestConfig) Using forests on [localhost] hosts for "data-hub-STAGING"
+2021-03-15 17:33:14,460 INFO com.marklogic.hub.step.impl.QueryStepRunner [pool-23-thread-1] Starting processing of items for step '2' in flow 'EmployeesMastering'
+2021-03-15 17:33:14,461 INFO com.marklogic.client.datamovement.impl.QueryBatcherImpl [pool-23-thread-1] Starting job batchSize=100, threadCount=4, onUrisReady listeners=2, failure listeners=4
+2021-03-15 17:33:16,019 INFO com.marklogic.client.datamovement.impl.QueryBatcherImpl$QueryThreadPoolExecutor [Thread-14] Job complete, jobBatchNumber=1, jobResultsSoFar=20
+2021-03-15 17:33:16,020 INFO com.marklogic.hub.step.impl.QueryStepRunner [Thread-14] Finished processing of items for step '2' in flow 'EmployeesMastering'
+2021-03-15 17:34:23,009 INFO com.marklogic.hub.step.impl.QueryStepRunner [pool-25-thread-1] Collecting items for step '3' in flow 'EmployeesMastering'
+2021-03-15 17:34:23,033 INFO com.marklogic.client.datamovement.impl.QueryBatcherImpl [pool-25-thread-1] (withForestConfig) Using forests on [localhost] hosts for "data-hub-STAGING"
+2021-03-15 17:34:23,034 INFO com.marklogic.hub.step.impl.QueryStepRunner [pool-25-thread-1] Starting processing of items for step '3' in flow 'EmployeesMastering'
+2021-03-15 17:34:23,035 INFO com.marklogic.client.datamovement.impl.QueryBatcherImpl [pool-25-thread-1] Starting job batchSize=100, threadCount=4, onUrisReady listeners=2, failure listeners=4
+2021-03-15 17:34:23,958 INFO com.marklogic.client.datamovement.impl.QueryBatcherImpl$QueryThreadPoolExecutor [Thread-15] Job complete, jobBatchNumber=1, jobResultsSoFar=40
+2021-03-15 17:34:23,958 INFO com.marklogic.hub.step.impl.QueryStepRunner [Thread-15] Finished processing of items for step '3' in flow 'EmployeesMastering'
+2021-03-15 17:34:27,073 INFO com.marklogic.hub.step.impl.QueryStepRunner [pool-27-thread-1] Collecting items for step '4' in flow 'EmployeesMastering'
+2021-03-15 17:34:27,092 INFO com.marklogic.client.datamovement.impl.QueryBatcherImpl [pool-27-thread-1] (withForestConfig) Using forests on [localhost] hosts for "data-hub-STAGING"
+2021-03-15 17:34:27,093 INFO com.marklogic.hub.step.impl.QueryStepRunner [pool-27-thread-1] Starting processing of items for step '4' in flow 'EmployeesMastering'
+2021-03-15 17:34:27,094 INFO com.marklogic.client.datamovement.impl.QueryBatcherImpl [pool-27-thread-1] Starting job batchSize=100, threadCount=4, onUrisReady listeners=2, failure listeners=4
+2021-03-15 17:34:27,437 INFO com.marklogic.client.datamovement.impl.QueryBatcherImpl$QueryThreadPoolExecutor [Thread-16] Job complete, jobBatchNumber=1, jobResultsSoFar=1
+2021-03-15 17:34:27,438 INFO com.marklogic.hub.step.impl.QueryStepRunner [Thread-16] Finished processing of items for step '4' in flow 'EmployeesMastering'

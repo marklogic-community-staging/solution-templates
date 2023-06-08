@@ -1,0 +1,61 @@
+{
+  "name" : "MountainTopEmployees",
+  "description" : "null",
+  "batchSize" : 100,
+  "threadCount" : 4,
+  "stopOnError" : false,
+  "options" : null,
+  "version" : 0,
+  "steps" : {
+    "1" : {
+      "stepId" : "IngestEmployees-ingestion",
+      "name" : "IngestEmployees",
+      "stepDefinitionType" : "INGESTION"
+    },
+    "2" : {
+      "stepId" : "IngestDepartments-ingestion",
+      "name" : "IngestDepartments",
+      "stepDefinitionType" : "INGESTION"
+    },
+    "3" : {
+      "stepId" : "IngestJobOpenings-ingestion",
+      "name" : "IngestJobOpenings",
+      "stepDefinitionType" : "INGESTION"
+    },
+    "4" : {
+      "stepId" : "IngestPerformanceReviews-ingestion",
+      "name" : "IngestPerformanceReviews",
+      "stepDefinitionType" : "INGESTION"
+    },
+    "5" : {
+      "stepId" : "IngestResumes-ingestion",
+      "name" : "IngestResumes",
+      "stepDefinitionType" : "INGESTION"
+    },
+    "6" : {
+      "stepId" : "MapEmployees-mapping",
+      "name" : "MapEmployees",
+      "stepDefinitionType" : "MAPPING"
+    },
+    "7" : {
+      "stepId" : "MapDepartments-mapping",
+      "name" : "MapDepartments",
+      "stepDefinitionType" : "MAPPING"
+    },
+    "8" : {
+      "stepId" : "MapJobOpenings-mapping",
+      "name" : "MapJobOpenings",
+      "stepDefinitionType" : "MAPPING"
+    },
+    "9" : {
+      "stepId" : "MapPerformanceReviews-mapping",
+      "name" : "MapPerformanceReviews",
+      "stepDefinitionType" : "MAPPING"
+    },
+    "10" : {
+      "stepId" : "MapResumes-mapping",
+      "name" : "MapResumes",
+      "stepDefinitionType" : "MAPPING"
+    }
+  }
+}

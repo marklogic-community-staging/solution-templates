@@ -1,0 +1,30 @@
+{
+  "lang" : "zxx",
+  "name" : "MountainTopEmployees-MapPerformanceReviews",
+  "description" : "",
+  "version" : 0,
+  "targetEntityType" : "http://marklogic.com/envision/JobReview-0.0.1/JobReview",
+  "sourceContext" : "/",
+  "sourceURI" : "/C/Users/paven/Desktop/HR360/MountaintopEmployeeReviews/cecbba25-eb5f-4fcb-99f6-b2945c414c4c.json",
+  "properties" : {
+    "reviewDate" : {
+      "sourcedFrom" : "parseDate(perfReviewDate,\"MM/DD/YYYY\")"
+    },
+    "reviewCode" : {
+      "sourcedFrom" : "reviewScore"
+    },
+    "employeeId" : {
+      "sourcedFrom" : "employeeId"
+    },
+    "reviewer" : {
+      "sourcedFrom" : "reviewer"
+    },
+    "reasonType" : {
+      "sourcedFrom" : "reasonType"
+    },
+    "reviewId" : {
+      "sourcedFrom" : "perfReviewID"
+    }
+  },
+  "namespaces" : { }
+}
