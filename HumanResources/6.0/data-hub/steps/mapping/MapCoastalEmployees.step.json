@@ -1,0 +1,95 @@
+{
+  "stepId" : "MapCoastalEmployees-mapping",
+  "name" : "MapCoastalEmployees",
+  "description" : "",
+  "batchSize" : 100,
+  "threadCount" : 4,
+  "stepDefinitionName" : "entity-services-mapping",
+  "stepDefinitionType" : "MAPPING",
+  "stepNumber" : "2",
+  "sourceQuery" : "cts.collectionQuery([\"CoastalEmployees\"])",
+  "mapping" : {
+    "name" : "MapCoastalEmployees"
+  },
+  "provenanceGranularityLevel" : "coarse",
+  "collections" : [ "MapCoastalEmployees", "Employee" ],
+  "sourceDatabase" : "data-hub-STAGING",
+  "targetEntityType" : "http://marklogic.com/envision#Employee-0.0.1/Employee",
+  "permissions" : "data-hub-common,read,data-hub-common,update",
+  "validateEntity" : "doNotValidate",
+  "outputFormat" : "json",
+  "targetDatabase" : "data-hub-FINAL",
+  "namespaces" : { },
+  "additionalCollections" : [ ],
+  "targetFormat" : "json",
+  "properties" : {
+    "lastName" : {
+      "sourcedFrom" : "l_name"
+    },
+    "country" : {
+      "sourcedFrom" : ""
+    },
+    "jobEffectiveDate" : {
+      "sourcedFrom" : "start_date"
+    },
+    "jobStatus" : {
+      "sourcedFrom" : "status"
+    },
+    "address" : {
+      "sourcedFrom" : "concat(address1,\" \",address2)"
+    },
+    "city" : {
+      "sourcedFrom" : "city"
+    },
+    "mobileNumber" : {
+      "sourcedFrom" : "cell_phone"
+    },
+    "departmentId" : {
+      "sourcedFrom" : "dept_num"
+    },
+    "jobTitle" : {
+      "sourcedFrom" : "job_title"
+    },
+    "postalCode" : {
+      "sourcedFrom" : "zip"
+    },
+    "profilePic" : {
+      "sourcedFrom" : ""
+    },
+    "employeeId" : {
+      "sourcedFrom" : "employee_id"
+    },
+    "hasJobReview" : {
+      "datatype" : "array",
+      "sourcedFrom" : "emp_id"
+    },
+    "languageSkills" : {
+      "sourcedFrom" : "string-join(competency/languages,\" , \")"
+    },
+    "firstName" : {
+      "sourcedFrom" : "f_name"
+    },
+    "toolSkills" : {
+      "sourcedFrom" : "string-join(competency/tools,\" , \")"
+    },
+    "geoLocation" : {
+      "sourcedFrom" : ""
+    },
+    "hasResume" : {
+      "sourcedFrom" : "emp_id"
+    },
+    "state" : {
+      "sourcedFrom" : "state"
+    },
+    "productSkills" : {
+      "sourcedFrom" : "primary_prod"
+    },
+    "belongsTo" : {
+      "sourcedFrom" : "dept_num"
+    },
+    "email" : {
+      "sourcedFrom" : "email"
+    }
+  },
+  "selectedSource" : "query"
+}

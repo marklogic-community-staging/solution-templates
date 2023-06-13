@@ -1,0 +1,36 @@
+{
+  "stepId" : "IngestJobOpenings-ingestion",
+  "name" : "IngestJobOpenings",
+  "description" : "",
+  "batchSize" : 100,
+  "threadCount" : 4,
+  "stepDefinitionName" : "default-ingestion",
+  "stepDefinitionType" : "INGESTION",
+  "fileLocations" : {
+    "inputFileType" : "csv",
+    "inputFilePath" : "data/JobOpenings",
+    "outputURIReplacement" : "",
+    "separator" : ","
+  },
+  "stepNumber" : "3",
+  "inputFileType" : "csv",
+  "inputFilePath" : "data/JobOpenings",
+  "outputURIReplacement" : "",
+  "separator" : ",",
+  "headers" : {
+    "sources" : [ {
+      "name" : "MountainTopEmployees"
+    } ],
+    "createdOn" : "currentDateTime",
+    "createdBy" : "currentUser"
+  },
+  "sourceQuery" : "cts.collectionQuery([])",
+  "provenanceGranularityLevel" : "coarse",
+  "collections" : [ "IngestJobOpenings" ],
+  "permissions" : "rest-reader,read,rest-writer,update",
+  "outputFormat" : "json",
+  "targetDatabase" : "data-hub-STAGING",
+  "additionalCollections" : [ ],
+  "targetFormat" : "json",
+  "sourceFormat" : "csv"
+}
