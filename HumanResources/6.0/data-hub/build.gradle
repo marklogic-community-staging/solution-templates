@@ -9,6 +9,6 @@ plugins {
     id 'net.saliman.properties' version '1.4.6'
 
     // Data Hub plugin
-    id 'com.marklogic.ml-data-hub' version '5.8.1'
+    id 'com.marklogic.ml-data-hub' version '6.0.0'
 }
 
