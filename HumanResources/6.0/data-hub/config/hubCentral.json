@@ -1,0 +1,21 @@
+{
+  "modeling" : {
+    "entities" : {
+      "Employee" : {
+        "label" : "lastName"
+      },
+      "Department" : {
+        "label" : "departmentId"
+      },
+      "JobOpening" : {
+        "label" : "jobTitle"
+      },
+      "Resume" : {
+        "label" : "category"
+      },
+      "JobReview" : {
+        "label" : "reviewCode"
+      }
+    }
+  }
+}

@@ -1,6 +1,6 @@
 {
   "user-name": "maverick",
-  "description": "DHCCE user",
+  "description": "Datahub user",
   "password": "goose",
   "role": [
     "hub-central-developer",

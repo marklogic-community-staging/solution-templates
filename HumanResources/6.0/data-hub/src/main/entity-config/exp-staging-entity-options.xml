@@ -7,6 +7,16 @@
       <search:facet-option>descending</search:facet-option>
     </search:collection>
   </search:constraint>
+  <search:constraint name="entityType">
+    <search:custom facet="false">
+      <search:parse apply="parse" ns="http://marklogic.com/data-hub/entities/constraint/entityType" at="/data-hub/5/entities/constraint/entityType.xqy"/>
+    </search:custom>
+  </search:constraint>
+  <search:constraint name="hideHubArtifacts">
+    <search:custom facet="false">
+      <search:parse apply="parse" ns="http://marklogic.com/data-hub/entities/constraint/hideHubArtifacts" at="/data-hub/5/entities/constraint/hideHubArtifacts.xqy"/>
+    </search:custom>
+  </search:constraint>
   <search:constraint name="createdByJob">
     <search:range facet="false">
       <search:field name="datahubCreatedByJob"/>
@@ -23,6 +33,11 @@
   <search:constraint name="createdByJobWord">
     <search:word>
       <search:field name="datahubCreatedByJob"/>
+    </search:word>
+  </search:constraint>
+  <search:constraint name="ranByStepWord">
+    <search:word>
+      <search:field name="datahubRanBySteps"/>
     </search:word>
   </search:constraint>
   <search:constraint name="createdOnRange">
@@ -54,6 +69,11 @@
       <search:facet-option>descending</search:facet-option>
     </search:range>
   </search:constraint>
+  <search:constraint name="relatedTo">
+    <search:custom facet="false">
+      <search:parse apply="parse" ns="http://marklogic.com/data-hub/entities/constraint/relatedTo" at="/data-hub/5/entities/constraint/relatedTo.xqy"/>
+    </search:custom>
+  </search:constraint>
   <search:constraint name="entity-type">
     <search:value>
       <search:element ns="http://marklogic.com/entity-services" name="title"/>
@@ -83,10 +103,6 @@
   <!--Change to 'filtered' to exclude false-positives in certain searches-->
   <search:search-option>unfiltered</search:search-option>
   <!--Modify document extraction to change results returned-->
-  <search:extract-document-data selected="include">
-    <search:extract-path xmlns:es="http://marklogic.com/entity-services">//*:instance/(JobReview|Department|Resume|Employee|JobOpening)</search:extract-path>
-    <search:extract-path xmlns:es="http://marklogic.com/entity-services">/*:envelope/*:headers</search:extract-path>
-  </search:extract-document-data>
   <!--Change or remove this additional-query to broaden search beyond entity instance documents-->
   <!--To return facets, change this option to 'true' and edit constraints-->
   <search:return-facets>true</search:return-facets>
